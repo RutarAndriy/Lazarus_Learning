@@ -1,0 +1,52 @@
+object fMain: TfMain
+  Left = 310
+  Height = 240
+  Top = 250
+  Width = 320
+  Caption = 'fMain'
+  ClientHeight = 240
+  ClientWidth = 320
+  object Edit1: TEdit
+    Left = 8
+    Height = 33
+    Top = 8
+    Width = 200
+    Font.Height = -20
+    Font.Name = 'Z003'
+    Font.Style = [fsItalic]
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 8
+    Height = 25
+    Top = 56
+    Width = 75
+    Caption = 'Button1'
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+  object LabeledEdit1: TLabeledEdit
+    Left = 8
+    Height = 28
+    Top = 112
+    Width = 200
+    EditLabel.Height = 16
+    EditLabel.Width = 200
+    EditLabel.Caption = 'Прізвище'
+    TabOrder = 2
+  end
+  object MaskEdit1: TMaskEdit
+    Left = 8
+    Height = 28
+    Top = 144
+    Width = 200
+    EnableSets = False
+    MaxLength = 13
+    TabOrder = 3
+    EditMask = '00-00-0000 р.;1;_'
+    Text = '  -  -     р.'
+    SpaceChar = '_'
+  end
+end
