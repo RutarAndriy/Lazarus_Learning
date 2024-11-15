@@ -1,0 +1,75 @@
+object fMain: TfMain
+  Left = 310
+  Height = 192
+  Top = 250
+  Width = 393
+  BorderStyle = bsDialog
+  Caption = 'Вибори'
+  ClientHeight = 192
+  ClientWidth = 393
+  Position = poDefault
+  object RG1: TRadioGroup
+    Left = 8
+    Height = 145
+    Top = 8
+    Width = 185
+    AutoFill = True
+    Caption = 'Кандидати'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 128
+    ClientWidth = 183
+    ItemIndex = 0
+    Items.Strings = (
+      'П. Порошенко'
+      'В. Зеленський'
+      'Ю. Тимошенко'
+      'С. Тігіпко'
+      'Ю. Бойко'
+    )
+    TabOrder = 0
+  end
+  object ChG1: TCheckGroup
+    Left = 200
+    Height = 145
+    Top = 8
+    Width = 185
+    AutoFill = True
+    Caption = 'Міста'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.TopBottomSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 128
+    ClientWidth = 183
+    Items.Strings = (
+      'Львів'
+      'Київ'
+      'Одеса'
+      'Харків'
+      'Дніпро'
+    )
+    TabOrder = 1
+    Data = {
+      050000000202020202
+    }
+  end
+  object Button1: TButton
+    Left = 148
+    Height = 25
+    Top = 160
+    Width = 97
+    Caption = 'Результат'
+    TabOrder = 2
+    OnClick = Button1Click
+  end
+end
