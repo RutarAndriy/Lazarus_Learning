@@ -1,0 +1,58 @@
+object fMain: TfMain
+  Left = 310
+  Height = 103
+  Top = 250
+  Width = 424
+  BorderStyle = bsDialog
+  Caption = 'IMT - Індекс маси тіла'
+  ClientHeight = 103
+  ClientWidth = 424
+  Position = poDesktopCenter
+  object ME1: TMaskEdit
+    Left = 320
+    Height = 28
+    Top = 8
+    Width = 96
+    EnableSets = False
+    MaxLength = 4
+    TabOrder = 0
+    EditMask = '0.00;1;_'
+    Text = ' .  '
+    SpaceChar = '_'
+  end
+  object ME2: TMaskEdit
+    Left = 320
+    Height = 28
+    Top = 40
+    Width = 96
+    EnableSets = False
+    MaxLength = 3
+    TabOrder = 1
+    EditMask = '###;1;_'
+    Text = '   '
+    SpaceChar = '_'
+  end
+  object Button1: TButton
+    Left = 143
+    Height = 25
+    Top = 72
+    Width = 139
+    Caption = 'Розрахувати ІМТ'
+    TabOrder = 2
+    OnClick = Button1Click
+  end
+  object Label1: TLabel
+    Left = 8
+    Height = 16
+    Top = 8
+    Width = 264
+    Caption = 'Введіть свій ріст у метрах, наприклад 1,90:'
+  end
+  object Label2: TLabel
+    Left = 8
+    Height = 16
+    Top = 40
+    Width = 290
+    Caption = 'Введіть свою вагу в кілограмах, наприклад 70:'
+  end
+end
