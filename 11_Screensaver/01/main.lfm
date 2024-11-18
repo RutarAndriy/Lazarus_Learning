@@ -1,0 +1,32 @@
+object fMain: TfMain
+  Cursor = crNone
+  Left = 310
+  Height = 240
+  Top = 250
+  Width = 320
+  BorderStyle = bsNone
+  Caption = 'fMain'
+  ClientHeight = 240
+  ClientWidth = 320
+  Color = clBlack
+  OnActivate = FormActivate
+  OnKeyPress = FormKeyPress
+  WindowState = wsFullScreen
+  object lClock: TLabel
+    Left = 37
+    Height = 88
+    Top = 76
+    Width = 246
+    Caption = '00:00:00'
+    Font.Color = clLime
+    Font.Height = -64
+    Font.Name = 'Sans'
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 8
+    Top = 200
+  end
+end
