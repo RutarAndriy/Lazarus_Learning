@@ -1,0 +1,39 @@
+object fMain: TfMain
+  Left = 308
+  Height = 264
+  Top = 250
+  Width = 235
+  BorderStyle = bsDialog
+  Caption = 'Дата і Час'
+  ClientHeight = 264
+  ClientWidth = 235
+  object Button1: TButton
+    Left = 8
+    Height = 25
+    Top = 232
+    Width = 220
+    Caption = 'Запуск'
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object Calendar1: TCalendar
+    Left = 8
+    Height = 190
+    Top = 8
+    Width = 220
+    DateTime = 45615
+    TabOrder = 1
+  end
+  object DateEdit1: TDateEdit
+    Left = 8
+    Height = 28
+    Top = 200
+    Width = 220
+    CalendarDisplaySettings = [dsShowHeadings, dsShowDayNames]
+    DateOrder = doNone
+    ButtonWidth = 23
+    NumGlyphs = 1
+    MaxLength = 0
+    TabOrder = 2
+  end
+end
