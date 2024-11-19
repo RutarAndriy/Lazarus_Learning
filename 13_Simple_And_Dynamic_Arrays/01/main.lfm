@@ -1,0 +1,39 @@
+object fMain: TfMain
+  Left = 310
+  Height = 90
+  Top = 250
+  Width = 296
+  BorderStyle = bsDialog
+  Caption = 'Перевід температурних шкал'
+  ClientHeight = 90
+  ClientWidth = 296
+  OnCreate = FormCreate
+  Position = poMainFormCenter
+  object StaticText1: TStaticText
+    Left = 8
+    Height = 40
+    Top = 8
+    Width = 200
+    Alignment = taRightJustify
+    Caption = 'Вкажіть температуру в Цельсіях'#10'від -100 до 200 градусів:'
+    TabOrder = 0
+  end
+  object SE1: TSpinEdit
+    Left = 216
+    Height = 28
+    Top = 16
+    Width = 75
+    MaxValue = 200
+    MinValue = -100
+    TabOrder = 1
+  end
+  object Button1: TButton
+    Left = 53
+    Height = 25
+    Top = 56
+    Width = 190
+    Caption = 'Розрахувати температуру'
+    TabOrder = 2
+    OnClick = Button1Click
+  end
+end
