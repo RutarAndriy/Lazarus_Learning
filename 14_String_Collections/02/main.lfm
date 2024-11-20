@@ -1,0 +1,63 @@
+object fMain: TfMain
+  Left = 308
+  Height = 210
+  Top = 250
+  Width = 340
+  BorderStyle = bsDialog
+  Caption = 'Вибір міста'
+  ClientHeight = 210
+  ClientWidth = 340
+  Position = poScreenCenter
+  object ListBox1: TListBox
+    Left = 10
+    Height = 150
+    Top = 10
+    Width = 166
+    Items.Strings = (
+      'Берлін'
+      'Будапешт'
+      'Вена'
+      'Вільнюс'
+      'Київ'
+      'Лондон'
+      'Лос-Анджелес'
+      'Львів'
+      'Мехіко'
+      'Нью-Йорк'
+      'Одеса'
+      'Оттава'
+      'Париж'
+      'Сан-Франциско'
+    )
+    ItemHeight = 22
+    MultiSelect = True
+    Sorted = True
+    TabOrder = 0
+  end
+  object ComboBox1: TComboBox
+    Left = 184
+    Height = 28
+    Top = 10
+    Width = 143
+    ItemHeight = 0
+    TabOrder = 1
+    OnChange = ComboBox1Change
+  end
+  object Button1: TButton
+    Left = 10
+    Height = 30
+    Top = 170
+    Width = 166
+    Caption = 'Копіювати в ComboBox'
+    TabOrder = 2
+    OnClick = Button1Click
+  end
+  object Edit1: TEdit
+    Left = 184
+    Height = 28
+    Top = 172
+    Width = 143
+    ReadOnly = True
+    TabOrder = 3
+  end
+end
