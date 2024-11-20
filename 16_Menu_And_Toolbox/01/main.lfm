@@ -1,0 +1,204 @@
+object fMain: TfMain
+  Left = 237
+  Height = 450
+  Top = 250
+  Width = 700
+  Caption = 'Перегляд зображень'
+  ClientHeight = 450
+  ClientWidth = 700
+  Menu = MainMenu1
+  object Image1: TImage
+    Left = 0
+    Height = 424
+    Top = 26
+    Width = 700
+    Align = alClient
+    Center = True
+    PopupMenu = PopupMenu1
+    Proportional = True
+    Stretch = True
+  end
+  object ToolBar1: TToolBar
+    Left = 0
+    Height = 26
+    Top = 0
+    Width = 700
+    Caption = 'ToolBar1'
+    EdgeBorders = [ebBottom]
+    Images = ImageList1
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 0
+    object bExit: TToolButton
+      Left = 1
+      Hint = 'Вихід з прогрпми'
+      Top = 0
+      Caption = 'bExit'
+      ImageIndex = 2
+      OnClick = FileExitClick
+    end
+    object ToolButton1: TToolButton
+      Left = 24
+      Height = 22
+      Top = 0
+      Caption = 'ToolButton1'
+      Style = tbsSeparator
+    end
+    object bOpen: TToolButton
+      Left = 32
+      Hint = 'Відкрити файл із зображенням'
+      Top = 0
+      Caption = 'bOpen'
+      ImageIndex = 0
+      OnClick = FileOpenClick
+    end
+    object bSaveAs: TToolButton
+      Left = 55
+      Hint = 'Зберегти файл як'
+      Top = 0
+      Caption = 'bSaveAs'
+      ImageIndex = 1
+      OnClick = FileSaveAsClick
+    end
+  end
+  object MainMenu1: TMainMenu
+    Images = ImageList1
+    Left = 8
+    Top = 8
+    object FileMenu: TMenuItem
+      Caption = 'Файл'
+      object FileOpen: TMenuItem
+        Caption = 'Відкрити'
+        ImageIndex = 0
+        ShortCut = 16463
+        OnClick = FileOpenClick
+      end
+      object FileSaveAs: TMenuItem
+        Caption = 'Зберегти як'
+        ImageIndex = 1
+        ShortCut = 16467
+        OnClick = FileSaveAsClick
+      end
+      object Separator1: TMenuItem
+        Caption = '-'
+      end
+      object FileExit: TMenuItem
+        Caption = 'Вихід'
+        ImageIndex = 2
+        ShortCut = 16465
+        OnClick = FileExitClick
+      end
+    end
+    object WindowMenu: TMenuItem
+      Caption = 'Вікно'
+      object WindowNormal: TMenuItem
+        Caption = 'Нормальне'
+        OnClick = WindowNormalClick
+      end
+      object WindowMinimize: TMenuItem
+        Caption = 'Згорнути'
+        OnClick = WindowMinimizeClick
+      end
+      object WindowMaximize: TMenuItem
+        Caption = 'Розгорнути'
+        OnClick = WindowMaximizeClick
+      end
+    end
+  end
+  object OPD: TOpenPictureDialog
+    Left = 40
+    Top = 8
+  end
+  object SPD: TSavePictureDialog
+    Left = 72
+    Top = 8
+  end
+  object PopupMenu1: TPopupMenu
+    Images = ImageList1
+    Left = 104
+    Top = 8
+    object pFileMenu: TMenuItem
+      Caption = 'Файл'
+      object pFileOpen: TMenuItem
+        Caption = 'Відкрити'
+        ImageIndex = 0
+        OnClick = FileOpenClick
+      end
+      object pFileSaveAs: TMenuItem
+        Caption = 'Зберегти як'
+        ImageIndex = 1
+        OnClick = FileSaveAsClick
+      end
+    end
+    object pWindowMenu: TMenuItem
+      Caption = 'Вікно'
+      object pWindowNormal: TMenuItem
+        Caption = 'Нормальне'
+        OnClick = WindowNormalClick
+      end
+      object pWindowMinimize: TMenuItem
+        Caption = 'Згорнути'
+        OnClick = WindowMinimizeClick
+      end
+      object pWindowMaximize: TMenuItem
+        Caption = 'Розгорнути'
+        OnClick = WindowMaximizeClick
+      end
+    end
+    object Separator2: TMenuItem
+      Caption = '-'
+    end
+    object CloseMenu: TMenuItem
+      Caption = 'Вихід'
+      ImageIndex = 2
+      OnClick = FileExitClick
+    end
+  end
+  object ImageList1: TImageList
+    Left = 136
+    Top = 8
+    Bitmap = {
+      4C7A030000001000000010000000EE0400000000000078DAB5960B4C535718C7
+      AF5518A68B667113B788CD346C1A9504702E10C4A0C331269B0A0A83086E243E
+      124788068D9971114834C24427208E89E274D9EA6391CDB89657700E50CBF051
+      CA43448CB4C2C6E8D61E28CAE3BFEFD4DBEE522F1592ED26BF70EEB9E777BF73
+      BE73FB1D00087083BFBF59151E6E2D0B0DB53095AABB54104CB3F01C470A7753
+      52069098D88F8000333C3C4C5AE973E585C67D8AB3FA0141AD0787B7799FE339
+      C5B572373ABA0F0B17F640A1305AA4FE441A5FD133089D1576787BF279C313FE
+      AEA05325D8F14911D62FBF62775F0DFD1DD3B699E0F943739FC3E7E31CAE94D6
+      DA1F613BB111BD5F25A1677F38D2B61420A1D986550DBD5850DB034163FCD49D
+      6F2EDA8441751AFA8BB7C09C1589A63D4B90DA3E88A4967E045E37C353637AE4
+      CEEFCE8D07CBFF08962F63D09D110AFDEE1044DC6608ABB760F6D56E1EBFC3E1
+      57998740398323876365A2BAE10FFE37BDC98CC5E56DF8F601B373AA9DE1F87D
+      86823686DC7B0C875A19B2EE32EC6B61486F66D8D3C41055DD09AF0B8632EE87
+      54B62359D735EAD85D8D0C690686D40686AD7A864D77185EBBD46A11D40DF1DC
+      579E6FC46706EBA8639369DD89B718E26F32ACADA7D8942085DA60134EDF9DC2
+      FDB99AB651C7AEFE8D61651D43848E61F90D86A5D7197CCB3B31E99CA18CE7CF
+      E35C03827FE91A756CF03586C5B50CFE35FF32E5E2D3B9735FA16E181A6FDE27
+      9CD5F7F2B98FE777F4BF737A23702A1928FE188F4C465990F7C1308EACDC2CEB
+      73F7E406E04422DA5A1A9DF468F280FC55F6368EBC0F1C8E1892F5EDEE7AE078
+      02F475D79C74957C4171A3EC6D728143E190F58BB84B5B521887EB55A5B22087
+      DC83CBE47DBB1B0B1C5B0B14ACA1397F08E4AEA4394752DC77C97DE7A99BBD54
+      DEE76EED37707B5515000742E4FD6331C08DEF60B1586032999E81F7E3D72260
+      7F90BC7F7435EACEFC8CE2621BAAAB1F8F086B1B7E0C8D458793BABDB8746219
+      FC6EAD50BAFAEA943C2424507D5B45F56D410F32339FC6ADE9B88935AD9F2350
+      9F0CBFBA38CCAD8EC2ECCA651DAAD2207FA91F1BF510A9A954DF92A8BE059AE1
+      E3D3698FBBAE3DC3E976F47771173E9AB731E3E2FCE699EA99939DE744F07D44
+      44507D0BA3FA369BEA9BB2132FE7E846C4E51777BD4B16E0A5B3AFE3C533DE71
+      E6EC48953537B6CC9C13839F366E45E05B77B0A8D08C30AAD16115559877638B
+      3DAEF47AC01E42797A3A3CBF56EEE2EEC0F7DBA94E6FA63AFD1ECA33137A53EE
+      D37945753A80EAF4D48A72E79CF9C5E3DADDE34A08478538CBE13556EEF6156E
+      A0736205EEED0C18E66EB481CE2B9AC324EDBD61C79C9D71B99B2F34090785C9
+      DDE94B4A795CEE76ED5E046DC6EA3F795CEE4EABECC284CB2D353C5723E27237
+      5FF0E379336D9FA732A5CDD71AB7CFB51AB7BDA9D995931EE4A13569151AA355
+      B86CD408A5A6593CCF3C57B4DE9D429E10CBE38EA526080292891DE3A923347E
+      2AE129B64B089DD8F6E4CF9EE3AE25FE22B264FC2CC24C44BB7187882B848F8C
+      EF435C2506891817D79BF85B74BD24FD4E5FBCF712DFC1E7F88AA43F937842CC
+      7179EF085FECF32506887449DF6D4223B3A6677CB19FFE0F43BDE4DE461C18EB
+      FE515F36C124F77D72BE9B7DCA72F1EB09ED387CD7F9678839993306F70D710F
+      F7BAEC9F85A8225E70E34AF76FBACBB37592EF678E8CEB2BBA436EBEC175E2BB
+      F9FCB4629EB3C5F50E8ADF6FCC73D63743CCC74DA25784B7D3F93AFFEB73FF1F
+      EFE81A72
+    }
+  end
+end
