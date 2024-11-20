@@ -1,0 +1,49 @@
+object fMain: TfMain
+  Left = 308
+  Height = 450
+  Top = 250
+  Width = 750
+  Caption = 'Мій записник'
+  ClientHeight = 450
+  ClientWidth = 750
+  Position = poDesktopCenter
+  object Memo1: TMemo
+    Left = 5
+    Height = 400
+    Top = 5
+    Width = 740
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    ScrollBars = ssAutoVertical
+    TabOrder = 0
+  end
+  object bSave: TButton
+    Left = 8
+    Height = 25
+    Top = 416
+    Width = 90
+    Anchors = [akLeft, akBottom]
+    Caption = 'Зберегти'
+    TabOrder = 1
+    OnClick = bSaveClick
+  end
+  object bRead: TButton
+    Left = 104
+    Height = 25
+    Top = 416
+    Width = 90
+    Anchors = [akLeft, akBottom]
+    Caption = 'Читати'
+    TabOrder = 2
+    OnClick = bReadClick
+  end
+  object bClear: TButton
+    Left = 200
+    Height = 25
+    Top = 416
+    Width = 90
+    Anchors = [akLeft, akBottom]
+    Caption = 'Очистити'
+    TabOrder = 3
+    OnClick = bClearClick
+  end
+end
