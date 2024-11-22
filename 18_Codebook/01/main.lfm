@@ -1,0 +1,178 @@
+object fMain: TfMain
+  Left = 409
+  Height = 452
+  Top = 147
+  Width = 750
+  Caption = 'Записник - шифрувальник'
+  ClientHeight = 452
+  ClientWidth = 750
+  Menu = MM
+  Position = poScreenCenter
+  LCLVersion = '4.99.0.0'
+  OnClose = FormClose
+  object Memo1: TMemo
+    Left = 0
+    Height = 452
+    Top = 0
+    Width = 750
+    Align = alClient
+    Font.Height = -16
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+    ScrollBars = ssAutoVertical
+    TabOrder = 0
+  end
+  object OD: TOpenDialog
+    DefaultExt = '.txt'
+    Filter = 'Такстові файли|*.txt|Всі файли|*.*'
+    Left = 8
+    Top = 8
+  end
+  object SD: TSaveDialog
+    DefaultExt = '.txt'
+    Filter = 'Такстові файли|*.txt|Всі файли|*.*'
+    Left = 40
+    Top = 8
+  end
+  object FD: TFontDialog
+    MinFontSize = 0
+    MaxFontSize = 0
+    Left = 72
+    Top = 8
+  end
+  object CD: TColorDialog
+    Color = clBlack
+    CustomColors.Strings = (
+      'ColorA=000000'
+      'ColorB=000080'
+      'ColorC=008000'
+      'ColorD=008080'
+      'ColorE=800000'
+      'ColorF=800080'
+      'ColorG=808000'
+      'ColorH=808080'
+      'ColorI=C0C0C0'
+      'ColorJ=0000FF'
+      'ColorK=00FF00'
+      'ColorL=00FFFF'
+      'ColorM=FF0000'
+      'ColorN=FF00FF'
+      'ColorO=FFFF00'
+      'ColorP=FFFFFF'
+      'ColorQ=C0DCC0'
+      'ColorR=F0CAA6'
+      'ColorS=F0FBFF'
+      'ColorT=A4A0A0'
+    )
+    Left = 104
+    Top = 8
+  end
+  object MM: TMainMenu
+    Left = 136
+    Top = 8
+    object FileMenu: TMenuItem
+      Caption = 'Файл'
+      object FileCreate: TMenuItem
+        Caption = 'Створити'
+        ShortCut = 16462
+        OnClick = FileCreateClick
+      end
+      object FileOpen: TMenuItem
+        Caption = 'Відкрити'
+        ShortCut = 16463
+        OnClick = FileOpenClick
+      end
+      object FileSave: TMenuItem
+        Caption = 'Зберегти'
+        ShortCut = 16467
+        OnClick = FileSaveClick
+      end
+      object FileSaveAs: TMenuItem
+        Caption = 'Зберегти як...'
+        OnClick = FileSaveAsClick
+      end
+      object N1: TMenuItem
+        Caption = '-'
+      end
+      object FileExit: TMenuItem
+        Caption = 'Вихід'
+        OnClick = FileExitClick
+      end
+    end
+    object EditMenu: TMenuItem
+      Caption = 'Правка'
+      object EditCancel: TMenuItem
+        Caption = 'Відмінити'
+        ShortCut = 16474
+        OnClick = EditCancelClick
+      end
+      object N2: TMenuItem
+        Caption = '-'
+      end
+      object EditCut: TMenuItem
+        Caption = 'Вирізати'
+        ShortCut = 16472
+        OnClick = EditCutClick
+      end
+      object EditCopy: TMenuItem
+        Caption = 'Копіювати'
+        ShortCut = 16451
+        OnClick = EditCopyClick
+      end
+      object EditPaste: TMenuItem
+        Caption = 'Вставити'
+        ShortCut = 16470
+        OnClick = EditPasteClick
+      end
+      object EditDelete: TMenuItem
+        Caption = 'Видалити'
+        OnClick = EditDeleteClick
+      end
+      object N3: TMenuItem
+        Caption = '-'
+      end
+      object EditSelectAll: TMenuItem
+        Caption = 'Виділити все'
+        ShortCut = 16449
+        OnClick = EditSelectAllClick
+      end
+    end
+    object FormatMenu: TMenuItem
+      Caption = 'Формат'
+      object FormatFont: TMenuItem
+        Caption = 'Шрифт'
+        OnClick = FormatFontClick
+      end
+      object FormatColor: TMenuItem
+        Caption = 'Колір'
+        OnClick = FormatColorClick
+      end
+      object N4: TMenuItem
+        Caption = '-'
+      end
+      object FormatWordWrap: TMenuItem
+        Caption = 'Перенесення по словах'
+        Checked = True
+        OnClick = FormatWordWrapClick
+      end
+    end
+    object CoderMenu: TMenuItem
+      Caption = 'Кодування'
+      object CoderCode: TMenuItem
+        Caption = 'Шифрувати'
+        OnClick = CoderCodeClick
+      end
+      object CoderDecode: TMenuItem
+        Caption = 'Розшифрувати'
+        OnClick = CoderDecodeClick
+      end
+    end
+    object HelpMenu: TMenuItem
+      Caption = 'Справка'
+      object HelpAbout: TMenuItem
+        Caption = 'Про програму'
+      end
+    end
+  end
+end
