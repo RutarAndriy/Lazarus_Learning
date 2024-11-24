@@ -1,0 +1,126 @@
+object fMain: TfMain
+  Left = 638
+  Height = 350
+  Top = 200
+  Width = 500
+  Caption = 'Бібліотечний каталог'
+  ClientHeight = 350
+  ClientWidth = 500
+  LCLVersion = '4.99.0.0'
+  OnClose = FormClose
+  OnCreate = FormCreate
+  object Panel1: TPanel
+    Left = 0
+    Height = 350
+    Top = 0
+    Width = 127
+    Align = alLeft
+    ClientHeight = 350
+    ClientWidth = 127
+    TabOrder = 0
+    object bNewNode: TButton
+      Left = 1
+      Height = 25
+      Top = 1
+      Width = 125
+      Caption = 'Новий розділ'
+      TabOrder = 0
+      OnClick = bNewNodeClick
+    end
+    object bNewChildNode: TButton
+      Left = 1
+      Height = 25
+      Top = 32
+      Width = 125
+      Caption = 'Новий підрозділ'
+      TabOrder = 1
+      OnClick = bNewChildNodeClick
+    end
+    object bDelete: TButton
+      Left = 1
+      Height = 25
+      Top = 64
+      Width = 125
+      Caption = 'Видалити'
+      TabOrder = 2
+      OnClick = bDeleteClick
+    end
+    object bEdit: TButton
+      Left = 1
+      Height = 25
+      Top = 96
+      Width = 125
+      Caption = 'Перейменувати'
+      TabOrder = 3
+      OnClick = bEditClick
+    end
+    object bSort: TButton
+      Left = 1
+      Height = 25
+      Top = 128
+      Width = 125
+      Caption = 'Сортувати'
+      TabOrder = 4
+      OnClick = bSortClick
+    end
+    object bCollapse: TButton
+      Left = 1
+      Height = 25
+      Top = 160
+      Width = 125
+      Caption = 'Згорнути список'
+      TabOrder = 5
+      OnClick = bCollapseClick
+    end
+    object bExpand: TButton
+      Left = 1
+      Height = 25
+      Top = 192
+      Width = 125
+      Caption = 'Розгорнути список'
+      TabOrder = 6
+      OnClick = bExpandClick
+    end
+  end
+  object TreeView1: TTreeView
+    Left = 127
+    Height = 350
+    Top = 0
+    Width = 360
+    Align = alLeft
+    AutoExpand = True
+    Images = IL
+    ScrollBars = ssAutoBoth
+    TabOrder = 1
+    Options = [tvoAutoExpand, tvoAutoItemHeight, tvoHideSelection, tvoKeepCollapsedNodes, tvoShowButtons, tvoShowLines, tvoShowRoot, tvoToolTips, tvoThemedDraw]
+  end
+  object IL: TImageList
+    Left = 136
+    Top = 8
+    Bitmap = {
+      4C7A020000001000000010000000B00200000000000078DADD93594F53511446
+      F909FE141E34C4688C4278F1414388020F028D1A0D4602718AA8880A2A8AC442
+      036999145029820A850707502814649696327438D0F1B6B4A5B7746EE9E7ED6D
+      4A8880ADF2A43B59D9C9CE59F972F6BD2721E1DFAFA3356ACD99774612254368
+      20297C921FAFCFE9A2C86B3310A5850AA148425BB33A0C24B35D4F32184E33A4
+      0B7524BD4D470EF3949AAD7ECE078A34E8021068FDA85DF18147BCE0AA3CA854
+      B8F074D189C70BEB28933B705F46E3EEAC1D27DFAC90AD7E66A79EE48A287044
+      2696DCEE30144B4E5784EC4D8CC8EA34064E09F5DA433C6559D84F6BD3906CE6
+      6C8B0971533AED0AECAF584A0DFBC75F2D138E68BBDFCCECE185318426C3061A
+      F41BA8D705993B06C1D70490233269134BC83E76FF752A5DC180959DD732D4AC
+      F8C15BF6A19AF8C0557BF15CE545A5D283670A0F2A96DC78B2E8C68956CD64F4
+      FE47F84A4BF114CDCECB175C7834EFC443B913A573EB78C0704FE64089D481E2
+      591A777ED0B83563478A40DDB3F9FD052AE7ED99C8BC687A0D37A7D67063D286
+      EB13365C1DB7E2CA981585DF2D2818B5207F64157962130E562B2AA37E72BDDA
+      139E5F1E31E392C48CBC61132E0E9970414CE1FC20857303469CFD6604E7AB01
+      B9FD7AA4BDD786122BE4A951FF0057E14F6952B124876954F98F352A7725A96A
+      2910DDDDFF52D2D66BF81376F2E3ADDFF9A4A31C9A1E2E0C5FF830895FC2322E
+      845DDA8575C547B83503317D6D6F15E30A601A6A8675A21D765937E37E82473B
+      08FFEA584CDFD05707F3700B460B931857C4768F4ECCF6907336A66F96B4C23A
+      F516F49C084ED56778F56204ACE38C2B05DC73317DDB540768790F9BE7350CB1
+      1D2E59A4C7E13BE67BE1227D8C3B8CA06D32E26C2586EF5AEE87CF28D9CCFBB5
+      C7F27DD40882F6E9EDB971E66FD0333BE6C69BBF6B6E9CF97BF97FF7F27EFEB6
+      7E02D39400F4
+    }
+  end
+end
