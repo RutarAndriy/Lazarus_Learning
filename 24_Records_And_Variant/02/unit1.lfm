@@ -1,0 +1,22 @@
+object Form1: TForm1
+  Left = 244
+  Height = 240
+  Top = 250
+  Width = 320
+  Caption = 'Form1'
+  ClientHeight = 240
+  ClientWidth = 320
+  object Button1: TButton
+    Left = 16
+    Height = 209
+    Top = 16
+    Width = 291
+    Caption = 'Тест'
+    Font.Height = -24
+    Font.Name = 'Sans'
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+end
