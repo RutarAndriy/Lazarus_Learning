@@ -1,0 +1,57 @@
+object fMain: TfMain
+  Left = 244
+  Height = 173
+  Top = 250
+  Width = 336
+  BorderStyle = bsDialog
+  Caption = 'Копіювання файлу'
+  ClientHeight = 173
+  ClientWidth = 336
+  Position = poDesktopCenter
+  object Label1: TLabel
+    Left = 8
+    Height = 16
+    Top = 8
+    Width = 258
+    Caption = 'Виберіть файл, який потрібно копіювати:'
+  end
+  object FNE: TFileNameEdit
+    Left = 8
+    Height = 28
+    Top = 32
+    Width = 320
+    FilterIndex = 0
+    HideDirectories = False
+    ButtonWidth = 23
+    NumGlyphs = 1
+    MaxLength = 0
+    TabOrder = 0
+  end
+  object Label2: TLabel
+    Left = 8
+    Height = 16
+    Top = 72
+    Width = 266
+    Caption = 'Вкажіть директорію, куди копіювати файл:'
+  end
+  object DE: TDirectoryEdit
+    Left = 8
+    Height = 28
+    Top = 96
+    Width = 320
+    ShowHidden = False
+    ButtonWidth = 23
+    NumGlyphs = 1
+    MaxLength = 0
+    TabOrder = 1
+  end
+  object Button1: TButton
+    Left = 82
+    Height = 25
+    Top = 136
+    Width = 172
+    Caption = 'Виконати копіювання'
+    TabOrder = 2
+    OnClick = Button1Click
+  end
+end
