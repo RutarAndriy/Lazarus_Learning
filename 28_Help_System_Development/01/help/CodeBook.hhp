@@ -1,0 +1,27 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=CodeBook.chm
+Contents file=Table of Contents.hhc
+Default Window=Favorites
+Default topic=1_ProgramPurpose.html
+Display compile progress=No
+Full-text search=Yes
+Index file=Index.hhk
+Language=0x422 Українська (Україна)
+
+[WINDOWS]
+Favorites=,"Table of Contents.hhc","Index.hhk","1_ProgramPurpose.html",,,,,,0x3520,,0x3006,,,,,,,,0
+
+
+[FILES]
+1_ProgramPurpose.html
+2_1_File.html
+2_2_Edit.html
+2_3_Format.html
+2_4_Code.html
+2_5_Help.html
+2_MenuCommands.html
+3_Feedback.html
+
+[INFOTYPES]
+

@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="CodeBook">
+		<param name="Name" value="Назва програми "CodeBook"">
+		<param name="Local" value="1_ProgramPurpose.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="&Agrave;&acirc;&ograve;&icirc;&eth;">
+		<param name="Name" value="Автор програми">
+		<param name="Local" value="3_Feedback.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="&Auml;&icirc;&acirc;&sup3;&auml;&ecirc;&agrave;">
+		<param name="Name" value="Команди меню "Довідка"">
+		<param name="Local" value="2_5_Help.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="&Ecirc;&icirc;&auml;&oacute;&acirc;&agrave;&iacute;&iacute;&yuml;">
+		<param name="Name" value="Команди меню "Кодування"">
+		<param name="Local" value="2_4_Code.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="&Iuml;&eth;&agrave;&acirc;&ecirc;&agrave;">
+		<param name="Name" value="Команди меню "Правка"">
+		<param name="Local" value="2_2_Edit.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="&Ocirc;&agrave;&eacute;&euml;">
+		<param name="Name" value="Команди меню "Файл"">
+		<param name="Local" value="2_1_File.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="&Ocirc;&icirc;&eth;&igrave;&agrave;&ograve;">
+		<param name="Name" value="Команди меню "Формат"">
+		<param name="Local" value="2_3_Format.html">
+		</OBJECT>
+</UL>
+</BODY></HTML>
