@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="Functions.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="35"/>
+        <CursorPos X="7" Y="56"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/mnt/disk_d/6_Others/1_Programming/3_Learning/Lazarus_Learning/34_Other_Examples/06/Functions.lpr"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="27"/>
+        <CursorPos X="37" Y="48"/>
+        <UsageCount Value="10"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="3">
+      <Position>
+        <Filename Value="Functions.lpr"/>
+        <Caret Line="24" Column="7" TopLine="5"/>
+      </Position>
+      <Position>
+        <Filename Value="Functions.lpr"/>
+        <Caret Line="39" Column="3" TopLine="15"/>
+      </Position>
+      <Position>
+        <Filename Value="Functions.lpr"/>
+        <Caret Line="48" Column="27" TopLine="27"/>
+      </Position>
+      <Position>
+        <Filename Value="Functions.lpr"/>
+        <Caret Line="47" Column="5" TopLine="27"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode="default">
+        <Mode Name="default">
+          <local>
+            <LaunchingApplication Use="True" PathPlusParams="/usr/bin/gnome-terminal -t &apos;Lazarus Run Output&apos; -e &apos;$(LazarusDir)/tools/runwait.sh $(TargetCmdLine)&apos; --wait"/>
+          </local>
+        </Mode>
+      </Modes>
+    </RunParams>
+    <HistoryLists>
+      <List Name="WorkingDirectory" Type="File" Count="1"/>
+      <List Name="LaunchingApplication" Type="File" Count="3">
+        <Item1 Value="/usr/bin/gnome-terminal -t &apos;Lazarus Run Output&apos; -e &apos;$(LazarusDir)/tools/runwait.sh $(TargetCmdLine)&apos; --wait"/>
+        <Item3 Value="/usr/bin/gnome-terminal -t &apos;Lazarus Run Output&apos; -e &apos;$(LazarusDir)/tools/runwait.sh $(TargetCmdLine)&apos;"/>
+      </List>
+      <List Name="CommandLineParameters" Count="1"/>
+    </HistoryLists>
+  </ProjectSession>
+</CONFIG>
