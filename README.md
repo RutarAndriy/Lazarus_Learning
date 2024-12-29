@@ -18,7 +18,7 @@
         <tr> <td>Introduction To Lazarus</td>
              <td>Введення в Lazarus</td> </tr>
         <tr> <td>&#9672; <a href="/01_Introduction_To_Lazarus/01">01</a></td>
-             <td> ... </td> </tr>
+             <td>Приклад простої програми HelloWorld</td> </tr>
         <!-- Project Anatomy -->
         <tr> <td>Project Anatomy</td>
              <td>Анатомія проекту</td> </tr>

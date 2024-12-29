@@ -1,4 +1,4 @@
-program project1;
+program HelloWorld;
 
 {$mode objfpc}{$H+}
 
@@ -10,7 +10,7 @@ uses
   athreads,
   {$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, unit1
+  Forms, Main
   { you can add units after this };
 
 {$R *.res}
@@ -19,7 +19,7 @@ begin
   RequireDerivedFormResource:=True;
   Application.Scaled:=True;
   Application.Initialize;
-  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TfMain, fMain);
   Application.Run;
 end.
 

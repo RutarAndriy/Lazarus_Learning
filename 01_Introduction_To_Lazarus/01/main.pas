@@ -1,4 +1,4 @@
-unit Unit1;
+unit Main;
 
 {$mode objfpc}{$H+}
 
@@ -9,11 +9,11 @@ uses
 
 type
 
-  { TForm1 }
+  { TfMain }
 
-  TForm1 = class(TForm)
-    Button1: TButton;
-    procedure Button1Click(Sender: TObject);
+  TfMain = class(TForm)
+    btnHello: TButton;
+    procedure btnHelloClick(Sender: TObject);
   private
 
   public
@@ -21,15 +21,15 @@ type
   end;
 
 var
-  Form1: TForm1;
+  fMain: TfMain;
 
 implementation
 
 {$R *.lfm}
 
-{ TForm1 }
+{ TfMain }
 
-procedure TForm1.Button1Click(Sender: TObject);
+procedure TfMain.btnHelloClick(Sender: TObject);
 begin
   ShowMessage('Hello, World!');
 end;

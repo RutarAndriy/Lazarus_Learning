@@ -5,23 +5,21 @@
     <BuildModes Active="Default"/>
     <Units>
       <Unit>
-        <Filename Value="project1.lpr"/>
+        <Filename Value="HelloWorld.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <WindowIndex Value="-1"/>
-        <TopLine Value="-1"/>
-        <CursorPos X="-1" Y="-1"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="12" Y="7"/>
         <UsageCount Value="21"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
-        <Filename Value="unit1.pas"/>
+        <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
-        <ComponentName Value="Form1"/>
+        <ComponentName Value="fMain"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UnitName Value="Unit1"/>
+        <UnitName Value="Main"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="15"/>
         <CursorPos X="29" Y="34"/>
         <UsageCount Value="21"/>
         <Loaded Value="True"/>
