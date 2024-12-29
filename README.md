@@ -25,7 +25,7 @@
         <tr> <td>&#9672; <a href="/02_Project_Anatomy/01">01</a></td>
              <td>Приклад створення найпростішої форми</td> </tr>
         <tr> <td>&#9672; <a href="/02_Project_Anatomy/02">02</a></td>
-             <td> ... </td> </tr>
+             <td>Написання програми яка виводить ваше ім'я</td> </tr>
         <!-- Working With Components -->
         <tr> <td>Working With Components</td>
              <td>Робота з компонентами</td> </tr>
