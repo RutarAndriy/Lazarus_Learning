@@ -24,6 +24,8 @@
              <td>Анатомія проекту</td> </tr>
         <tr> <td>&#9672; <a href="/02_Project_Anatomy/01">01</a></td>
              <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/02_Project_Anatomy/02">02</a></td>
+             <td> ... </td> </tr>
         <!-- Working With Components -->
         <tr> <td>Working With Components</td>
              <td>Робота з компонентами</td> </tr>
@@ -38,6 +40,8 @@
         <tr> <td>Chars And Strings</td>
              <td>Символи та строки</td> </tr>
         <tr> <td>&#9672; <a href="/05_Chars_And_Strings/01">01</a></td>
+             <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/05_Chars_And_Strings/02">02</a></td>
              <td> ... </td> </tr>
         <!-- Standard String Functions And Messages -->
         <tr> <td>Standard String Functions And Messages</td>
@@ -79,15 +83,21 @@
              <td>Прості та динамічні масиви</td> </tr>
         <tr> <td>&#9672; <a href="/13_Simple_And_Dynamic_Arrays/01">01</a></td>
              <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/13_Simple_And_Dynamic_Arrays/02">02</a></td>
+             <td> ... </td> </tr>
         <!-- String Collections -->
         <tr> <td>String Collections</td>
              <td>Строкові колекції</td> </tr>
         <tr> <td>&#9672; <a href="/14_String_Collections/01">01</a></td>
              <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/14_String_Collections/02">02</a></td>
+             <td> ... </td> </tr>
         <!-- Dialogs -->
         <tr> <td>Dialogs</td>
              <td>Діалоги</td> </tr>
         <tr> <td>&#9672; <a href="/15_Dialogs/01">01</a></td>
+             <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/15_Dialogs/02">02</a></td>
              <td> ... </td> </tr>
         <!-- Menu And Toolbox -->
         <tr> <td>Menu And Toolbox</td>
@@ -129,10 +139,18 @@
              <td>Файли</td> </tr>
         <tr> <td>&#9672; <a href="/23_Files/01">01</a></td>
              <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/23_Files/02">02</a></td>
+             <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/23_Files/03">03</a></td>
+             <td> ... </td> </tr>
         <!-- Records And Variant -->
         <tr> <td>Records And Variant</td>
              <td>Записи та варіанти</td> </tr>
         <tr> <td>&#9672; <a href="/24_Records_And_Variant/01">01</a></td>
+             <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/24_Records_And_Variant/02">02</a></td>
+             <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/24_Records_And_Variant/03">03</a></td>
              <td> ... </td> </tr>
         <!-- Phonebook -->
         <tr> <td>Phonebook</td>
@@ -143,6 +161,10 @@
         <tr> <td>DLL</td>
              <td>Динамічно приєднувані бібліотеки</td> </tr>
         <tr> <td>&#9672; <a href="/26_DLL/01">01</a></td>
+             <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/26_DLL/02">02</a></td>
+             <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/26_DLL/03">03</a></td>
              <td> ... </td> </tr>
         <!-- Testing And Debugging -->
         <tr> <td>Testing And Debugging</td>
@@ -164,6 +186,12 @@
              <td>Додаткові приклади</td> </tr>
         <tr> <td>&#9672; <a href="/30_Additional_Examples/01">01</a></td>
              <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/30_Additional_Examples/02">02</a></td>
+             <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/30_Additional_Examples/03">03</a></td>
+             <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/30_Additional_Examples/04">04</a></td>
+             <td> ... </td> </tr>
         <!-- Snowfall -->
         <tr> <td>Snowfall</td>
              <td>Снігопад</td> </tr>
@@ -179,10 +207,34 @@
              <td>Виконання зовнішніх програм</td> </tr>
         <tr> <td>&#9672; <a href="/33_Execute_External_Programs/01">01</a></td>
              <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/33_Execute_External_Programs/02">02</a></td>
+             <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/33_Execute_External_Programs/03">03</a></td>
+             <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/33_Execute_External_Programs/04">04</a></td>
+             <td> ... </td> </tr>
         <!-- Other Examples -->
         <tr> <td>Other Examples</td>
              <td>Інші приклади</td> </tr>
         <tr> <td>&#9672; <a href="/34_Other_Examples/01">01</a></td>
+             <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/34_Other_Examples/02">02</a></td>
+             <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/34_Other_Examples/03">03</a></td>
+             <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/34_Other_Examples/04">04</a></td>
+             <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/34_Other_Examples/05">05</a></td>
+             <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/34_Other_Examples/06">06</a></td>
+             <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/34_Other_Examples/07">07</a></td>
+             <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/34_Other_Examples/08">08</a></td>
+             <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/34_Other_Examples/09">09</a></td>
+             <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/34_Other_Examples/10">10</a></td>
              <td> ... </td> </tr>
     </tbody>
 </table>
