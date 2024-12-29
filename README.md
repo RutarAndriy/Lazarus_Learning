@@ -30,7 +30,7 @@
         <tr> <td>Working With Components</td>
              <td>Робота з компонентами</td> </tr>
         <tr> <td>&#9672; <a href="/03_Working_With_Components/01">01</a></td>
-             <td> ... </td> </tr>
+             <td>Приклад використання різних видів кнопок</td> </tr>
         <!-- Code Basics -->
         <tr> <td>Code Basics</td>
              <td>Основи кодування</td> </tr>

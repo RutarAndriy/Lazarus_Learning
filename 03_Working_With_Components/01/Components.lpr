@@ -1,4 +1,4 @@
-program Proba;
+program Components;
 
 {$mode objfpc}{$H+}
 

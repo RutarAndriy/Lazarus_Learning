@@ -9,8 +9,7 @@ object fMain: TfMain
   ClientWidth = 600
   Position = poDesktopCenter
   ShowHint = True
-  LCLVersion = '3.4.0.0'
-  object Panel1: TPanel
+  object pnlTop: TPanel
     Left = 0
     Height = 42
     Top = 0
@@ -20,20 +19,20 @@ object fMain: TfMain
     ClientHeight = 42
     ClientWidth = 600
     TabOrder = 0
-    object Button1: TButton
+    object btnExit: TButton
       Left = 1
       Height = 40
-      Hint = 'Кнопка Button1'
+      Hint = 'Кнопка btnExit'
       Top = 1
       Width = 200
       Caption = 'Вихід'
       TabOrder = 0
-      OnClick = Button1Click
+      OnClick = btnExitClick
     end
-    object BitBtn1: TBitBtn
+    object bitExit: TBitBtn
       Left = 201
       Height = 40
-      Hint = 'Кнопка BitBtn1'
+      Hint = 'Кнопка bitExit'
       Top = 1
       Width = 100
       Caption = 'Вихід'
@@ -73,13 +72,13 @@ object fMain: TfMain
         FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF000000FF630000FF76FFFF
         FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00
       }
-      OnClick = BitBtn1Click
+      OnClick = bitExitClick
       TabOrder = 1
     end
-    object BitBtn2: TBitBtn
+    object bitClose: TBitBtn
       Left = 301
       Height = 40
-      Hint = 'Кнопка BitBtn2'
+      Hint = 'Кнопка bitClose'
       Top = 1
       Width = 100
       DefaultCaption = True
@@ -87,10 +86,10 @@ object fMain: TfMain
       ModalResult = 11
       TabOrder = 2
     end
-    object SpeedButton1: TSpeedButton
+    object spdExit: TSpeedButton
       Left = 401
       Height = 22
-      Hint = 'Кнопка SpeedButton'
+      Hint = 'Кнопка spdExit'
       Top = 1
       Width = 23
       Glyph.Data = {
@@ -129,10 +128,10 @@ object fMain: TfMain
         FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF000000FF630000FF76FFFF
         FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00
       }
-      OnClick = Button1Click
+      OnClick = btnExitClick
     end
   end
-  object Splitter1: TSplitter
+  object splHor: TSplitter
     Cursor = crVSplit
     Left = 0
     Height = 5
@@ -141,7 +140,7 @@ object fMain: TfMain
     Align = alTop
     ResizeAnchor = akTop
   end
-  object Panel2: TPanel
+  object pnlLeft: TPanel
     Left = 0
     Height = 353
     Top = 47
@@ -149,13 +148,13 @@ object fMain: TfMain
     Align = alLeft
     TabOrder = 2
   end
-  object Splitter2: TSplitter
+  object splVert: TSplitter
     Left = 170
     Height = 353
     Top = 47
     Width = 5
   end
-  object Panel3: TPanel
+  object pnlRight: TPanel
     Left = 175
     Height = 353
     Top = 47
