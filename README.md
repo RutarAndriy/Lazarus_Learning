@@ -23,7 +23,7 @@
         <tr> <td>Project Anatomy</td>
              <td>Анатомія проекту</td> </tr>
         <tr> <td>&#9672; <a href="/02_Project_Anatomy/01">01</a></td>
-             <td> ... </td> </tr>
+             <td>Приклад створення найпростішої форми</td> </tr>
         <tr> <td>&#9672; <a href="/02_Project_Anatomy/02">02</a></td>
              <td> ... </td> </tr>
         <!-- Working With Components -->
