@@ -12,10 +12,10 @@ type
   { TfMain }
 
   TfMain = class(TForm)
-    Button1: TButton;
-    Edit1: TEdit;
-    Label1: TLabel;
-    procedure Button1Click(Sender: TObject);
+    btnOk: TButton;                        // кнопка "виконати"
+    edtName: TEdit;                        // поле для введення імені
+    lblName: TLabel;                       // пояснювальний напис
+    procedure btnOkClick(Sender: TObject); // метод "реагування" на натискання
   private
 
   public
@@ -31,15 +31,15 @@ implementation
 
 { TfMain }
 
-procedure TfMain.Button1Click(Sender: TObject);
+procedure TfMain.btnOkClick(Sender: TObject);
 const
   priv = 'Привіт, ';
 var
   MyName: String;
 begin
-  MyName:= priv + Edit1.Text + '!';
+  MyName:= priv + edtName.Text + '!';
   ShowMessage(MyName);
-  MyName:= 'Раді вас бачити, ' + Edit1.Text + '!';
+  MyName:= 'Раді вас бачити, ' + edtName.Text + '!';
   ShowMessage(MyName);
 end;
 

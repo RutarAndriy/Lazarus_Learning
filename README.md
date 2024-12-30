@@ -35,7 +35,7 @@
         <tr> <td>Code Basics</td>
              <td>Основи кодування</td> </tr>
         <tr> <td>&#9672; <a href="/04_Code_Basics/01">01</a></td>
-             <td> ... </td> </tr>
+             <td>Доопрацювання програми яка виводить ваше ім'я</td> </tr>
         <!-- Chars And Strings -->
         <tr> <td>Chars And Strings</td>
              <td>Символи та строки</td> </tr>
