@@ -13,10 +13,10 @@ type
   { TfMain }
 
   TfMain = class(TForm)
-    Button1: TButton;
-    Button2: TButton;
-    procedure Button1Click(Sender: TObject);
-    procedure Button2Click(Sender: TObject);
+    btnChar: TButton;
+    btnString: TButton;
+    procedure btnCharClick(Sender: TObject);
+    procedure btnStringClick(Sender: TObject);
   private
 
   public
@@ -32,7 +32,7 @@ implementation
 
 { TfMain }
 
-procedure TfMain.Button1Click(Sender: TObject);
+procedure TfMain.btnCharClick(Sender: TObject);
 var
   ch1: Char; // Змінна символьного типу
   ch2: TUTF8Char;
@@ -42,11 +42,11 @@ begin
   ShowMessage(ch1 + #13 + ch2);
 end;
 
-procedure TfMain.Button2Click(Sender: TObject);
+procedure TfMain.btnStringClick(Sender: TObject);
 var
-  s1: String; // Він же AnsiString
-  s2: ShortString;
-  s3: PChar;
+  s1: String; // Він же AnsiString, якщо використовується {$H+}
+  s2: ShortString; // ShortString = String[255]
+  s3: PChar; // Вказівник на строку в кінці якої є символом закінчення строки
 begin
   s1:= 'Це строка із п''яти слів!';
 

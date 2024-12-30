@@ -3,26 +3,26 @@ object fMain: TfMain
   Height = 240
   Top = 250
   Width = 320
-  Caption = 'fMain'
+  Caption = 'Символи і строки'
   ClientHeight = 240
   ClientWidth = 320
   Position = poScreenCenter
-  object Button1: TButton
+  object btnChar: TButton
     Left = 8
     Height = 25
     Top = 8
-    Width = 75
-    Caption = 'Button1'
+    Width = 136
+    Caption = 'Вивести символи'
     TabOrder = 0
-    OnClick = Button1Click
+    OnClick = btnCharClick
   end
-  object Button2: TButton
+  object btnString: TButton
     Left = 8
     Height = 25
     Top = 40
-    Width = 75
-    Caption = 'Button2'
+    Width = 136
+    Caption = 'Вивести строки'
     TabOrder = 1
-    OnClick = Button2Click
+    OnClick = btnStringClick
   end
 end

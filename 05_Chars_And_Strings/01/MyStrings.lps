@@ -7,11 +7,9 @@
       <Unit>
         <Filename Value="MyStrings.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <WindowIndex Value="-1"/>
-        <TopLine Value="-1"/>
-        <CursorPos X="-1" Y="-1"/>
+        <TopLine Value="5"/>
         <UsageCount Value="20"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="main.pas"/>
@@ -20,35 +18,27 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Main"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="23"/>
-        <CursorPos X="22" Y="40"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="47" Y="48"/>
         <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
-        <Filename Value="/mnt/disk_d/6_Others/1_Programming/3_Learning/Lazarus_Learning/05_Chars_And_Strings/01/main.pas"/>
+        <Filename Value="../../../../disk_d/6_Others/1_Programming/3_Learning/Lazarus_Learning/05_Chars_And_Strings/01/main.pas"/>
         <ComponentName Value="fMain"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Main"/>
-        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="45"/>
         <CursorPos X="39" Y="62"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="1">
-      <Position>
-        <Filename Value="/mnt/disk_d/6_Others/1_Programming/3_Learning/Lazarus_Learning/05_Chars_And_Strings/01/main.pas"/>
-        <Caret Line="40" Column="33" TopLine="23"/>
-      </Position>
-      <Position>
-        <Filename Value="/mnt/disk_d/6_Others/1_Programming/3_Learning/Lazarus_Learning/05_Chars_And_Strings/01/main.pas"/>
-        <Caret Line="42" Column="33" TopLine="25"/>
-      </Position>
-    </JumpHistory>
+    <JumpHistory HistoryIndex="-1"/>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes ActiveMode=""/>

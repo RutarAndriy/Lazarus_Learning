@@ -40,7 +40,7 @@
         <tr> <td>Chars And Strings</td>
              <td>Символи та строки</td> </tr>
         <tr> <td>&#9672; <a href="/05_Chars_And_Strings/01">01</a></td>
-             <td> ... </td> </tr>
+             <td>Простий приклад використання символів та строк</td> </tr>
         <tr> <td>&#9672; <a href="/05_Chars_And_Strings/02">02</a></td>
              <td> ... </td> </tr>
         <!-- Standard String Functions And Messages -->
