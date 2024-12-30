@@ -47,7 +47,7 @@
         <tr> <td>Standard String Functions And Messages</td>
              <td>Стандартні строкові функції та повідомлення</td> </tr>
         <tr> <td>&#9672; <a href="/06_Standard_String_Functions_And_Messages/01">01</a></td>
-             <td> ... </td> </tr>
+             <td>Приклад використання базових строкових функцій та діалогів</td> </tr>
         <!-- Logical Types And Constructions -->
         <tr> <td>Logical Types And Constructions</td>
              <td>Логічні типи і конструкції</td> </tr>

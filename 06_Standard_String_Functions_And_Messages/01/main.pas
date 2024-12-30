@@ -1,4 +1,4 @@
-unit Unit1;
+unit Main;
 
 {$mode objfpc}{$H+}
 
@@ -10,11 +10,11 @@ uses
 
 type
 
-  { TForm1 }
+  { TfMain }
 
-  TForm1 = class(TForm)
-    Button1: TButton;
-    procedure Button1Click(Sender: TObject);
+  TfMain = class(TForm)
+    btnStart: TButton;
+    procedure btnStartClick(Sender: TObject);
   private
 
   public
@@ -22,21 +22,21 @@ type
   end;
 
 var
-  Form1: TForm1;
+  fMain: TfMain;
 
 implementation
 
 {$R *.lfm}
 
-{ TForm1 }
+{ TfMain }
 
-procedure TForm1.Button1Click(Sender: TObject);
+procedure TfMain.btnStartClick(Sender: TObject);
 var
   s1: String;
   s2: String;
   YourName: String;
 begin
-  // Об'єднання строк
+  // Об'єднання строк:
   s1:= Concat('Строка №1', #13, 'Строка №2', #13, 'Строка №3');
   ShowMessage(s1);
 
@@ -45,34 +45,34 @@ begin
   s2:= 'Привіт';
   ShowMessage(IntToStr(Length(s2))); // 12
 
-  // Наступний код вимагає модуль LazUTF8
+  // Наступний код вимагає модуль LazUTF8:
   ShowMessage(IntToStr(UTF8Length(s2))); // 6
 
-  // Пошук підстроки у строці
+  // Пошук підстроки у строці:
   ShowMessage(IntToStr(UTF8Pos('ив', s2))); // 3
 
-  // Отримання підстроки
+  // Отримання підстроки:
   ShowMessage(UTF8Copy(s2, 3, 2)); // ив
 
-  // Видалення частини строки
+  // Видалення частини строки:
   UTF8Delete(s2, 3, 2); // Пріт
   ShowMessage(s2);
 
   s2:= 'Привіт';
 
-  // Переведення строки у верхній та нижній регістр
+  // Переведення строки у верхній та нижній регістр:
   ShowMessage(UTF8UpperCase(s2)); // ПРИВІТ
   ShowMessage(UTF8LowerCase(s2)); // привіт
 
-  // Ще один варіант виведення тексту
+  // Ще один варіант виведення тексту:
   if Application.MessageBox('Повідомлення', 'Заголовок', MB_ICONINFORMATION +
      MB_YESNOCANCEL) = IDYES then ShowMessage('Ви натиснули кнопку Так');
 
-  // І ще один варіант виведення повідомлення
+  // І ще один варіант виведення повідомлення:
   if MessageDlg('Підтвердження', 'Ви дійсно хочете закрити програму?',
      mtConfirmation, [mbYes, mbNo, mbIgnore], 0) = mrYes then Close;
 
-  // Вікно для введення даних
+  // Вікно для введення даних:
   YourName:= 'Невідомий';
   if InputQuery('Хто ви?', 'Вкажіть ваше ім''я', YourName) then
      ShowMessage('Привіт, ' + YourName + '!');
