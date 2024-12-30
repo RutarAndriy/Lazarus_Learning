@@ -13,11 +13,11 @@ type
   { TfMain }
 
   TfMain = class(TForm)
-    Button1: TButton;
-    Edit1: TEdit;
-    LabeledEdit1: TLabeledEdit;
-    MaskEdit1: TMaskEdit;
-    procedure Button1Click(Sender: TObject);
+    btnAddText: TButton;
+    edtReadOnly: TEdit;
+    ledt: TLabeledEdit;
+    medt: TMaskEdit;
+    procedure btnAddTextClick(Sender: TObject);
   private
 
   public
@@ -33,9 +33,10 @@ implementation
 
 { TfMain }
 
-procedure TfMain.Button1Click(Sender: TObject);
+procedure TfMain.btnAddTextClick(Sender: TObject);
 begin
-  Edit1.Text:= Edit1.Text + 'Привіт! ';
+  // Додаємо текст до поля, яке доступне лише для читання:
+  edtReadOnly.Text:= edtReadOnly.Text + 'Привіт! ';
 end;
 
 end.

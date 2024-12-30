@@ -42,7 +42,7 @@
         <tr> <td>&#9672; <a href="/05_Chars_And_Strings/01">01</a></td>
              <td>Простий приклад використання символів та строк</td> </tr>
         <tr> <td>&#9672; <a href="/05_Chars_And_Strings/02">02</a></td>
-             <td> ... </td> </tr>
+             <td>Приклад використання TEdit, TLabeledEdit, TMaskEdit</td> </tr>
         <!-- Standard String Functions And Messages -->
         <tr> <td>Standard String Functions And Messages</td>
              <td>Стандартні строкові функції та повідомлення</td> </tr>

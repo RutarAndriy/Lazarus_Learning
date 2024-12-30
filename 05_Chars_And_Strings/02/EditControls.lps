@@ -7,27 +7,26 @@
       <Unit>
         <Filename Value="EditControls.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <WindowIndex Value="-1"/>
-        <TopLine Value="-1"/>
-        <CursorPos X="-1" Y="-1"/>
+        <EditorIndex Value="1"/>
         <UsageCount Value="20"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="fMain"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Main"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="21"/>
-        <CursorPos X="38" Y="38"/>
+        <TopLine Value="24"/>
+        <CursorPos X="59" Y="38"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
-        <Filename Value="../../../../../../.FpcUpDeluxe/lazarus/lcl/maskedit.pp"/>
+        <Filename Value="/.FpcUpDeluxe/lazarus/lcl/maskedit.pp"/>
         <UnitName Value="MaskEdit"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="2459"/>

@@ -3,10 +3,10 @@ object fMain: TfMain
   Height = 240
   Top = 250
   Width = 320
-  Caption = 'fMain'
+  Caption = 'Поля введення тексту'
   ClientHeight = 240
   ClientWidth = 320
-  object Edit1: TEdit
+  object edtReadOnly: TEdit
     Left = 8
     Height = 33
     Top = 8
@@ -18,16 +18,16 @@ object fMain: TfMain
     ReadOnly = True
     TabOrder = 0
   end
-  object Button1: TButton
+  object btnAddText: TButton
     Left = 8
     Height = 25
     Top = 56
-    Width = 75
-    Caption = 'Button1'
+    Width = 120
+    Caption = 'Вставити текст'
     TabOrder = 1
-    OnClick = Button1Click
+    OnClick = btnAddTextClick
   end
-  object LabeledEdit1: TLabeledEdit
+  object ledt: TLabeledEdit
     Left = 8
     Height = 28
     Top = 112
@@ -37,7 +37,7 @@ object fMain: TfMain
     EditLabel.Caption = 'Прізвище'
     TabOrder = 2
   end
-  object MaskEdit1: TMaskEdit
+  object medt: TMaskEdit
     Left = 8
     Height = 28
     Top = 144
