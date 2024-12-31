@@ -12,13 +12,13 @@ type
   { TfMain }
 
   TfMain = class(TForm)
-    bSave: TButton;
-    bRead: TButton;
-    bClear: TButton;
-    Memo1: TMemo;
-    procedure bClearClick(Sender: TObject);
-    procedure bReadClick(Sender: TObject);
-    procedure bSaveClick(Sender: TObject);
+    btnSave: TButton;
+    btnRead: TButton;
+    btnClear: TButton;
+    memNotepad: TMemo;
+    procedure btnClearClick(Sender: TObject);
+    procedure btnReadClick(Sender: TObject);
+    procedure btnSaveClick(Sender: TObject);
   private
 
   public
@@ -34,21 +34,24 @@ implementation
 
 { TfMain }
 
-procedure TfMain.bSaveClick(Sender: TObject);
+// Зберігаємо текст у файл MyText.txt:
+procedure TfMain.btnSaveClick(Sender: TObject);
 begin
-  Memo1.Lines.SaveToFile('MyText.txt');
+  memNotepad.Lines.SaveToFile('MyText.txt');
 end;
 
-procedure TfMain.bReadClick(Sender: TObject);
+// Зчитуємо текст із файлу MyText.txt:
+procedure TfMain.btnReadClick(Sender: TObject);
 begin
   if FileExists('MyText.txt') then
-    Memo1.Lines.LoadFromFile('MyText.txt')
+    memNotepad.Lines.LoadFromFile('MyText.txt')
   else ShowMessage('Файлу MyText.txt не існує');
 end;
 
-procedure TfMain.bClearClick(Sender: TObject);
+// Очищуємо введений текст:
+procedure TfMain.btnClearClick(Sender: TObject);
 begin
-  Memo1.Clear;
+  memNotepad.Clear;
 end;
 
 end.

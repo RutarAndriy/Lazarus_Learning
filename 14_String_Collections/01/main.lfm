@@ -7,7 +7,7 @@ object fMain: TfMain
   ClientHeight = 450
   ClientWidth = 750
   Position = poDesktopCenter
-  object Memo1: TMemo
+  object memNotepad: TMemo
     Left = 5
     Height = 400
     Top = 5
@@ -16,7 +16,7 @@ object fMain: TfMain
     ScrollBars = ssAutoVertical
     TabOrder = 0
   end
-  object bSave: TButton
+  object btnSave: TButton
     Left = 8
     Height = 25
     Top = 416
@@ -24,9 +24,9 @@ object fMain: TfMain
     Anchors = [akLeft, akBottom]
     Caption = 'Зберегти'
     TabOrder = 1
-    OnClick = bSaveClick
+    OnClick = btnSaveClick
   end
-  object bRead: TButton
+  object btnRead: TButton
     Left = 104
     Height = 25
     Top = 416
@@ -34,9 +34,9 @@ object fMain: TfMain
     Anchors = [akLeft, akBottom]
     Caption = 'Читати'
     TabOrder = 2
-    OnClick = bReadClick
+    OnClick = btnReadClick
   end
-  object bClear: TButton
+  object btnClear: TButton
     Left = 200
     Height = 25
     Top = 416
@@ -44,6 +44,6 @@ object fMain: TfMain
     Anchors = [akLeft, akBottom]
     Caption = 'Очистити'
     TabOrder = 3
-    OnClick = bClearClick
+    OnClick = btnClearClick
   end
 end

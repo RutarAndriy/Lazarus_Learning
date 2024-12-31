@@ -17,81 +17,81 @@
         <!-- Introduction To Lazarus -->
         <tr> <td>Introduction To Lazarus</td>
              <td>Введення в Lazarus</td> </tr>
-        <tr> <td>&#9672; <a href="/01_Introduction_To_Lazarus/01">01</a></td>
+        <tr> <td>&#9672; <a href="/01_Introduction_To_Lazarus/01">HelloWorld</a></td>
              <td>Приклад простої програми HelloWorld</td> </tr>
         <!-- Project Anatomy -->
         <tr> <td>Project Anatomy</td>
              <td>Анатомія проекту</td> </tr>
-        <tr> <td>&#9672; <a href="/02_Project_Anatomy/01">01</a></td>
+        <tr> <td>&#9672; <a href="/02_Project_Anatomy/01">SimpleForm</a></td>
              <td>Приклад створення найпростішої форми</td> </tr>
-        <tr> <td>&#9672; <a href="/02_Project_Anatomy/02">02</a></td>
+        <tr> <td>&#9672; <a href="/02_Project_Anatomy/02">Hello</a></td>
              <td>Написання програми яка виводить ваше ім'я</td> </tr>
         <!-- Working With Components -->
         <tr> <td>Working With Components</td>
              <td>Робота з компонентами</td> </tr>
-        <tr> <td>&#9672; <a href="/03_Working_With_Components/01">01</a></td>
+        <tr> <td>&#9672; <a href="/03_Working_With_Components/01">Components</a></td>
              <td>Приклад використання різних видів кнопок</td> </tr>
         <!-- Code Basics -->
         <tr> <td>Code Basics</td>
              <td>Основи кодування</td> </tr>
-        <tr> <td>&#9672; <a href="/04_Code_Basics/01">01</a></td>
+        <tr> <td>&#9672; <a href="/04_Code_Basics/01">Hello</a></td>
              <td>Доопрацювання програми яка виводить ваше ім'я</td> </tr>
         <!-- Chars And Strings -->
         <tr> <td>Chars And Strings</td>
              <td>Символи та строки</td> </tr>
-        <tr> <td>&#9672; <a href="/05_Chars_And_Strings/01">01</a></td>
+        <tr> <td>&#9672; <a href="/05_Chars_And_Strings/01">MyStrings</a></td>
              <td>Простий приклад використання символів та строк</td> </tr>
-        <tr> <td>&#9672; <a href="/05_Chars_And_Strings/02">02</a></td>
+        <tr> <td>&#9672; <a href="/05_Chars_And_Strings/02">EditControls</a></td>
              <td>Приклад використання TEdit, TLabeledEdit, TMaskEdit</td> </tr>
         <!-- Standard String Functions And Messages -->
         <tr> <td>Standard String Functions And Messages</td>
              <td>Стандартні строкові функції та повідомлення</td> </tr>
-        <tr> <td>&#9672; <a href="/06_Standard_String_Functions_And_Messages/01">01</a></td>
+        <tr> <td>&#9672; <a href="/06_Standard_String_Functions_And_Messages/01">StringFunc</a></td>
              <td>Приклад використання базових строкових функцій та діалогів</td> </tr>
         <!-- Logical Types And Constructions -->
         <tr> <td>Logical Types And Constructions</td>
              <td>Логічні типи і конструкції</td> </tr>
-        <tr> <td>&#9672; <a href="/07_Logical_Types_And_Constructions/01">01</a></td>
+        <tr> <td>&#9672; <a href="/07_Logical_Types_And_Constructions/01">MyBool</a></td>
              <td>Приклад використання логічного типу Boolean</td> </tr>
-        <tr> <td>&#9672; <a href="/07_Logical_Types_And_Constructions/02">02</a></td>
+        <tr> <td>&#9672; <a href="/07_Logical_Types_And_Constructions/02">Election</a></td>
              <td>Написання програми "Вибори Президента"</td> </tr>
         <!-- Numbers -->
         <tr> <td>Numbers</td>
              <td>Числа</td> </tr>
-        <tr> <td>&#9672; <a href="/08_Numbers/01">01</a></td>
+        <tr> <td>&#9672; <a href="/08_Numbers/01">IMT</a></td>
              <td>Написання програми для визначення індексу маси тіла</td> </tr>
         <!-- Subprograms -->
         <tr> <td>Subprograms</td>
              <td>Підпрограми</td> </tr>
-        <tr> <td>&#9672; <a href="/09_Subprograms/01">01</a></td>
+        <tr> <td>&#9672; <a href="/09_Subprograms/01">MySubprog</a></td>
              <td>Приклад використання підпрограм (процедур та функцій)</td> </tr>
         <!-- Cycles And Case Switch -->
         <tr> <td>Cycles And Case Switch</td>
              <td>Цикли і перемикач "switch"</td> </tr>
-        <tr> <td>&#9672; <a href="/10_Cycles_And_Case_Switch/01">01</a></td>
+        <tr> <td>&#9672; <a href="/10_Cycles_And_Case_Switch/01">MyCycles</a></td>
              <td>Приклад використання циклів та оператора Switch</td> </tr>
         <!-- Screensaver -->
         <tr> <td>Screensaver</td>
              <td>Екранна заставка</td> </tr>
-        <tr> <td>&#9672; <a href="/11_Screensaver/01">01</a></td>
+        <tr> <td>&#9672; <a href="/11_Screensaver/01">Screensaver</a></td>
              <td>Написання скрінсейвера - екранної заставки</td> </tr>
         <!-- Date And Time -->
         <tr> <td>Date And Time</td>
              <td>Дата і час</td> </tr>
-        <tr> <td>&#9672; <a href="/12_Date_And_Time/01">01</a></td>
+        <tr> <td>&#9672; <a href="/12_Date_And_Time/01">DateTime</a></td>
              <td>Приклад використання компонентів для роботи з датою і часом</td> </tr>
         <!-- Simple And Dynamic Arrays -->
         <tr> <td>Simple And Dynamic Arrays</td>
              <td>Прості та динамічні масиви</td> </tr>
-        <tr> <td>&#9672; <a href="/13_Simple_And_Dynamic_Arrays/01">01</a></td>
+        <tr> <td>&#9672; <a href="/13_Simple_And_Dynamic_Arrays/01">MyTemp</a></td>
              <td>Написання програми "Конвертер температур""</td> </tr>
-        <tr> <td>&#9672; <a href="/13_Simple_And_Dynamic_Arrays/02">02</a></td>
+        <tr> <td>&#9672; <a href="/13_Simple_And_Dynamic_Arrays/02">DynArrays</a></td>
              <td>Приклад роботи із динамічними масивами</td> </tr>
         <!-- String Collections -->
         <tr> <td>String Collections</td>
              <td>Строкові колекції</td> </tr>
-        <tr> <td>&#9672; <a href="/14_String_Collections/01">01</a></td>
-             <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/14_String_Collections/01">MyNotebook</a></td>
+             <td>Написання простої програми "Мій записник"</td> </tr>
         <tr> <td>&#9672; <a href="/14_String_Collections/02">02</a></td>
              <td> ... </td> </tr>
         <!-- Dialogs -->
