@@ -12,17 +12,17 @@ type
   { TfMain }
 
   TfMain = class(TForm)
-    Button1: TButton;
-    Button2: TButton;
-    ChB1: TCheckBox;
-    RB1: TRadioButton;
-    RB2: TRadioButton;
-    RB3: TRadioButton;
-    RB4: TRadioButton;
-    RB5: TRadioButton;
-    procedure Button1Click(Sender: TObject);
-    procedure Button2Click(Sender: TObject);
-    procedure ChB1Change(Sender: TObject);
+    btnBool: TButton;
+    btnRadio: TButton;
+    cbFlag: TCheckBox;
+    rbOne: TRadioButton;
+    rbTwo: TRadioButton;
+    rbThree: TRadioButton;
+    rbFour: TRadioButton;
+    rbFive: TRadioButton;
+    procedure btnBoolClick(Sender: TObject);
+    procedure btnRadioClick(Sender: TObject);
+    procedure cbFlagChange(Sender: TObject);
   private
 
   public
@@ -38,7 +38,7 @@ implementation
 
 { TfMain }
 
-procedure TfMain.Button1Click(Sender: TObject);
+procedure TfMain.btnBoolClick(Sender: TObject);
 var
   a,b: Boolean;
 begin
@@ -62,23 +62,23 @@ begin
 
 end;
 
-procedure TfMain.Button2Click(Sender: TObject);
+procedure TfMain.btnRadioClick(Sender: TObject);
 begin
-  if RB1.Checked then
+  if rbOne.Checked then
     ShowMessage('Ви вибрали радіокнопку №1')
-  else if RB2.Checked then
+  else if rbTwo.Checked then
     ShowMessage('Ви вибрали радіокнопку №2')
-  else if RB3.Checked then
+  else if rbThree.Checked then
     ShowMessage('Ви вибрали радіокнопку №3')
-  else if RB4.Checked then
+  else if rbFour.Checked then
     ShowMessage('Ви вибрали радіокнопку №4')
   else
     ShowMessage('Ви вибрали радіокнопку №5')
 end;
 
-procedure TfMain.ChB1Change(Sender: TObject);
+procedure TfMain.cbFlagChange(Sender: TObject);
 begin
-  if ChB1.Checked then
+  if cbFlag.Checked then
     ShowMessage('Наш прапорець увімкнутий!')
   else
     ShowMessage('Наш прапорець вимкнений!');

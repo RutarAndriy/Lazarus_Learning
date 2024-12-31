@@ -52,6 +52,8 @@
         <tr> <td>Logical Types And Constructions</td>
              <td>Логічні типи і конструкції</td> </tr>
         <tr> <td>&#9672; <a href="/07_Logical_Types_And_Constructions/01">01</a></td>
+             <td>Приклад використання логічного типу Boolean</td> </tr>
+        <tr> <td>&#9672; <a href="/07_Logical_Types_And_Constructions/02">02</a></td>
              <td> ... </td> </tr>
         <!-- Numbers -->
         <tr> <td>Numbers</td>
