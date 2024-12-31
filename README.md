@@ -92,8 +92,8 @@
              <td>Строкові колекції</td> </tr>
         <tr> <td>&#9672; <a href="/14_String_Collections/01">MyNotebook</a></td>
              <td>Написання простої програми "Мій записник"</td> </tr>
-        <tr> <td>&#9672; <a href="/14_String_Collections/02">02</a></td>
-             <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/14_String_Collections/02">MyStrings</a></td>
+             <td>Приклад використання TListBox та TComboBox</td> </tr>
         <!-- Dialogs -->
         <tr> <td>Dialogs</td>
              <td>Діалоги</td> </tr>

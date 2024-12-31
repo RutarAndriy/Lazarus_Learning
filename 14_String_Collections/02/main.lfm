@@ -8,7 +8,8 @@ object fMain: TfMain
   ClientHeight = 210
   ClientWidth = 340
   Position = poScreenCenter
-  object ListBox1: TListBox
+  LCLVersion = '3.4.0.0'
+  object lbSities: TListBox
     Left = 10
     Height = 150
     Top = 10
@@ -34,25 +35,25 @@ object fMain: TfMain
     Sorted = True
     TabOrder = 0
   end
-  object ComboBox1: TComboBox
+  object cbSities: TComboBox
     Left = 184
     Height = 28
     Top = 10
     Width = 143
     ItemHeight = 0
     TabOrder = 1
-    OnChange = ComboBox1Change
+    OnChange = cbSitiesChange
   end
-  object Button1: TButton
+  object btnCopy: TButton
     Left = 10
     Height = 30
     Top = 170
     Width = 166
     Caption = 'Копіювати в ComboBox'
     TabOrder = 2
-    OnClick = Button1Click
+    OnClick = btnCopyClick
   end
-  object Edit1: TEdit
+  object edtSelected: TEdit
     Left = 184
     Height = 28
     Top = 172
