@@ -7,49 +7,49 @@ object fMain: TfMain
   Caption = 'Цикли та перемикач ''case'''
   ClientHeight = 106
   ClientWidth = 329
-  object Button1: TButton
+  object btnForDo: TButton
     Left = 8
     Height = 25
     Top = 8
     Width = 152
     Caption = 'for ... do'
     TabOrder = 0
-    OnClick = Button1Click
+    OnClick = btnForDoClick
   end
-  object Button2: TButton
+  object btn100n: TButton
     Left = 8
     Height = 25
     Top = 72
     Width = 312
     Caption = '100 / n'
     TabOrder = 1
-    OnClick = Button2Click
+    OnClick = btn100nClick
   end
-  object Button3: TButton
+  object btnWhileDo: TButton
     Left = 8
     Height = 25
     Top = 40
     Width = 152
     Caption = 'while ... do'
     TabOrder = 2
-    OnClick = Button3Click
+    OnClick = btnWhileDoClick
   end
-  object Button4: TButton
+  object btnRepeatUntil: TButton
     Left = 168
     Height = 25
     Top = 8
     Width = 152
     Caption = 'repeat ... until'
     TabOrder = 3
-    OnClick = Button4Click
+    OnClick = btnRepeatUntilClick
   end
-  object Button5: TButton
+  object btnCase: TButton
     Left = 168
     Height = 25
     Top = 40
     Width = 152
     Caption = 'case'
     TabOrder = 4
-    OnClick = Button5Click
+    OnClick = btnCaseClick
   end
 end

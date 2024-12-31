@@ -12,16 +12,16 @@ type
   { TfMain }
 
   TfMain = class(TForm)
-    Button1: TButton;
-    Button2: TButton;
-    Button3: TButton;
-    Button4: TButton;
-    Button5: TButton;
-    procedure Button1Click(Sender: TObject);
-    procedure Button2Click(Sender: TObject);
-    procedure Button3Click(Sender: TObject);
-    procedure Button4Click(Sender: TObject);
-    procedure Button5Click(Sender: TObject);
+    btnForDo: TButton;
+    btn100n: TButton;
+    btnWhileDo: TButton;
+    btnRepeatUntil: TButton;
+    btnCase: TButton;
+    procedure btnForDoClick(Sender: TObject);
+    procedure btn100nClick(Sender: TObject);
+    procedure btnWhileDoClick(Sender: TObject);
+    procedure btnRepeatUntilClick(Sender: TObject);
+    procedure btnCaseClick(Sender: TObject);
   private
 
   public
@@ -37,7 +37,8 @@ implementation
 
 { TfMain }
 
-procedure TfMain.Button1Click(Sender: TObject);
+// Натиснуто кнопку "for ... do"
+procedure TfMain.btnForDoClick(Sender: TObject);
 var
   b: Byte;
 begin
@@ -47,11 +48,12 @@ begin
   for b:= 10 downto 1 do ShowMessage('Прохід циклу №' + IntToStr(b));
 end;
 
-procedure TfMain.Button2Click(Sender: TObject);
+// Натиснуто кнопку "100/n"
+procedure TfMain.btn100nClick(Sender: TObject);
 var
-  s: String; // для збирання результатів ділення
-  b: ShortInt; // лічильник
-  r: Real; // результат ділення
+  s: String = ''; // для збирання результатів ділення
+  b: ShortInt;    // лічильник
+  r: Real;        // результат ділення
 begin
   for b:= -10 to 10 do begin // початок циклу
     // Якщо нуль, то не ділимо:
@@ -69,12 +71,13 @@ begin
   ShowMessage(s);
 end;
 
-procedure TfMain.Button3Click(Sender: TObject);
+// Натиснуто кнопку "while ... do"
+procedure TfMain.btnWhileDoClick(Sender: TObject);
 var
   s: String; // для отримання числа від користувача
-  r: Real; // результат ділення
+  r: Real;   // результат ділення
 begin
-  // Починаємо цикл
+  // Починаємо цикл:
   while true do begin
     // Очищуємо строку:
     s:= '';
@@ -92,10 +95,11 @@ begin
   end; // кінець циклу
 end;
 
-procedure TfMain.Button4Click(Sender: TObject);
+// Натиснуто кнопку "repeat ... until"
+procedure TfMain.btnRepeatUntilClick(Sender: TObject);
 var
   i: Byte;
-  s: String;
+  s: String = '';
 begin
   // Задамо початкове значення лічильника:
   i:= 1;
@@ -109,13 +113,12 @@ begin
   ShowMessage(s);
 end;
 
-procedure TfMain.Button5Click(Sender: TObject);
+// Натиснуто кнопку "case"
+procedure TfMain.btnCaseClick(Sender: TObject);
 var
   i: Integer;
-  s: String;
+  s: String = '';
 begin
-  // Очистимо строку:
-  s:= '';
   // Отримаємо число від користувача:
   InputQuery('Квадрат цілого числа', 'Введіть ціле число від 1 до 3', s);
   // Перетворемо строкове представлення числа у число:

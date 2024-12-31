@@ -69,7 +69,7 @@
         <tr> <td>Cycles And Case Switch</td>
              <td>Цикли і перемикач "switch"</td> </tr>
         <tr> <td>&#9672; <a href="/10_Cycles_And_Case_Switch/01">01</a></td>
-             <td> ... </td> </tr>
+             <td>Приклад використання циклів та оператора Switch</td> </tr>
         <!-- Screensaver -->
         <tr> <td>Screensaver</td>
              <td>Екранна заставка</td> </tr>
