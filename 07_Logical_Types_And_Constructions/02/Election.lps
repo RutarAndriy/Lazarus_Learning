@@ -17,17 +17,18 @@
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="fMain"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Main"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="31"/>
-        <CursorPos X="32" Y="48"/>
+        <TopLine Value="42"/>
+        <CursorPos X="37" Y="63"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
-        <Filename Value="/mnt/disk_d/6_Others/1_Programming/3_Learning/Lazarus_Learning/07_Logical_Types_And_Constructions/02/main.pas"/>
+        <Filename Value="../../../../disk_d/6_Others/1_Programming/3_Learning/Lazarus_Learning/07_Logical_Types_And_Constructions/02/main.pas"/>
         <ComponentName Value="fMain"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
@@ -38,7 +39,7 @@
         <UsageCount Value="10"/>
       </Unit>
       <Unit>
-        <Filename Value="../../../../../../.FpcUpDeluxe/lazarus/lcl/include/monitor.inc"/>
+        <Filename Value="/.FpcUpDeluxe/lazarus/lcl/include/monitor.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="22"/>
         <CursorPos Y="34"/>

@@ -4,11 +4,12 @@ object fMain: TfMain
   Top = 250
   Width = 393
   BorderStyle = bsDialog
-  Caption = 'Вибори'
+  Caption = 'Вибори Президента'
   ClientHeight = 192
   ClientWidth = 393
   Position = poDefault
-  object RG1: TRadioGroup
+  LCLVersion = '3.4.0.0'
+  object rgCandidates: TRadioGroup
     Left = 8
     Height = 145
     Top = 8
@@ -34,7 +35,7 @@ object fMain: TfMain
     )
     TabOrder = 0
   end
-  object ChG1: TCheckGroup
+  object cgSities: TCheckGroup
     Left = 200
     Height = 145
     Top = 8
@@ -63,13 +64,13 @@ object fMain: TfMain
       050000000202020202
     }
   end
-  object Button1: TButton
+  object btnResult: TButton
     Left = 148
     Height = 25
     Top = 160
     Width = 97
     Caption = 'Результат'
     TabOrder = 2
-    OnClick = Button1Click
+    OnClick = btnResultClick
   end
 end

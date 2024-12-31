@@ -54,7 +54,7 @@
         <tr> <td>&#9672; <a href="/07_Logical_Types_And_Constructions/01">01</a></td>
              <td>Приклад використання логічного типу Boolean</td> </tr>
         <tr> <td>&#9672; <a href="/07_Logical_Types_And_Constructions/02">02</a></td>
-             <td> ... </td> </tr>
+             <td>Написання програми "Вибори Президента"</td> </tr>
         <!-- Numbers -->
         <tr> <td>Numbers</td>
              <td>Числа</td> </tr>
