@@ -84,7 +84,7 @@
         <tr> <td>Simple And Dynamic Arrays</td>
              <td>Прості та динамічні масиви</td> </tr>
         <tr> <td>&#9672; <a href="/13_Simple_And_Dynamic_Arrays/01">01</a></td>
-             <td> ... </td> </tr>
+             <td>Написання програми "Конвертер температур""</td> </tr>
         <tr> <td>&#9672; <a href="/13_Simple_And_Dynamic_Arrays/02">02</a></td>
              <td> ... </td> </tr>
         <!-- String Collections -->

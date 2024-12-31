@@ -12,10 +12,10 @@ type
   { TfMain }
 
   TfMain = class(TForm)
-    Button1: TButton;
-    SE1: TSpinEdit;
-    StaticText1: TStaticText;
-    procedure Button1Click(Sender: TObject);
+    btnCalc: TButton;
+    seTemp: TSpinEdit;
+    stLabel: TStaticText;
+    procedure btnCalcClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
   private
 
@@ -25,7 +25,7 @@ type
 
 var
   fMain: TfMain;
-  atemp: array[1..2, -100..200] of Real; // Наш глобальний масив
+  atemp: array[1..2, -100..200] of Real; // глобальний двовимірний масив
 
 implementation
 
@@ -35,7 +35,7 @@ implementation
 
 procedure TfMain.FormCreate(Sender: TObject);
 var
-  i: SmallInt; // Лічильник для циклу
+  i: SmallInt; // лічильник для циклу
 begin
   for i:= -100 to 200 do begin
     atemp[1, i]:= i * 9/5 + 32; // Фаренгейти
@@ -43,11 +43,11 @@ begin
   end;
 end;
 
-procedure TfMain.Button1Click(Sender: TObject);
+procedure TfMain.btnCalcClick(Sender: TObject);
 begin
-  ShowMessage(SE1.Text + '° Цельсія буде дорівнювати: ' + #13 +
-              FloatToStr(atemp[1, SE1.Value]) + '° Фаренгейта' + #13 +
-              FloatToStr(atemp[2, SE1.Value]) + '° Кельвіна');
+  ShowMessage(seTemp.Text + '° Цельсія буде дорівнювати: ' + #13 +
+              FloatToStr(atemp[1, seTemp.Value]) + '° Фаренгейта' + #13 +
+              FloatToStr(atemp[2, seTemp.Value]) + '° Кельвіна');
 end;
 
 end.

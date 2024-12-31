@@ -4,12 +4,12 @@ object fMain: TfMain
   Top = 250
   Width = 296
   BorderStyle = bsDialog
-  Caption = 'Перевід температурних шкал'
+  Caption = 'Конвертор температур'
   ClientHeight = 90
   ClientWidth = 296
   OnCreate = FormCreate
   Position = poMainFormCenter
-  object StaticText1: TStaticText
+  object stLabel: TStaticText
     Left = 8
     Height = 40
     Top = 8
@@ -18,7 +18,7 @@ object fMain: TfMain
     Caption = 'Вкажіть температуру в Цельсіях'#10'від -100 до 200 градусів:'
     TabOrder = 0
   end
-  object SE1: TSpinEdit
+  object seTemp: TSpinEdit
     Left = 216
     Height = 28
     Top = 16
@@ -27,13 +27,13 @@ object fMain: TfMain
     MinValue = -100
     TabOrder = 1
   end
-  object Button1: TButton
+  object btnCalc: TButton
     Left = 53
     Height = 25
     Top = 56
     Width = 190
     Caption = 'Розрахувати температуру'
     TabOrder = 2
-    OnClick = Button1Click
+    OnClick = btnCalcClick
   end
 end
