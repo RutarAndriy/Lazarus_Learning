@@ -74,7 +74,7 @@
         <tr> <td>Screensaver</td>
              <td>Екранна заставка</td> </tr>
         <tr> <td>&#9672; <a href="/11_Screensaver/01">01</a></td>
-             <td> ... </td> </tr>
+             <td>Написання скрінсейвера - екранної заставки</td> </tr>
         <!-- Date And Time -->
         <tr> <td>Date And Time</td>
              <td>Дата і час</td> </tr>

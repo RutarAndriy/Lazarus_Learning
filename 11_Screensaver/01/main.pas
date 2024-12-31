@@ -12,11 +12,11 @@ type
   { TfMain }
 
   TfMain = class(TForm)
-    lClock: TLabel;
-    Timer1: TTimer;
+    lblClock: TLabel;
+    tmrUpdate: TTimer;
     procedure FormActivate(Sender: TObject);
     procedure FormKeyPress(Sender: TObject; var Key: char);
-    procedure Timer1Timer(Sender: TObject);
+    procedure tmrUpdateTimer(Sender: TObject);
   private
 
   public
@@ -32,47 +32,48 @@ implementation
 
 { TfMain }
 
-procedure TfMain.Timer1Timer(Sender: TObject);
+procedure TfMain.tmrUpdateTimer(Sender: TObject);
 var
   i: Byte; // для отримання випадкового числа
 begin
   // Спочатку змінюємо текст напису:
-  lClock.Caption:= TimeToStr(Now);
+  lblClock.Caption:= TimeToStr(Now);
   // Отримуємо випадковий напрямок:
   i:= Random(4);
   // Тепер в залежності від напрямку рухаємо текст:
   case i of
-    0: lClock.Left:= lClock.Left + 50; // вправо
-    1: lClock.Left:= lClock.Left - 50; // вліво
-    2: lClock.Top:= lClock.Top + 50; // вверх
-    3: lClock.Top:= lClock.Top - 50; // вниз
+    0: lblClock.Left:= lblClock.Left + 50; // вправо
+    1: lblClock.Left:= lblClock.Left - 50; // вліво
+    2: lblClock.Top:= lblClock.Top + 50;   // вверх
+    3: lblClock.Top:= lblClock.Top - 50;   // вниз
   end;
   // Тепер перевіримо, чи не вийшов напис за межі форми?
   // Якщо вийшла - повертаємо її назад
   // Якщо вийшла вліво:
-  if lClock.Left < 0 then lClock.Left:= 0;
+  if lblClock.Left < 0 then lblClock.Left:= 0;
     // Якщо вийшла вверх:
-  if lClock.Top < 0 then lClock.Top:= 0;
+  if lblClock.Top < 0 then lblClock.Top:= 0;
     // Якщо вийшла вправо:
-  if (lClock.Left + lClock.Width) > fMain.Width then
-      lClock.Left:= fMain.Width - lClock.Width;
+  if (lblClock.Left + lblClock.Width) > fMain.Width then
+      lblClock.Left:= fMain.Width - lblClock.Width;
     // Якщо вийшла вниз:
-  if (lClock.Top + lClock.Height) > fMain.Height then
-      lClock.Top:= fMain.Height - lClock.Height;
+  if (lblClock.Top + lblClock.Height) > fMain.Height then
+      lblClock.Top:= fMain.Height - lblClock.Height;
 end;
 
 procedure TfMain.FormKeyPress(Sender: TObject; var Key: char);
 begin
+  // Якщо натиснули Esc - виходимо:
   if Key = #27 then Close;
 end;
 
 procedure TfMain.FormActivate(Sender: TObject);
 begin
   // Задаємо початковий текст для напису:
-  lClock.Caption:= TimeToStr(Now);
+  lblClock.Caption:= TimeToStr(Now);
   // Задаємо початкове положення напису по центрі екрану:
-  lClock.Left:= Trunc(fMain.Width/2 - lClock.Width/2);
-  lClock.Top:= Trunc(Height/2 - lClock.Height/2);
+  lblClock.Left:= Trunc(fMain.Width/2 - lblClock.Width/2);
+  lblClock.Top:= Trunc(Height/2 - lblClock.Height/2);
 end;
 
 end.

@@ -5,14 +5,14 @@ object fMain: TfMain
   Top = 250
   Width = 320
   BorderStyle = bsNone
-  Caption = 'fMain'
   ClientHeight = 240
   ClientWidth = 320
   Color = clBlack
   OnActivate = FormActivate
   OnKeyPress = FormKeyPress
+  LCLVersion = '3.4.0.0'
   WindowState = wsFullScreen
-  object lClock: TLabel
+  object lblClock: TLabel
     Left = 37
     Height = 88
     Top = 76
@@ -24,8 +24,8 @@ object fMain: TfMain
     Font.Style = [fsBold, fsItalic]
     ParentFont = False
   end
-  object Timer1: TTimer
-    OnTimer = Timer1Timer
+  object tmrUpdate: TTimer
+    OnTimer = tmrUpdateTimer
     Left = 8
     Top = 200
   end
