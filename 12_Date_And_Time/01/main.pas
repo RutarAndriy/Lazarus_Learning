@@ -1,4 +1,4 @@
-unit Unit1;
+unit Main;
 
 {$mode objfpc}{$H+}
 
@@ -13,10 +13,10 @@ type
   { TfMain }
 
   TfMain = class(TForm)
-    Button1: TButton;
-    Calendar1: TCalendar;
-    DateEdit1: TDateEdit;
-    procedure Button1Click(Sender: TObject);
+    btnRun: TButton;
+    cldMain: TCalendar;
+    dedtMain: TDateEdit;
+    procedure btnRunClick(Sender: TObject);
   private
 
   public
@@ -32,7 +32,7 @@ implementation
 
 { TfMain }
 
-procedure TfMain.Button1Click(Sender: TObject);
+procedure TfMain.btnRunClick(Sender: TObject);
 var
   dt: TDateTime;
   s: String;
@@ -61,15 +61,15 @@ begin
   ShowMessage(s);
   // Отримання дня тижня, відлік починається з неділі:
   i:= DayOfWeek(Now);
-  // Розбиває дату на рік, місяць і день
+  // Розбиває дату на рік, місяць і день:
   DecodeDate(Now, year, month, day);
-  // Збирає дату з окремих елементів
+  // Збирає дату з окремих елементів:
   dt:= EncodeDate(year, month, day);
-  // Розбиває час на години, хвилини, секунди та мілісекунди
+  // Розбиває час на години, хвилини, секунди та мілісекунди:
   DecodeTime(Now, hour, min, sec, msec);
-  // Збирає час з окремих елементів
+  // Збирає час з окремих елементів:
   dt:= EncodeTime(hour, min, sec, msec);
-  // Перевірка "високосності" року
+  // Перевірка "високосності" року:
   leap:= IsLeapYear(year);
 end;
 

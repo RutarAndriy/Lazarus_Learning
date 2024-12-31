@@ -7,16 +7,16 @@ object fMain: TfMain
   Caption = 'Дата і Час'
   ClientHeight = 264
   ClientWidth = 235
-  object Button1: TButton
+  object btnRun: TButton
     Left = 8
     Height = 25
     Top = 232
     Width = 220
     Caption = 'Запуск'
     TabOrder = 0
-    OnClick = Button1Click
+    OnClick = btnRunClick
   end
-  object Calendar1: TCalendar
+  object cldMain: TCalendar
     Left = 8
     Height = 190
     Top = 8
@@ -24,7 +24,7 @@ object fMain: TfMain
     DateTime = 45615
     TabOrder = 1
   end
-  object DateEdit1: TDateEdit
+  object dedtMain: TDateEdit
     Left = 8
     Height = 28
     Top = 200

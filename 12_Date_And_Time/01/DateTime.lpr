@@ -1,4 +1,4 @@
-program Project1;
+program DateTime;
 
 {$mode objfpc}{$H+}
 
@@ -10,7 +10,7 @@ uses
   athreads,
   {$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, unit1
+  Forms, Main
   { you can add units after this };
 
 {$R *.res}

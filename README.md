@@ -79,7 +79,7 @@
         <tr> <td>Date And Time</td>
              <td>Дата і час</td> </tr>
         <tr> <td>&#9672; <a href="/12_Date_And_Time/01">01</a></td>
-             <td> ... </td> </tr>
+             <td>Приклад використання компонентів для роботи з датою і часом</td> </tr>
         <!-- Simple And Dynamic Arrays -->
         <tr> <td>Simple And Dynamic Arrays</td>
              <td>Прості та динамічні масиви</td> </tr>
