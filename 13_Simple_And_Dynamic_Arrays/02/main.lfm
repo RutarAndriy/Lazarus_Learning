@@ -1,0 +1,19 @@
+object fMain: TfMain
+  Left = 310
+  Height = 240
+  Top = 250
+  Width = 320
+  Caption = 'Динамічні масиви'
+  ClientHeight = 240
+  ClientWidth = 320
+  object btnStart: TButton
+    Left = 86
+    Height = 52
+    Top = 94
+    Width = 149
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = 'Почати'
+    TabOrder = 0
+    OnClick = btnStartClick
+  end
+end

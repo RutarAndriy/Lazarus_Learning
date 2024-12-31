@@ -1,4 +1,4 @@
-unit Unit1;
+unit Main;
 
 {$mode objfpc}{$H+}
 
@@ -9,11 +9,11 @@ uses
 
 type
 
-  { TForm1 }
+  { TfMain }
 
-  TForm1 = class(TForm)
-    Button1: TButton;
-    procedure Button1Click(Sender: TObject);
+  TfMain = class(TForm)
+    btnStart: TButton;
+    procedure btnStartClick(Sender: TObject);
   private
 
   public
@@ -21,22 +21,21 @@ type
   end;
 
 var
-  Form1: TForm1;
+  fMain: TfMain;
 
 implementation
 
 {$R *.lfm}
 
-{ TForm1 }
+{ TfMain }
 
-procedure TForm1.Button1Click(Sender: TObject);
+procedure TfMain.btnStartClick(Sender: TObject);
 var
-  s: String; // для запиту
-  da: array of String; // динамічний масив рядків
-  i: Integer; // лічильник
+  s: String = '0';           // для отримання числа із запиту
+  da: array of String = nil; // динамічний масив рядків
+  i: Integer;                // лічильник
 begin
   // Дізнаємося у користувача скільки робити рядків:
-  s:= '0';
   InputQuery('Привіт', 'Скільки рядків ви хочете створити?', s);
   // Якщо нуль, то нічого не робимо, виходимо з програми:
   if StrToInt(s) = 0 then Exit;
@@ -49,6 +48,7 @@ begin
   s:= '';
   for i:= Low(da) to High(da) do
     s:= s + da[i] + #13;
+  // Відобразимо отриманий результат:
   ShowMessage(s);
 end;
 
