@@ -97,8 +97,8 @@
         <!-- Dialogs -->
         <tr> <td>Dialogs</td>
              <td>Діалоги</td> </tr>
-        <tr> <td>&#9672; <a href="/15_Dialogs/01">01</a></td>
-             <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/15_Dialogs/01">MyNotebook</a></td>
+             <td>Приклад використання стандартних діалогів</td> </tr>
         <tr> <td>&#9672; <a href="/15_Dialogs/02">02</a></td>
              <td> ... </td> </tr>
         <!-- Menu And Toolbox -->

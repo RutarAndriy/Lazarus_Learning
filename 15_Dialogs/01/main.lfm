@@ -7,7 +7,7 @@ object fMain: TfMain
   ClientHeight = 450
   ClientWidth = 750
   Position = poDesktopCenter
-  object Memo1: TMemo
+  object memNotepad: TMemo
     Left = 5
     Height = 400
     Top = 5
@@ -16,7 +16,7 @@ object fMain: TfMain
     ScrollBars = ssAutoVertical
     TabOrder = 0
   end
-  object bSave: TButton
+  object btnSave: TButton
     Left = 8
     Height = 25
     Top = 416
@@ -24,9 +24,9 @@ object fMain: TfMain
     Anchors = [akLeft, akBottom]
     Caption = 'Зберегти'
     TabOrder = 1
-    OnClick = bSaveClick
+    OnClick = btnSaveClick
   end
-  object bRead: TButton
+  object btnRead: TButton
     Left = 104
     Height = 25
     Top = 416
@@ -34,9 +34,9 @@ object fMain: TfMain
     Anchors = [akLeft, akBottom]
     Caption = 'Читати'
     TabOrder = 2
-    OnClick = bReadClick
+    OnClick = btnReadClick
   end
-  object bClear: TButton
+  object btnClear: TButton
     Left = 200
     Height = 25
     Top = 416
@@ -44,9 +44,9 @@ object fMain: TfMain
     Anchors = [akLeft, akBottom]
     Caption = 'Очистити'
     TabOrder = 3
-    OnClick = bClearClick
+    OnClick = btnClearClick
   end
-  object bColor: TButton
+  object btnColor: TButton
     Left = 296
     Height = 25
     Top = 416
@@ -54,9 +54,9 @@ object fMain: TfMain
     Anchors = [akLeft, akBottom]
     Caption = 'Колір'
     TabOrder = 4
-    OnClick = bColorClick
+    OnClick = btnColorClick
   end
-  object bFont: TButton
+  object btnFont: TButton
     Left = 392
     Height = 25
     Top = 416
@@ -64,9 +64,9 @@ object fMain: TfMain
     Anchors = [akLeft, akBottom]
     Caption = 'Шрифт'
     TabOrder = 5
-    OnClick = bFontClick
+    OnClick = btnFontClick
   end
-  object bDate: TButton
+  object btnDate: TButton
     Left = 488
     Height = 25
     Top = 416
@@ -74,9 +74,9 @@ object fMain: TfMain
     Anchors = [akLeft, akBottom]
     Caption = 'Дата'
     TabOrder = 6
-    OnClick = bDateClick
+    OnClick = btnDateClick
   end
-  object bCalc: TButton
+  object btnCalc: TButton
     Left = 584
     Height = 25
     Top = 416
@@ -84,21 +84,21 @@ object fMain: TfMain
     Anchors = [akLeft, akBottom]
     Caption = 'Розрахувати'
     TabOrder = 7
-    OnClick = bCalcClick
+    OnClick = btnCalcClick
   end
-  object OD: TOpenDialog
+  object opnDlg: TOpenDialog
     DefaultExt = '.txt'
     Filter = 'Текстові файли|*.txt|Всі файли|*.*'
-    Left = 8
-    Top = 8
+    Left = 80
+    Top = 65464
   end
-  object SD: TSaveDialog
+  object savDlg: TSaveDialog
     DefaultExt = '.txt'
     Filter = 'Текстові файли|*.txt|Всі файли|*.*'
-    Left = 40
-    Top = 8
+    Left = 96
+    Top = 65456
   end
-  object CD: TColorDialog
+  object clrDlg: TColorDialog
     Color = clBlack
     CustomColors.Strings = (
       'ColorA=000000'
@@ -122,23 +122,23 @@ object fMain: TfMain
       'ColorS=F0FBFF'
       'ColorT=A4A0A0'
     )
-    Left = 72
-    Top = 8
+    Left = 112
+    Top = 65456
   end
-  object FD: TFontDialog
+  object fntDlg: TFontDialog
     MinFontSize = 0
     MaxFontSize = 0
-    Left = 104
-    Top = 8
+    Left = 128
+    Top = 65456
   end
-  object DD: TCalendarDialog
+  object clndDlg: TCalendarDialog
     Date = 45616
     OKCaption = '&ОК'
     CancelCaption = 'Скасувати'
-    Left = 136
-    Top = 8
+    Left = 144
+    Top = 65456
   end
-  object CalcD: TCalculatorDialog
+  object calcDlg: TCalculatorDialog
     ColorBtnDigits = clBtnText
     ColorBtnMemory = 16741888
     ColorBtnOk = clLime
@@ -147,7 +147,7 @@ object fMain: TfMain
     ColorBtnOthers = clBtnText
     ColorDisplayText = clBtnText
     ColorDisplayBack = clBtnShadow
-    Left = 168
-    Top = 8
+    Left = 160
+    Top = 65456
   end
 end

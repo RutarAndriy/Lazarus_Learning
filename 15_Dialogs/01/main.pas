@@ -12,27 +12,27 @@ type
   { TfMain }
 
   TfMain = class(TForm)
-    bDate: TButton;
-    bCalc: TButton;
-    bSave: TButton;
-    bRead: TButton;
-    bClear: TButton;
-    bColor: TButton;
-    bFont: TButton;
-    CalcD: TCalculatorDialog;
-    DD: TCalendarDialog;
-    CD: TColorDialog;
-    FD: TFontDialog;
-    Memo1: TMemo;
-    OD: TOpenDialog;
-    SD: TSaveDialog;
-    procedure bCalcClick(Sender: TObject);
-    procedure bClearClick(Sender: TObject);
-    procedure bColorClick(Sender: TObject);
-    procedure bDateClick(Sender: TObject);
-    procedure bFontClick(Sender: TObject);
-    procedure bReadClick(Sender: TObject);
-    procedure bSaveClick(Sender: TObject);
+    btnDate: TButton;
+    btnCalc: TButton;
+    btnSave: TButton;
+    btnRead: TButton;
+    btnClear: TButton;
+    btnColor: TButton;
+    btnFont: TButton;
+    calcDlg: TCalculatorDialog;
+    clndDlg: TCalendarDialog;
+    clrDlg: TColorDialog;
+    fntDlg: TFontDialog;
+    memNotepad: TMemo;
+    opnDlg: TOpenDialog;
+    savDlg: TSaveDialog;
+    procedure btnCalcClick(Sender: TObject);
+    procedure btnClearClick(Sender: TObject);
+    procedure btnColorClick(Sender: TObject);
+    procedure btnDateClick(Sender: TObject);
+    procedure btnFontClick(Sender: TObject);
+    procedure btnReadClick(Sender: TObject);
+    procedure btnSaveClick(Sender: TObject);
   private
 
   public
@@ -48,44 +48,51 @@ implementation
 
 { TfMain }
 
-procedure TfMain.bSaveClick(Sender: TObject);
+// Збереження тексту в файл:
+procedure TfMain.btnSaveClick(Sender: TObject);
 begin
-  if SD.Execute then Memo1.Lines.SaveToFile(SD.FileName);
+  if savDlg.Execute then memNotepad.Lines.SaveToFile(savDlg.FileName);
 end;
 
-procedure TfMain.bReadClick(Sender: TObject);
+// Зчитування тексту з файлу:
+procedure TfMain.btnReadClick(Sender: TObject);
 begin
-  if OD.Execute then Memo1.Lines.LoadFromFile(OD.FileName);
+  if opnDlg.Execute then memNotepad.Lines.LoadFromFile(opnDlg.FileName);
 end;
 
-procedure TfMain.bClearClick(Sender: TObject);
+// Очищення тексту:
+procedure TfMain.btnClearClick(Sender: TObject);
 begin
-  Memo1.Clear;
+  memNotepad.Clear;
 end;
 
-procedure TfMain.bCalcClick(Sender: TObject);
+// Додавання порахованого значення:
+procedure TfMain.btnCalcClick(Sender: TObject);
 begin
-  if CalcD.Execute then Memo1.Lines.Add(FloatToStr(CalcD.Value));
+  if calcDlg.Execute then memNotepad.Lines.Add(FloatToStr(calcDlg.Value));
 end;
 
-procedure TfMain.bColorClick(Sender: TObject);
+// Задання кольору тексту:
+procedure TfMain.btnColorClick(Sender: TObject);
 begin
-  if CD.Execute then Memo1.Font.Color:= CD.Color;
+  if clrDlg.Execute then memNotepad.Font.Color:= clrDlg.Color;
 end;
 
-procedure TfMain.bDateClick(Sender: TObject);
+// Додавання дати до тексту:
+procedure TfMain.btnDateClick(Sender: TObject);
 begin
-  if DD.Execute then Memo1.Lines.Add(DateToStr(DD.Date));
+  if clndDlg.Execute then memNotepad.Lines.Add(DateToStr(clndDlg.Date));
 end;
 
-procedure TfMain.bFontClick(Sender: TObject);
+// Задання шрифту тексту:
+procedure TfMain.btnFontClick(Sender: TObject);
 var
   c: TColor;
 begin
-  if FD.Execute then begin
-    c:= Memo1.Font.Color;
-    Memo1.Font:= FD.Font;
-    Memo1.Font.Color:= c;
+  if fntDlg.Execute then begin
+    c:= memNotepad.Font.Color;
+    memNotepad.Font:= fntDlg.Font;
+    memNotepad.Font.Color:= c;
   end;
 end;
 
