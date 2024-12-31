@@ -12,12 +12,12 @@ type
   { TfMain }
 
   TfMain = class(TForm)
-    Button1: TButton;
-    Label1: TLabel;
-    Label2: TLabel;
-    ME1: TMaskEdit;
-    ME2: TMaskEdit;
-    procedure Button1Click(Sender: TObject);
+    btnCalculate: TButton;
+    lblHeight: TLabel;
+    lblWeight: TLabel;
+    meHeight: TMaskEdit;
+    meWeight: TMaskEdit;
+    procedure btnCalculateClick(Sender: TObject);
   private
 
   public
@@ -33,17 +33,17 @@ implementation
 
 { TfMain }
 
-procedure TfMain.Button1Click(Sender: TObject);
+procedure TfMain.btnCalculateClick(Sender: TObject);
 var
-  s: String; // для формування звіту
+  s: String;  // для формування звіту
   rist: Real; // для отримання росту
   vaga: Byte; // для отримання ваги
-  imt: Real; // для розрахунку ІМТ
+  imt: Real;  // для розрахунку ІМТ
 begin
   // Спочатку перетворити ріст із строки у дробове число:
-  rist:= StrToFloat(ME1.Text);
+  rist:= StrToFloat(meHeight.Text);
   // Тепер вага:
-  vaga:= StrToInt(ME2.Text);
+  vaga:= StrToInt(meWeight.Text);
   // Тепер розрахуємо ІМТ:
   imt:= vaga / (rist * rist);
   // В залежності від результату формуємо строку звіту:
@@ -60,7 +60,7 @@ begin
     s:= s + 'Жах! У вас сильне ожиріння!'
   else
     s:= s + 'Що-небуть пішло не так, результат не вдалося розрахувати!';
-  // Виводимо результат на екран
+  // Виводимо результат на екран:
   ShowMessage(s);
 end;
 

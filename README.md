@@ -59,7 +59,7 @@
         <tr> <td>Numbers</td>
              <td>Числа</td> </tr>
         <tr> <td>&#9672; <a href="/08_Numbers/01">01</a></td>
-             <td> ... </td> </tr>
+             <td>Написання програми для визначення індексу маси тіла</td> </tr>
         <!-- Subprograms -->
         <tr> <td>Subprograms</td>
              <td>Підпрограми</td> </tr>

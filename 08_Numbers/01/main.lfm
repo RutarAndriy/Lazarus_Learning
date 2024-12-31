@@ -8,7 +8,7 @@ object fMain: TfMain
   ClientHeight = 103
   ClientWidth = 424
   Position = poDesktopCenter
-  object ME1: TMaskEdit
+  object meHeight: TMaskEdit
     Left = 320
     Height = 28
     Top = 8
@@ -16,11 +16,11 @@ object fMain: TfMain
     EnableSets = False
     MaxLength = 4
     TabOrder = 0
-    EditMask = '0.00;1;_'
+    EditMask = '9.99;1;_'
     Text = ' .  '
     SpaceChar = '_'
   end
-  object ME2: TMaskEdit
+  object meWeight: TMaskEdit
     Left = 320
     Height = 28
     Top = 40
@@ -28,27 +28,26 @@ object fMain: TfMain
     EnableSets = False
     MaxLength = 3
     TabOrder = 1
-    EditMask = '###;1;_'
-    Text = '   '
+    EditMask = '999;0;_'
     SpaceChar = '_'
   end
-  object Button1: TButton
+  object btnCalculate: TButton
     Left = 143
     Height = 25
     Top = 72
     Width = 139
     Caption = 'Розрахувати ІМТ'
     TabOrder = 2
-    OnClick = Button1Click
+    OnClick = btnCalculateClick
   end
-  object Label1: TLabel
+  object lblHeight: TLabel
     Left = 8
     Height = 16
     Top = 8
     Width = 264
     Caption = 'Введіть свій ріст у метрах, наприклад 1,90:'
   end
-  object Label2: TLabel
+  object lblWeight: TLabel
     Left = 8
     Height = 16
     Top = 40
