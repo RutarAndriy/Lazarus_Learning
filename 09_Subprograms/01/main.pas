@@ -12,18 +12,18 @@ type
   { TfMain }
 
   TfMain = class(TForm)
-    Button1: TButton;
-    Button2: TButton;
-    Button3: TButton;
-    Button4: TButton;
-    Button5: TButton;
-    Edit1: TEdit;
-    Label1: TLabel;
-    procedure Button1Click(Sender: TObject);
-    procedure Button2Click(Sender: TObject);
-    procedure Button3Click(Sender: TObject);
-    procedure Button4Click(Sender: TObject);
-    procedure Button5Click(Sender: TObject);
+    btnOne: TButton;
+    btnTwo: TButton;
+    btnThree: TButton;
+    btnFour: TButton;
+    btnFive: TButton;
+    edtNumber: TEdit;
+    lblNumber: TLabel;
+    procedure btnOneClick(Sender: TObject);
+    procedure btnTwoClick(Sender: TObject);
+    procedure btnThreeClick(Sender: TObject);
+    procedure btnFourClick(Sender: TObject);
+    procedure btnFiveClick(Sender: TObject);
   private
     procedure MyPrivat; // Попередньо об'явлена процедура
     procedure MyDouble; // Подвоєння глобальної змінної
@@ -33,7 +33,7 @@ type
 
 var
   fMain: TfMain;
-  MyNum: Real;
+  MyNum: Real; // глобальна змінна
 
 implementation
 
@@ -41,6 +41,7 @@ implementation
 
 { TfMain }
 
+// Процедура подвоює число і виводить результат на екран:
 procedure Podvoenja(st: String);
 var
   r: Real;
@@ -53,11 +54,7 @@ begin
   ShowMessage(FloatToStr(r));
 end;
 
-procedure TfMain.Button1Click(Sender: TObject);
-begin
-  Podvoenja(Edit1.Text);
-end;
-
+// Функція подвоює число і повертає результат:
 function FuncPodvoenja(st: String): String;
 var
   r: Real;
@@ -70,51 +67,64 @@ begin
   Result:= FloatToStr(r);
 end;
 
-procedure TfMain.Button2Click(Sender: TObject);
-begin
-  ShowMessage(FuncPodvoenja(Edit1.Text));
-end;
-
+// Процедура змінює вхідний параметр (зміна за посиланням):
 procedure PodvoenjaZaPosylanjam(var r: Real);
 begin
   r:= r * 2;
 end;
 
-procedure TfMain.Button3Click(Sender: TObject);
+// Натискання на 1-шу кнопку:
+procedure TfMain.btnOneClick(Sender: TObject);
+begin
+  Podvoenja(edtNumber.Text);
+end;
+
+// Натискання на 2-гу кнопку:
+procedure TfMain.btnTwoClick(Sender: TObject);
+begin
+  ShowMessage(FuncPodvoenja(edtNumber.Text));
+end;
+
+// Натискання на 3-тю кнопку:
+procedure TfMain.btnThreeClick(Sender: TObject);
 var
   myReal: Real;
 begin
-  myReal:= StrToFloat(Edit1.Text);
+  myReal:= StrToFloat(edtNumber.Text);
   PodvoenjaZaPosylanjam(myReal);
   ShowMessage(FloatToStr(myReal));
 end;
 
-procedure TfMain.Button4Click(Sender: TObject);
+// Натискання на 4-ту кнопку:
+procedure TfMain.btnFourClick(Sender: TObject);
 begin
   MyPrivat;
 end;
 
-procedure TfMain.Button5Click(Sender: TObject);
+// Натискання на 5-ту кнопку:
+procedure TfMain.btnFiveClick(Sender: TObject);
 begin
-  MyNum:= StrToFloat(Edit1.Text);
+  MyNum:= StrToFloat(edtNumber.Text);
   // Подвоїмо число
   MyDouble;
   // Виведемо результат на екран
   ShowMessage(FloatToStr(MyNum));
 end;
 
+// Приватна процедура форми TfMain яка має доступ до її змінних:
 procedure TfMain.MyPrivat;
 var
   r: Real;
 begin
   // Перетворюємо у число те, що ввів користувач:
-  r:= StrToFloat(Edit1.Text);
+  r:= StrToFloat(edtNumber.Text);
   // Тепер подвоїмо його:
   r:= R * 2;
   // Тепер відобразимо результат у повідомленні:
   ShowMessage(FloatToStr(r));
 end;
 
+// Приватна процедура форми TfMain яка подвоює глобальну змінну:
 procedure TfMain.MyDouble;
 begin
   // Подвоюємо глобальну змінну

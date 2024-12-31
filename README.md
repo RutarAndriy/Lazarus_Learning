@@ -64,7 +64,7 @@
         <tr> <td>Subprograms</td>
              <td>Підпрограми</td> </tr>
         <tr> <td>&#9672; <a href="/09_Subprograms/01">01</a></td>
-             <td> ... </td> </tr>
+             <td>Приклад використання підпрограм (процедур та функцій)</td> </tr>
         <!-- Cycles And Case Switch -->
         <tr> <td>Cycles And Case Switch</td>
              <td>Цикли і перемикач "switch"</td> </tr>
