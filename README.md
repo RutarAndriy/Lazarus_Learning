@@ -114,8 +114,8 @@
         <!-- Codebook -->
         <tr> <td>Codebook</td>
              <td>Записник-шифрувальник</td> </tr>
-        <tr> <td>&#9672; <a href="/18_Codebook/01">01</a></td>
-             <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/18_Codebook/01">CodeBook</a></td>
+             <td>Написання програми "Записник-шифрувальник"</td> </tr>
         <!-- Trees -->
         <tr> <td>Trees</td>
              <td>Дерева</td> </tr>
