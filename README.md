@@ -105,7 +105,7 @@
         <tr> <td>Menu And Toolbox</td>
              <td>Меню і панель інструментів</td> </tr>
         <tr> <td>&#9672; <a href="/16_Menu_And_Toolbox/01">ImageViewer</a></td>
-             <td>Доопрацювання "ImageViewer" - додано меню і панель інструментів</td> </tr>
+             <td>Оновлення "ImageViewer" - додано меню і панель інструментів</td> </tr>
         <!-- Modules -->
         <tr> <td>Modules</td>
              <td>Модулі</td> </tr>

@@ -13,14 +13,14 @@ type
   { TfMain }
 
   TfMain = class(TForm)
-    Image1: TImage;
-    ImageList1: TImageList;
-    MainMenu1: TMainMenu;
-    FileMenu: TMenuItem;
-    FileOpen: TMenuItem;
-    FileExit: TMenuItem;
-    CloseMenu: TMenuItem;
-    Separator2: TMenuItem;
+    imgMain: TImage;
+    imgList: TImageList;
+    mMenu: TMainMenu;
+    mFileMenu: TMenuItem;
+    mFileOpen: TMenuItem;
+    mFileExit: TMenuItem;
+    pCloseMenu: TMenuItem;
+    sepTwo: TMenuItem;
     pWindowMaximize: TMenuItem;
     pWindowMinimize: TMenuItem;
     pWindowNormal: TMenuItem;
@@ -28,26 +28,26 @@ type
     pFileOpen: TMenuItem;
     pWindowMenu: TMenuItem;
     pFileMenu: TMenuItem;
-    OPD: TOpenPictureDialog;
-    PopupMenu1: TPopupMenu;
-    SPD: TSavePictureDialog;
-    ToolBar1: TToolBar;
-    bExit: TToolButton;
-    ToolButton1: TToolButton;
-    bOpen: TToolButton;
-    bSaveAs: TToolButton;
-    WindowMaximize: TMenuItem;
-    WindowMinimize: TMenuItem;
-    WindowNormal: TMenuItem;
-    Separator1: TMenuItem;
-    FileSaveAs: TMenuItem;
-    WindowMenu: TMenuItem;
-    procedure FileExitClick(Sender: TObject);
-    procedure FileOpenClick(Sender: TObject);
-    procedure FileSaveAsClick(Sender: TObject);
-    procedure WindowMaximizeClick(Sender: TObject);
-    procedure WindowMinimizeClick(Sender: TObject);
-    procedure WindowNormalClick(Sender: TObject);
+    opnPctrDlg: TOpenPictureDialog;
+    pMenu: TPopupMenu;
+    savPctrDlg: TSavePictureDialog;
+    tlbMain: TToolBar;
+    btnExit: TToolButton;
+    btnSep: TToolButton;
+    btnOpen: TToolButton;
+    btnSaveAs: TToolButton;
+    mWindowMaximize: TMenuItem;
+    mWindowMinimize: TMenuItem;
+    mWindowNormal: TMenuItem;
+    sepOne: TMenuItem;
+    mFileSaveAs: TMenuItem;
+    mWindowMenu: TMenuItem;
+    procedure mFileExitClick(Sender: TObject);
+    procedure mFileOpenClick(Sender: TObject);
+    procedure mFileSaveAsClick(Sender: TObject);
+    procedure mWindowMaximizeClick(Sender: TObject);
+    procedure mWindowMinimizeClick(Sender: TObject);
+    procedure mWindowNormalClick(Sender: TObject);
   private
 
   public
@@ -63,32 +63,38 @@ implementation
 
 { TfMain }
 
-procedure TfMain.FileExitClick(Sender: TObject);
+// Закриття програми:
+procedure TfMain.mFileExitClick(Sender: TObject);
 begin
   Close;
 end;
 
-procedure TfMain.FileOpenClick(Sender: TObject);
+// Відкривання файлу для перегляду:
+procedure TfMain.mFileOpenClick(Sender: TObject);
 begin
-  if OPD.Execute then Image1.Picture.LoadFromFile(OPD.FileName);
+  if opnPctrDlg.Execute then imgMain.Picture.LoadFromFile(opnPctrDlg.FileName);
 end;
 
-procedure TfMain.FileSaveAsClick(Sender: TObject);
+// Збереження файлу:
+procedure TfMain.mFileSaveAsClick(Sender: TObject);
 begin
-  if SPD.Execute then Image1.Picture.SaveToFile(SPD.FileName);
+  if savPctrDlg.Execute then imgMain.Picture.SaveToFile(savPctrDlg.FileName);
 end;
 
-procedure TfMain.WindowMaximizeClick(Sender: TObject);
+// Розгортання вікна програми:
+procedure TfMain.mWindowMaximizeClick(Sender: TObject);
 begin
   fMain.WindowState:= wsMaximized;
 end;
 
-procedure TfMain.WindowMinimizeClick(Sender: TObject);
+// Згортання вікна програми:
+procedure TfMain.mWindowMinimizeClick(Sender: TObject);
 begin
   fMain.WindowState:= wsMinimized;
 end;
 
-procedure TfMain.WindowNormalClick(Sender: TObject);
+// Відновлення вікна програми:
+procedure TfMain.mWindowNormalClick(Sender: TObject);
 begin
   fMain.WindowState:= wsNormal;
 end;

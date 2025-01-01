@@ -6,157 +6,157 @@ object fMain: TfMain
   Caption = 'Перегляд зображень'
   ClientHeight = 450
   ClientWidth = 700
-  Menu = MainMenu1
-  object Image1: TImage
+  Menu = mMenu
+  object imgMain: TImage
     Left = 0
     Height = 424
     Top = 26
     Width = 700
     Align = alClient
     Center = True
-    PopupMenu = PopupMenu1
+    PopupMenu = pMenu
     Proportional = True
     Stretch = True
   end
-  object ToolBar1: TToolBar
+  object tlbMain: TToolBar
     Left = 0
     Height = 26
     Top = 0
     Width = 700
-    Caption = 'ToolBar1'
+    Caption = 'tlbMain'
     EdgeBorders = [ebBottom]
-    Images = ImageList1
+    Images = imgList
     ParentShowHint = False
     ShowHint = True
     TabOrder = 0
-    object bExit: TToolButton
+    object btnExit: TToolButton
       Left = 1
       Hint = 'Вихід з прогрпми'
       Top = 0
-      Caption = 'bExit'
+      Caption = 'btnExit'
       ImageIndex = 2
-      OnClick = FileExitClick
+      OnClick = mFileExitClick
     end
-    object ToolButton1: TToolButton
+    object btnSep: TToolButton
       Left = 24
       Height = 22
       Top = 0
-      Caption = 'ToolButton1'
-      Style = tbsSeparator
+      Caption = 'btnSep'
+      Style = tbsDivider
     end
-    object bOpen: TToolButton
-      Left = 32
+    object btnOpen: TToolButton
+      Left = 29
       Hint = 'Відкрити файл із зображенням'
       Top = 0
-      Caption = 'bOpen'
+      Caption = 'btnOpen'
       ImageIndex = 0
-      OnClick = FileOpenClick
+      OnClick = mFileOpenClick
     end
-    object bSaveAs: TToolButton
-      Left = 55
+    object btnSaveAs: TToolButton
+      Left = 52
       Hint = 'Зберегти файл як'
       Top = 0
-      Caption = 'bSaveAs'
+      Caption = 'btnSaveAs'
       ImageIndex = 1
-      OnClick = FileSaveAsClick
+      OnClick = mFileSaveAsClick
     end
   end
-  object MainMenu1: TMainMenu
-    Images = ImageList1
-    Left = 8
-    Top = 8
-    object FileMenu: TMenuItem
+  object mMenu: TMainMenu
+    Images = imgList
+    Left = 144
+    Top = 65440
+    object mFileMenu: TMenuItem
       Caption = 'Файл'
-      object FileOpen: TMenuItem
+      object mFileOpen: TMenuItem
         Caption = 'Відкрити'
         ImageIndex = 0
         ShortCut = 16463
-        OnClick = FileOpenClick
+        OnClick = mFileOpenClick
       end
-      object FileSaveAs: TMenuItem
+      object mFileSaveAs: TMenuItem
         Caption = 'Зберегти як'
         ImageIndex = 1
         ShortCut = 16467
-        OnClick = FileSaveAsClick
+        OnClick = mFileSaveAsClick
       end
-      object Separator1: TMenuItem
+      object sepOne: TMenuItem
         Caption = '-'
       end
-      object FileExit: TMenuItem
+      object mFileExit: TMenuItem
         Caption = 'Вихід'
         ImageIndex = 2
         ShortCut = 16465
-        OnClick = FileExitClick
+        OnClick = mFileExitClick
       end
     end
-    object WindowMenu: TMenuItem
+    object mWindowMenu: TMenuItem
       Caption = 'Вікно'
-      object WindowNormal: TMenuItem
+      object mWindowNormal: TMenuItem
         Caption = 'Нормальне'
-        OnClick = WindowNormalClick
+        OnClick = mWindowNormalClick
       end
-      object WindowMinimize: TMenuItem
+      object mWindowMinimize: TMenuItem
         Caption = 'Згорнути'
-        OnClick = WindowMinimizeClick
+        OnClick = mWindowMinimizeClick
       end
-      object WindowMaximize: TMenuItem
+      object mWindowMaximize: TMenuItem
         Caption = 'Розгорнути'
-        OnClick = WindowMaximizeClick
+        OnClick = mWindowMaximizeClick
       end
     end
   end
-  object OPD: TOpenPictureDialog
-    Left = 40
-    Top = 8
-  end
-  object SPD: TSavePictureDialog
-    Left = 72
-    Top = 8
-  end
-  object PopupMenu1: TPopupMenu
-    Images = ImageList1
+  object opnPctrDlg: TOpenPictureDialog
     Left = 104
-    Top = 8
+    Top = 65432
+  end
+  object savPctrDlg: TSavePictureDialog
+    Left = 104
+    Top = 65440
+  end
+  object pMenu: TPopupMenu
+    Images = imgList
+    Left = 160
+    Top = 65440
     object pFileMenu: TMenuItem
       Caption = 'Файл'
       object pFileOpen: TMenuItem
         Caption = 'Відкрити'
         ImageIndex = 0
-        OnClick = FileOpenClick
+        OnClick = mFileOpenClick
       end
       object pFileSaveAs: TMenuItem
         Caption = 'Зберегти як'
         ImageIndex = 1
-        OnClick = FileSaveAsClick
+        OnClick = mFileSaveAsClick
       end
     end
     object pWindowMenu: TMenuItem
       Caption = 'Вікно'
       object pWindowNormal: TMenuItem
         Caption = 'Нормальне'
-        OnClick = WindowNormalClick
+        OnClick = mWindowNormalClick
       end
       object pWindowMinimize: TMenuItem
         Caption = 'Згорнути'
-        OnClick = WindowMinimizeClick
+        OnClick = mWindowMinimizeClick
       end
       object pWindowMaximize: TMenuItem
         Caption = 'Розгорнути'
-        OnClick = WindowMaximizeClick
+        OnClick = mWindowMaximizeClick
       end
     end
-    object Separator2: TMenuItem
+    object sepTwo: TMenuItem
       Caption = '-'
     end
-    object CloseMenu: TMenuItem
+    object pCloseMenu: TMenuItem
       Caption = 'Вихід'
       ImageIndex = 2
-      OnClick = FileExitClick
+      OnClick = mFileExitClick
     end
   end
-  object ImageList1: TImageList
-    Left = 136
-    Top = 8
+  object imgList: TImageList
+    Left = 96
+    Top = 65440
     Bitmap = {
       4C7A030000001000000010000000EE0400000000000078DAB5960B4C535718C7
       AF5518A68B667113B788CD346C1A9504702E10C4A0C331269B0A0A83086E243E
