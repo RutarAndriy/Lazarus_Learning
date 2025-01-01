@@ -13,10 +13,10 @@ type
   { TfMain }
 
   TfMain = class(TForm)
-    Button1: TButton;
-    Image1: TImage;
-    OPD: TOpenPictureDialog;
-    procedure Button1Click(Sender: TObject);
+    btnOpen: TButton;
+    imgMain: TImage;
+    opnPctrDlg: TOpenPictureDialog;
+    procedure btnOpenClick(Sender: TObject);
   private
 
   public
@@ -32,9 +32,10 @@ implementation
 
 { TfMain }
 
-procedure TfMain.Button1Click(Sender: TObject);
+// Відкривання зображення для перегляду:
+procedure TfMain.btnOpenClick(Sender: TObject);
 begin
-  if OPD.Execute then Image1.Picture.LoadFromFile(OPD.FileName);
+  if opnPctrDlg.Execute then imgMain.Picture.LoadFromFile(opnPctrDlg.FileName);
 end;
 
 end.

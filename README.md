@@ -98,14 +98,14 @@
         <tr> <td>Dialogs</td>
              <td>Діалоги</td> </tr>
         <tr> <td>&#9672; <a href="/15_Dialogs/01">MyNotebook</a></td>
-             <td>Приклад використання стандартних діалогів</td> </tr>
-        <tr> <td>&#9672; <a href="/15_Dialogs/02">02</a></td>
-             <td> ... </td> </tr>
+             <td>Доопрацювання "MyNotebook" - додано стандартні діалоги</td> </tr>
+        <tr> <td>&#9672; <a href="/15_Dialogs/02">ImageViewer</a></td>
+             <td>Написання програми для перегляду зображень</td> </tr>
         <!-- Menu And Toolbox -->
         <tr> <td>Menu And Toolbox</td>
              <td>Меню і панель інструментів</td> </tr>
-        <tr> <td>&#9672; <a href="/16_Menu_And_Toolbox/01">01</a></td>
-             <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/16_Menu_And_Toolbox/01">ImageViewer</a></td>
+             <td>Доопрацювання "ImageViewer" - додано меню і панель інструментів</td> </tr>
         <!-- Modules -->
         <tr> <td>Modules</td>
              <td>Модулі</td> </tr>

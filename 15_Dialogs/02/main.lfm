@@ -7,9 +7,10 @@ object fMain: TfMain
   ClientHeight = 450
   ClientWidth = 700
   Position = poDesktopCenter
-  object Image1: TImage
+  LCLVersion = '3.6.0.0'
+  object imgMain: TImage
     Left = 5
-    Height = 385
+    Height = 401
     Top = 5
     Width = 690
     Anchors = [akTop, akLeft, akRight, akBottom]
@@ -17,18 +18,18 @@ object fMain: TfMain
     Proportional = True
     Stretch = True
   end
-  object Button1: TButton
+  object btnOpen: TButton
     Left = 5
     Height = 25
-    Top = 408
+    Top = 416
     Width = 211
     Anchors = [akLeft, akBottom]
     Caption = 'Завантажити зображення'
     TabOrder = 0
-    OnClick = Button1Click
+    OnClick = btnOpenClick
   end
-  object OPD: TOpenPictureDialog
-    Left = 8
-    Top = 8
+  object opnPctrDlg: TOpenPictureDialog
+    Left = 128
+    Top = 65464
   end
 end
