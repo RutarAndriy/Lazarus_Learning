@@ -109,8 +109,8 @@
         <!-- Modules -->
         <tr> <td>Modules</td>
              <td>Модулі</td> </tr>
-        <tr> <td>&#9672; <a href="/17_Modules/01">01</a></td>
-             <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/17_Modules/01">CheckNum</a></td>
+             <td>Приклад написання та використання модулів</td> </tr>
         <!-- Codebook -->
         <tr> <td>Codebook</td>
              <td>Записник-шифрувальник</td> </tr>

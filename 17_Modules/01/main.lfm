@@ -7,52 +7,52 @@ object fMain: TfMain
   Caption = 'Перевірка чисел'
   ClientHeight = 151
   ClientWidth = 301
-  object Label1: TLabel
+  object lblSignInt: TLabel
     Left = 8
     Height = 16
     Top = 13
     Width = 91
     Caption = 'Ціле зі знаком:'
   end
-  object Label2: TLabel
+  object lblUnsignInt: TLabel
     Left = 8
     Height = 16
     Top = 45
     Width = 91
     Caption = 'Ціле без знаку:'
   end
-  object Label3: TLabel
+  object lblReal: TLabel
     Left = 8
     Height = 16
     Top = 77
     Width = 58
     Caption = 'Дробове:'
   end
-  object Edit1: TEdit
+  object edtSignInt: TEdit
     Left = 136
     Height = 28
     Top = 8
     Width = 160
     TabOrder = 0
-    OnKeyPress = Edit1KeyPress
+    OnKeyPress = edtSignIntKeyPress
   end
-  object Edit2: TEdit
+  object edtUnsignInt: TEdit
     Left = 136
     Height = 28
     Top = 40
     Width = 160
     TabOrder = 1
-    OnKeyPress = Edit2KeyPress
+    OnKeyPress = edtUnsignIntKeyPress
   end
-  object Edit3: TEdit
+  object edtReal: TEdit
     Left = 136
     Height = 28
     Top = 72
     Width = 160
     TabOrder = 2
-    OnKeyPress = Edit3KeyPress
+    OnKeyPress = edtRealKeyPress
   end
-  object BitBtn1: TBitBtn
+  object btnClose: TBitBtn
     Left = 113
     Height = 30
     Top = 112

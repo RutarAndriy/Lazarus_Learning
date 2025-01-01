@@ -13,16 +13,16 @@ type
   { TfMain }
 
   TfMain = class(TForm)
-    BitBtn1: TBitBtn;
-    Edit1: TEdit;
-    Edit2: TEdit;
-    Edit3: TEdit;
-    Label1: TLabel;
-    Label2: TLabel;
-    Label3: TLabel;
-    procedure Edit1KeyPress(Sender: TObject; var Key: char);
-    procedure Edit2KeyPress(Sender: TObject; var Key: char);
-    procedure Edit3KeyPress(Sender: TObject; var Key: char);
+    btnClose: TBitBtn;
+    edtSignInt: TEdit;
+    edtUnsignInt: TEdit;
+    edtReal: TEdit;
+    lblSignInt: TLabel;
+    lblUnsignInt: TLabel;
+    lblReal: TLabel;
+    procedure edtSignIntKeyPress(Sender: TObject; var Key: char);
+    procedure edtUnsignIntKeyPress(Sender: TObject; var Key: char);
+    procedure edtRealKeyPress(Sender: TObject; var Key: char);
   private
 
   public
@@ -38,22 +38,22 @@ implementation
 
 { TfMain }
 
-procedure TfMain.Edit1KeyPress(Sender: TObject; var Key: char);
+procedure TfMain.edtSignIntKeyPress(Sender: TObject; var Key: char);
 begin
   // Перевірка правильності вводимого символу в ціле число із знаком:
-  key:= TrueIntKeys(key, Edit1.Text, True);
+  key:= TrueIntKeys(key, edtSignInt.Text, True);
 end;
 
-procedure TfMain.Edit2KeyPress(Sender: TObject; var Key: char);
+procedure TfMain.edtUnsignIntKeyPress(Sender: TObject; var Key: char);
 begin
   // Перевірка правильності вводимого символу в ціле число без знаку:
-  key:= TrueIntKeys(key, Edit2.Text, False);
+  key:= TrueIntKeys(key, edtUnsignInt.Text, False);
 end;
 
-procedure TfMain.Edit3KeyPress(Sender: TObject; var Key: char);
+procedure TfMain.edtRealKeyPress(Sender: TObject; var Key: char);
 begin
   // Перевірка правильності вводимого символу в дробове число:
-  key:= TrueFloatKeys(key, Edit3.Text);
+  key:= TrueFloatKeys(key, edtReal.Text);
 end;
 
 end.

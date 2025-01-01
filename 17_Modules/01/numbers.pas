@@ -5,9 +5,9 @@
   тувач ввів правильний символ, функція його не змінить, інакше повертає
   символ #0 - тобто нічого. Функція TrueFloatKeys аналогічним чином виконує
   перевірку дробових чисел. Приклад використання:
-  Key:= TrueIntKeys(Key, Edit1.Text, True); // ціле зі знаком
+  Key:= TrueIntKeys(Key, Edit1.Text, True);  // ціле зі знаком
   Key:= TrueIntKeys(Key, Edit1.Text, False); // ціле без знаку
-  Key:= TrueFloatKeys(Key, Edit1.Text); // дробове
+  Key:= TrueFloatKeys(Key, Edit1.Text);      // дробове
 }
 
 unit Numbers;
@@ -26,7 +26,7 @@ function TrueFloatKeys(key: Char; str: String): Char;
 
 implementation
 
-{ Перевірка правильності символа у цілому числі }
+// Перевірка правильності символа у цілому числі:
 function TrueIntKeys(key: Char; str: String; sign: Boolean): Char;
 begin
   // Спочатку вкажемо, що повертається той самий символ, що ввів користувач:
@@ -41,18 +41,19 @@ begin
     // Якщо знаковий, то дозволяємо мінус при умові, що мінус - перший
     // символ у строці:
     '-' : if sign and (Length(str) = 0) then Result:= key
-          else Result:= #0; // якщо беззнакове або мінус не перший - забороняємо
+          // Якщо беззнакове або мінус не перший - забороняємо:
+          else Result:= #0;
     // Всі інші символи забороняємо:
     else Result:= #0;
   end; // case
 end;
 
-{ Перевірка правильності символа у дробовому числі }
+// Перевірка правильності символа у дробовому числі:
 function TrueFloatKeys(key: Char; str: String): Char;
 var
   separator: Char;
 begin
-  // Отримуємо системний розділювач чисел
+  // Отримуємо системний розділювач чисел:
   separator:= DefaultFormatSettings.DecimalSeparator;
   // Спочатку вкажемо, що повертається той самий символ, що ввів користувач:
   Result:= key;
@@ -70,7 +71,8 @@ begin
     // Якщо знаковий, то дозволяємо мінус при умові, що мінус - перший
     // символ у строці:
     '-' : if Length(str) = 0 then Result:= key
-          else Result:= #0; // якщо беззнакове або мінус не перший - забороняємо
+          // Якщо беззнакове або мінус не перший - забороняємо:
+          else Result:= #0;
     // Всі інші символи забороняємо:
     else Result:= #0;
   end; // case
