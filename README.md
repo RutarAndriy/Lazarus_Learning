@@ -119,8 +119,8 @@
         <!-- Trees -->
         <tr> <td>Trees</td>
              <td>Дерева</td> </tr>
-        <tr> <td>&#9672; <a href="/19_Trees/01">01</a></td>
-             <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/19_Trees/01">MyLibrary</a></td>
+             <td>Написання програми "Бібліотечний каталог"</td> </tr>
         <!-- SDI And MDI Interfaces -->
         <tr> <td>SDI And MDI Interfaces</td>
              <td>SDI та MDI інтерфейси</td> </tr>

@@ -6,97 +6,96 @@ object fMain: TfMain
   Caption = 'Бібліотечний каталог'
   ClientHeight = 350
   ClientWidth = 500
-  LCLVersion = '4.99.0.0'
   OnClose = FormClose
   OnCreate = FormCreate
-  object Panel1: TPanel
+  object pnlButtons: TPanel
     Left = 0
     Height = 350
     Top = 0
-    Width = 127
+    Width = 135
     Align = alLeft
     ClientHeight = 350
-    ClientWidth = 127
+    ClientWidth = 135
     TabOrder = 0
-    object bNewNode: TButton
+    object btnNewNode: TButton
       Left = 1
       Height = 25
       Top = 1
-      Width = 125
+      Width = 133
       Caption = 'Новий розділ'
       TabOrder = 0
-      OnClick = bNewNodeClick
+      OnClick = btnNewNodeClick
     end
-    object bNewChildNode: TButton
+    object btnNewChildNode: TButton
       Left = 1
       Height = 25
       Top = 32
-      Width = 125
+      Width = 133
       Caption = 'Новий підрозділ'
       TabOrder = 1
-      OnClick = bNewChildNodeClick
+      OnClick = btnNewChildNodeClick
     end
-    object bDelete: TButton
+    object btnDelete: TButton
       Left = 1
       Height = 25
       Top = 64
-      Width = 125
+      Width = 133
       Caption = 'Видалити'
       TabOrder = 2
-      OnClick = bDeleteClick
+      OnClick = btnDeleteClick
     end
-    object bEdit: TButton
+    object btnEdit: TButton
       Left = 1
       Height = 25
       Top = 96
-      Width = 125
+      Width = 133
       Caption = 'Перейменувати'
       TabOrder = 3
-      OnClick = bEditClick
+      OnClick = btnEditClick
     end
-    object bSort: TButton
+    object btnSort: TButton
       Left = 1
       Height = 25
       Top = 128
-      Width = 125
+      Width = 133
       Caption = 'Сортувати'
       TabOrder = 4
-      OnClick = bSortClick
+      OnClick = btnSortClick
     end
-    object bCollapse: TButton
+    object btnCollapse: TButton
       Left = 1
       Height = 25
       Top = 160
-      Width = 125
+      Width = 133
       Caption = 'Згорнути список'
       TabOrder = 5
-      OnClick = bCollapseClick
+      OnClick = btnCollapseClick
     end
-    object bExpand: TButton
+    object btnExpand: TButton
       Left = 1
       Height = 25
       Top = 192
-      Width = 125
+      Width = 133
       Caption = 'Розгорнути список'
       TabOrder = 6
-      OnClick = bExpandClick
+      OnClick = btnExpandClick
     end
   end
-  object TreeView1: TTreeView
-    Left = 127
+  object trvMain: TTreeView
+    Left = 135
     Height = 350
     Top = 0
     Width = 360
     Align = alLeft
     AutoExpand = True
-    Images = IL
+    Images = imgList
     ScrollBars = ssAutoBoth
     TabOrder = 1
     Options = [tvoAutoExpand, tvoAutoItemHeight, tvoHideSelection, tvoKeepCollapsedNodes, tvoShowButtons, tvoShowLines, tvoShowRoot, tvoToolTips, tvoThemedDraw]
   end
-  object IL: TImageList
-    Left = 136
-    Top = 8
+  object imgList: TImageList
+    Left = 144
+    Top = 65456
     Bitmap = {
       4C7A020000001000000010000000B00200000000000078DADD93594F53511446
       F909FE141E34C4688C4278F1414388020F028D1A0D4602718AA8880A2A8AC442
