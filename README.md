@@ -157,8 +157,8 @@
         <!-- Phonebook -->
         <tr> <td>Phonebook</td>
              <td>Телефонний записник</td> </tr>
-        <tr> <td>&#9672; <a href="/25_Phonebook/01">01</a></td>
-             <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/25_Phonebook/01">PhoneBook</a></td>
+             <td>Написання програми "Телефонний довідник"</td> </tr>
         <!-- DLL -->
         <tr> <td>DLL</td>
              <td>Динамічно приєднувані бібліотеки</td> </tr>

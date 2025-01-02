@@ -1,4 +1,4 @@
-program Phonebook;
+program PhoneBook;
 
 {$mode objfpc}{$H+}
 

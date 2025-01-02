@@ -2,66 +2,66 @@ object fMain: TfMain
   Left = 288
   Height = 400
   Top = 250
-  Width = 700
+  Width = 667
   BorderStyle = bsDialog
   Caption = 'Телефонний довідник'
   ClientHeight = 400
-  ClientWidth = 700
-  Position = poDesktopCenter
+  ClientWidth = 667
   OnClose = FormClose
   OnCreate = FormCreate
-  object Panel1: TPanel
+  Position = poDesktopCenter
+  object pnlButtons: TPanel
     Left = 0
     Height = 27
     Top = 0
-    Width = 700
+    Width = 667
     Align = alTop
     ClientHeight = 27
-    ClientWidth = 700
+    ClientWidth = 667
     TabOrder = 0
-    object bAdd: TSpeedButton
+    object btnAdd: TSpeedButton
       Left = 2
       Height = 22
       Top = 2
       Width = 140
       Caption = 'Додати контакт'
-      OnClick = bAddClick
+      OnClick = btnAddClick
     end
-    object bEdit: TSpeedButton
+    object btnEdit: TSpeedButton
       Left = 142
       Height = 22
       Top = 2
       Width = 140
       Caption = 'Редагувати контакт'
-      OnClick = bEditClick
+      OnClick = btnEditClick
     end
-    object bDel: TSpeedButton
+    object btnDel: TSpeedButton
       Left = 284
       Height = 22
       Top = 2
       Width = 140
       Caption = 'Видалити контакт'
-      OnClick = bDelClick
+      OnClick = btnDelClick
     end
-    object bSort: TSpeedButton
+    object btnSort: TSpeedButton
       Left = 426
       Height = 22
       Top = 2
       Width = 140
       Caption = 'Сортувати список'
-      OnClick = bSortClick
+      OnClick = btnSortClick
     end
   end
-  object SG: TStringGrid
+  object sgView: TStringGrid
     Left = 0
     Height = 373
     Top = 27
-    Width = 700
+    Width = 667
     Align = alClient
     ColCount = 3
     FixedCols = 0
     RowCount = 1
     TabOrder = 1
-    OnDblClick = bEditClick
+    OnDblClick = btnEditClick
   end
 end
