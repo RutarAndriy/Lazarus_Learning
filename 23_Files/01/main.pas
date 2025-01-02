@@ -1,4 +1,4 @@
-unit Unit1;
+unit Main;
 
 {$mode objfpc}{$H+}
 
@@ -9,15 +9,15 @@ uses
 
 type
 
-  { TForm1 }
+  { TfMain }
 
-  TForm1 = class(TForm)
-    Button1: TButton;
-    Button2: TButton;
-    Edit1: TEdit;
-    Memo1: TMemo;
-    procedure Button1Click(Sender: TObject);
-    procedure Button2Click(Sender: TObject);
+  TfMain = class(TForm)
+    btnAdd: TButton;
+    btnRead: TButton;
+    edtField: TEdit;
+    memView: TMemo;
+    procedure btnAddClick(Sender: TObject);
+    procedure btnReadClick(Sender: TObject);
   private
 
   public
@@ -25,52 +25,52 @@ type
   end;
 
 var
-  Form1: TForm1;
+  fMain: TfMain;
 
 implementation
 
 {$R *.lfm}
 
-{ TForm1 }
+{ TfMain }
 
-procedure TForm1.Button1Click(Sender: TObject);
+procedure TfMain.btnAddClick(Sender: TObject);
 var
   tf: TextFile; // текстовий файл
   s: String;
 begin
-  // Якщо користувач не ввів строку в Edit1, просто вийдемо:
-  if Edit1.Text = '' then Exit;
+  // Якщо користувач не ввів строку в edtField, просто вийдемо:
+  if edtField.Text = '' then Exit;
   // Інакше в s отримуємо текст:
-  s:= Edit1.Text;
-  // Тепер зв'язуємо файлову змінну tf із файлом mytext.txt:
-  AssignFile(tf, 'mytext.txt');
+  s:= edtField.Text;
+  // Тепер зв'язуємо файлову змінну tf із файлом MyText.txt:
+  AssignFile(tf, 'MyText.txt');
   // Далі може виникнути виняткова ситуація, тому
   // вкладемо небезпечний код у блок try-finally-end:
   try
     // Якщо файлу немає (кнопку натиснули вперше), створюємо його:
-    if not FileExists('mytext.txt') then Rewrite(tf)
+    if not FileExists('MyText.txt') then Rewrite(tf)
     // Інакше відкриємо для запису, встановимо вказівник у кінець файлу:
     else Append(tf);
     // Тут просто записуємо строку в файл:
     WriteLn(tf, s);
-    // Очищуємо Edit1, щоб користувач бачив, що подія відбулася:
-    Edit1.Text:= '';
+    // Очищуємо edtField, щоб користувач бачив, що подія відбулася:
+    edtField.Text:= '';
   finally
     CloseFile(tf); // Закриваємо файл
   end;
 end;
 
-procedure TForm1.Button2Click(Sender: TObject);
+procedure TfMain.btnReadClick(Sender: TObject);
 var
   tf: TextFile; // текстовий файл
   s: String;
 begin
   // Якщо файлу немає, просто виходимо:
-  if not FileExists('mytext.txt') then Exit;
-  // Інакше спочатку очищуємо Memo1:
-  Memo1.Clear;
-  // Зв'язуємо файлову змінну tf із файлом mytext.txt:
-  AssignFile(tf, 'mytext.txt');
+  if not FileExists('MyText.txt') then Exit;
+  // Інакше спочатку очищуємо memView:
+  memView.Clear;
+  // Зв'язуємо файлову змінну tf із файлом MyText.txt:
+  AssignFile(tf, 'MyText.txt');
   // Далі може виникнути виняткова ситуація, тому
   // вкладемо небезпечний код у блок try-finally-end:
   try
@@ -78,7 +78,7 @@ begin
     // Робимо, поки не кінець файлу:
     while not EOF(tf) do begin
       ReadLn(tf, s); // читаємо в s черговий рядок
-      Memo1.Lines.Add(s); // додаємо цей рядок у Memo1
+      memView.Lines.Add(s); // додаємо цей рядок у memView
     end;
   finally
     CloseFile(tf); // Закриваємо файл

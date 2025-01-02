@@ -139,8 +139,8 @@
         <!-- Files -->
         <tr> <td>Files</td>
              <td>Файли</td> </tr>
-        <tr> <td>&#9672; <a href="/23_Files/01">01</a></td>
-             <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/23_Files/01">TextFile</a></td>
+             <td>Приклад роботи із текстовими файлами</td> </tr>
         <tr> <td>&#9672; <a href="/23_Files/02">02</a></td>
              <td> ... </td> </tr>
         <tr> <td>&#9672; <a href="/23_Files/03">03</a></td>
