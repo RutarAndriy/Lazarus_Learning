@@ -1,4 +1,4 @@
-unit Unit1;
+unit Main;
 
 {$mode objfpc}{$H+}
 
@@ -9,14 +9,14 @@ uses
 
 type
 
-  { TForm1 }
+  { TfMain }
 
-  TForm1 = class(TForm)
-    Button1: TButton;
-    Button2: TButton;
-    ListBox1: TListBox;
-    procedure Button1Click(Sender: TObject);
-    procedure Button2Click(Sender: TObject);
+  TfMain = class(TForm)
+    btnGenerate: TButton;
+    btnRead: TButton;
+    lbView: TListBox;
+    procedure btnGenerateClick(Sender: TObject);
+    procedure btnReadClick(Sender: TObject);
   private
 
   public
@@ -24,41 +24,41 @@ type
   end;
 
 var
-  Form1: TForm1;
+  fMain: TfMain;
 
 implementation
 
 {$R *.lfm}
 
-{ TForm1 }
+{ TfMain }
 
-procedure TForm1.Button1Click(Sender: TObject);
+procedure TfMain.btnGenerateClick(Sender: TObject);
 var
   f: File of Integer; // файл типу цілого числа
-  i: Integer; // лічильник для циклу
+  i: Integer;         // лічильник для циклу
 begin
-  AssignFile(f, 'mytypefile.dat');
+  AssignFile(f, 'MyTypedFile.dat');
   Rewrite(f);
-  for i:= 1 to 10 do // робимо 10 разів
+  for i:= 1 to 10 do // виконуємо цикл 10 разів
     Write(f, Random(1000)); // записуємо у файл випадкове ціле число
   CloseFile(f);
 end;
 
-procedure TForm1.Button2Click(Sender: TObject);
+procedure TfMain.btnReadClick(Sender: TObject);
 var
   f: File of Integer;
   i: Integer; // для отримання значень елементів
 begin
-  // виходимо із процедури, якщо файлу немає:
-  if not FileExists('mytypefile.dat') then Exit;
-  ListBox1.Clear;
-  AssignFile(f, 'mytypefile.dat');
+  // Виходимо із процедури, якщо файлу немає:
+  if not FileExists('MyTypedFile.dat') then Exit;
+  lbView.Clear;
+  AssignFile(f, 'MyTypedFile.dat');
   // Відкриваємо для читання:
   Reset(f);
   // Робимо від першого до останнього елемента:
   while not EOF(f) do begin
     Read(f, i); // зчитуємо черговий елемент у змінну k
-    ListBox1.Items.Add(IntToStr(i)); // записуємо це значення в ListBox1
+    lbView.Items.Add(IntToStr(i)); // записуємо це значення в lbView
   end;
   CloseFile(f);
 end;
