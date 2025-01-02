@@ -4,7 +4,7 @@
     <Version Value="12"/>
     <General>
       <SessionStorage Value="InProjectDir"/>
-      <Title Value="Proba"/>
+      <Title Value="StatLink"/>
       <Scaled Value="True"/>
       <ResourceType Value="res"/>
       <UseXPManifest Value="True"/>
@@ -14,7 +14,36 @@
       <Icon Value="0"/>
     </General>
     <BuildModes>
-      <Item Name="Default" Default="True"/>
+      <Item Name="Linux" Default="True"/>
+      <Item Name="Windows">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="StatLink"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <CodeGeneration>
+            <SmartLinkUnit Value="True"/>
+            <TargetCPU Value="i386"/>
+            <TargetOS Value="win32"/>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+              <DebugInfoType Value="dsDwarf3"/>
+            </Debugging>
+            <LinkSmart Value="True"/>
+            <Options>
+              <Win32>
+                <GraphicApplication Value="True"/>
+              </Win32>
+            </Options>
+          </Linking>
+        </CompilerOptions>
+      </Item>
     </BuildModes>
     <PublishOptions>
       <Version Value="2"/>
@@ -30,7 +59,7 @@
     </RequiredPackages>
     <Units>
       <Unit>
-        <Filename Value="Proba.lpr"/>
+        <Filename Value="StatLink.lpr"/>
         <IsPartOfProject Value="True"/>
       </Unit>
       <Unit>
@@ -46,16 +75,21 @@
   <CompilerOptions>
     <Version Value="11"/>
     <Target>
-      <Filename Value="Proba"/>
+      <Filename Value="StatLink"/>
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
       <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
+    <CodeGeneration>
+      <SmartLinkUnit Value="True"/>
+    </CodeGeneration>
     <Linking>
       <Debugging>
+        <GenerateDebugInfo Value="False"/>
         <DebugInfoType Value="dsDwarf3"/>
       </Debugging>
+      <LinkSmart Value="True"/>
       <Options>
         <Win32>
           <GraphicApplication Value="True"/>

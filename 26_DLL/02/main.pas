@@ -1,5 +1,6 @@
-// Для запуску на Linux та Unix необхідно вказати директорію із бібліотекою,
-// наприклад це можна зробити так:
+// Для запуску на Windows необхідно покласти *.dll із попереднього проекту в
+// корінь даного проекту. Для запуску на Linux та Unix необхідно вказати
+// директорію із бібліотекою, наприклад це можна зробити так:
 // export LD_LIBRARY_PATH=/path/to/library
 
 unit Main;
@@ -16,20 +17,20 @@ type
   { TfMain }
 
   TfMain = class(TForm)
-    bBeforeBirthday: TButton;
-    bArToRom: TButton;
-    bRomToAr: TButton;
-    bCode: TButton;
-    DE1: TDateEdit;
-    eCode: TEdit;
-    eNumbers: TEdit;
-    Label1: TLabel;
-    Label2: TLabel;
-    Label3: TLabel;
-    procedure bArToRomClick(Sender: TObject);
-    procedure bBeforeBirthdayClick(Sender: TObject);
-    procedure bCodeClick(Sender: TObject);
-    procedure bRomToArClick(Sender: TObject);
+    btnBirthday: TButton;
+    btnArToRom: TButton;
+    btnRomToAr: TButton;
+    btnCode: TButton;
+    deBirthday: TDateEdit;
+    edtText: TEdit;
+    edtNum: TEdit;
+    lblBirthday: TLabel;
+    lblNum: TLabel;
+    LlblText: TLabel;
+    procedure btnArToRomClick(Sender: TObject);
+    procedure btnBirthdayClick(Sender: TObject);
+    procedure btnCodeClick(Sender: TObject);
+    procedure btnRomToArClick(Sender: TObject);
   private
 
   public
@@ -43,39 +44,39 @@ implementation
 
 {$R *.lfm}
 function Code(s: PChar; Key: integer): PChar; register;
-         external 'myfirstdll';
-function BeforeBirthday(Birthday:TDateTime): Integer; register;
-         external 'myfirstdll';
-function ArToRom(N: Integer): PChar; register;
-         external 'myfirstdll';
-function RomToAr(s: PChar): Integer; register;
-         external 'myfirstdll';
+         external 'firstdll';
+function BeforeBirthday(Birthday:TDateTime): Integer; cdecl;
+         external 'firstdll';
+function ArToRom(N: Integer): PChar; stdcall;
+         external 'firstdll';
+function RomToAr(s: PChar): Integer; stdcall;
+         external 'firstdll';
 
 { TfMain }
 
-procedure TfMain.bBeforeBirthdayClick(Sender: TObject);
+procedure TfMain.btnBirthdayClick(Sender: TObject);
 begin
-  if DE1.Text = '' then Exit;
+  if deBirthday.Text = '' then Exit;
   ShowMessage('До дня народження залишилось ' +
-              IntToStr(BeforeBirthday(DE1.Date)) + ' днів');
+              IntToStr(BeforeBirthday(deBirthday.Date)) + ' днів');
 end;
 
-procedure TfMain.bCodeClick(Sender: TObject);
+procedure TfMain.btnCodeClick(Sender: TObject);
 begin
-  if eCode.Text = '' then Exit;
-  eCode.Text:= Code(PChar(eCode.Text), 10);
+  if edtText.Text = '' then Exit;
+  edtText.Text:= Code(PChar(edtText.Text), 10);
 end;
 
-procedure TfMain.bRomToArClick(Sender: TObject);
+procedure TfMain.btnRomToArClick(Sender: TObject);
 begin
-  if eNumbers.Text = '' then Exit;
-  eNumbers.Text:= IntToStr(RomToAr(PChar(eNumbers.Text)));
+  if edtNum.Text = '' then Exit;
+  edtNum.Text:= IntToStr(RomToAr(PChar(edtNum.Text)));
 end;
 
-procedure TfMain.bArToRomClick(Sender: TObject);
+procedure TfMain.btnArToRomClick(Sender: TObject);
 begin
-  if eNumbers.Text = '' then Exit;
-  eNumbers.Text:= ArToRom(StrToInt(eNumbers.Text));
+  if edtNum.Text = '' then Exit;
+  edtNum.Text:= ArToRom(StrToInt(edtNum.Text));
 end;
 
 end.

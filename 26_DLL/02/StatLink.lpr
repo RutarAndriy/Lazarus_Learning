@@ -1,4 +1,4 @@
-program Proba;
+program StatLink;
 
 {$mode objfpc}{$H+}
 
@@ -9,9 +9,7 @@ uses
   {$IFDEF HASAMIGA}
   athreads,
   {$ENDIF}
-  Interfaces, // this includes the LCL widgetset
-  Forms, Main
-  { you can add units after this };
+  Interfaces, Forms, Main;
 
 {$R *.res}
 
