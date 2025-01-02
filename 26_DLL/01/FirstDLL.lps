@@ -2,27 +2,19 @@
 <CONFIG>
   <ProjectSession>
     <Version Value="12"/>
-    <BuildModes Active="Default"/>
+    <BuildModes Active="Linux"/>
     <Units>
       <Unit>
-        <Filename Value="MyFirstDLL.lpr"/>
+        <Filename Value="FirstDLL.lpr"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <CursorPos X="4" Y="3"/>
+        <TopLine Value="58"/>
+        <CursorPos X="45" Y="62"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="1">
-      <Position>
-        <Filename Value="MyFirstDLL.lpr"/>
-        <Caret Line="6" Column="5"/>
-      </Position>
-      <Position>
-        <Filename Value="MyFirstDLL.lpr"/>
-        <Caret Line="7" Column="3"/>
-      </Position>
-    </JumpHistory>
+    <JumpHistory HistoryIndex="-1"/>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes ActiveMode=""/>
