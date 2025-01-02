@@ -152,8 +152,8 @@
              <td>Приклад роботи із записами</td> </tr>
         <tr> <td>&#9672; <a href="/24_Records_And_Variant/02">Variants</a></td>
              <td>Приклад роботи із варіантами</td> </tr>
-        <tr> <td>&#9672; <a href="/24_Records_And_Variant/03">03</a></td>
-             <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/24_Records_And_Variant/03">StrGrid</a></td>
+             <td>Приклад використання TStringGrid</td> </tr>
         <!-- Phonebook -->
         <tr> <td>Phonebook</td>
              <td>Телефонний записник</td> </tr>

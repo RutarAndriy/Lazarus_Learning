@@ -1,4 +1,4 @@
-program Grid;
+program StrGrid;
 
 {$mode objfpc}{$H+}
 
