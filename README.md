@@ -124,8 +124,8 @@
         <!-- SDI And MDI Interfaces -->
         <tr> <td>SDI And MDI Interfaces</td>
              <td>SDI та MDI інтерфейси</td> </tr>
-        <tr> <td>&#9672; <a href="/20_SDI_And_MDI_Interfaces/01">01</a></td>
-             <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/20_SDI_And_MDI_Interfaces/01">CodeBook</a></td>
+             <td>Оновлення "CodeBook" - додано вікна статистики і довідки</td> </tr>
         <!-- Console Applications And Parameters -->
         <tr> <td>Console Applications And Parameters</td>
              <td>Консольні програми і параметри</td> </tr>

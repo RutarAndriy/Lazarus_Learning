@@ -6,11 +6,10 @@ object fMain: TfMain
   Caption = 'Записник - шифрувальник'
   ClientHeight = 404
   ClientWidth = 750
-  Menu = MM
-  Position = poScreenCenter
-  LCLVersion = '4.99.0.0'
+  Menu = mMenu
   OnClose = FormClose
-  object Memo1: TMemo
+  Position = poScreenCenter
+  object memNotebook: TMemo
     Left = 0
     Height = 404
     Top = 0
@@ -22,27 +21,27 @@ object fMain: TfMain
     ParentFont = False
     ScrollBars = ssAutoVertical
     TabOrder = 0
-    OnChange = Memo1Change
+    OnChange = memNotebookChange
   end
-  object OD: TOpenDialog
+  object opnDlg: TOpenDialog
     DefaultExt = '.txt'
     Filter = 'Такстові файли|*.txt|Всі файли|*.*'
-    Left = 8
-    Top = 8
+    Left = 104
+    Top = 65408
   end
-  object SD: TSaveDialog
+  object savDlg: TSaveDialog
     DefaultExt = '.txt'
     Filter = 'Такстові файли|*.txt|Всі файли|*.*'
-    Left = 40
-    Top = 8
+    Left = 112
+    Top = 65408
   end
-  object FD: TFontDialog
+  object fntDlg: TFontDialog
     MinFontSize = 0
     MaxFontSize = 0
-    Left = 72
-    Top = 8
+    Left = 120
+    Top = 65408
   end
-  object CD: TColorDialog
+  object clrDlg: TColorDialog
     Color = clBlack
     CustomColors.Strings = (
       'ColorA=000000'
@@ -66,121 +65,121 @@ object fMain: TfMain
       'ColorS=F0FBFF'
       'ColorT=A4A0A0'
     )
-    Left = 104
-    Top = 8
-  end
-  object MM: TMainMenu
     Left = 136
-    Top = 8
-    object FileMenu: TMenuItem
+    Top = 65408
+  end
+  object mMenu: TMainMenu
+    Left = 160
+    Top = 65416
+    object mFileMenu: TMenuItem
       Caption = 'Файл'
-      object FileCreate: TMenuItem
+      object mFileCreate: TMenuItem
         Caption = 'Створити'
         ShortCut = 16462
-        OnClick = FileCreateClick
+        OnClick = mFileCreateClick
       end
-      object FileOpen: TMenuItem
+      object mFileOpen: TMenuItem
         Caption = 'Відкрити'
         ShortCut = 16463
-        OnClick = FileOpenClick
+        OnClick = mFileOpenClick
       end
-      object FileSave: TMenuItem
+      object mFileSave: TMenuItem
         Caption = 'Зберегти'
         ShortCut = 16467
-        OnClick = FileSaveClick
+        OnClick = mFileSaveClick
       end
-      object FileSaveAs: TMenuItem
+      object mFileSaveAs: TMenuItem
         Caption = 'Зберегти як...'
-        OnClick = FileSaveAsClick
+        OnClick = mFileSaveAsClick
       end
-      object N5: TMenuItem
+      object sepOne: TMenuItem
         Caption = '-'
       end
-      object FileStat: TMenuItem
+      object mFileStat: TMenuItem
         Caption = 'Статистика'
-        OnClick = FileStatClick
+        OnClick = mFileStatClick
       end
-      object N1: TMenuItem
+      object sepTwo: TMenuItem
         Caption = '-'
       end
-      object FileExit: TMenuItem
+      object mFileExit: TMenuItem
         Caption = 'Вихід'
-        OnClick = FileExitClick
+        OnClick = mFileExitClick
       end
     end
-    object EditMenu: TMenuItem
+    object mEditMenu: TMenuItem
       Caption = 'Правка'
-      object EditCancel: TMenuItem
+      object mEditCancel: TMenuItem
         Caption = 'Відмінити'
         ShortCut = 16474
-        OnClick = EditCancelClick
+        OnClick = mEditCancelClick
       end
-      object N2: TMenuItem
+      object sepThree: TMenuItem
         Caption = '-'
       end
-      object EditCut: TMenuItem
+      object mEditCut: TMenuItem
         Caption = 'Вирізати'
         ShortCut = 16472
-        OnClick = EditCutClick
+        OnClick = mEditCutClick
       end
-      object EditCopy: TMenuItem
+      object mEditCopy: TMenuItem
         Caption = 'Копіювати'
         ShortCut = 16451
-        OnClick = EditCopyClick
+        OnClick = mEditCopyClick
       end
-      object EditPaste: TMenuItem
+      object mEditPaste: TMenuItem
         Caption = 'Вставити'
         ShortCut = 16470
-        OnClick = EditPasteClick
+        OnClick = mEditPasteClick
       end
-      object EditDelete: TMenuItem
+      object mEditDelete: TMenuItem
         Caption = 'Видалити'
-        OnClick = EditDeleteClick
+        OnClick = mEditDeleteClick
       end
-      object N3: TMenuItem
+      object sepFour: TMenuItem
         Caption = '-'
       end
-      object EditSelectAll: TMenuItem
+      object mEditSelectAll: TMenuItem
         Caption = 'Виділити все'
         ShortCut = 16449
-        OnClick = EditSelectAllClick
+        OnClick = mEditSelectAllClick
       end
     end
-    object FormatMenu: TMenuItem
+    object mFormatMenu: TMenuItem
       Caption = 'Формат'
-      object FormatFont: TMenuItem
+      object mFormatFont: TMenuItem
         Caption = 'Шрифт'
-        OnClick = FormatFontClick
+        OnClick = mFormatFontClick
       end
-      object FormatColor: TMenuItem
+      object mFormatColor: TMenuItem
         Caption = 'Колір'
-        OnClick = FormatColorClick
+        OnClick = mFormatColorClick
       end
-      object N4: TMenuItem
+      object sepFive: TMenuItem
         Caption = '-'
       end
-      object FormatWordWrap: TMenuItem
+      object mFormatWordWrap: TMenuItem
         Caption = 'Перенесення по словах'
         Checked = True
-        OnClick = FormatWordWrapClick
+        OnClick = mFormatWordWrapClick
       end
     end
-    object CoderMenu: TMenuItem
+    object mCoderMenu: TMenuItem
       Caption = 'Кодування'
-      object CoderCode: TMenuItem
+      object mCoderCode: TMenuItem
         Caption = 'Шифрувати'
-        OnClick = CoderCodeClick
+        OnClick = mCoderCodeClick
       end
-      object CoderDecode: TMenuItem
+      object mCoderDecode: TMenuItem
         Caption = 'Розшифрувати'
-        OnClick = CoderDecodeClick
+        OnClick = mCoderDecodeClick
       end
     end
-    object HelpMenu: TMenuItem
-      Caption = 'Справка'
-      object HelpAbout: TMenuItem
+    object mHelpMenu: TMenuItem
+      Caption = 'Довідка'
+      object mHelpAbout: TMenuItem
         Caption = 'Про програму'
-        OnClick = HelpAboutClick
+        OnClick = mHelpAboutClick
       end
     end
   end
