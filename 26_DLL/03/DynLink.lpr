@@ -1,4 +1,4 @@
-program Proba2;
+program DynLink;
 
 {$mode objfpc}{$H+}
 

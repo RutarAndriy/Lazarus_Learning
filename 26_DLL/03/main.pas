@@ -1,3 +1,7 @@
+// Для коректного підвантаження бібліотеки необхідно покласти
+// файл *.so (для Linux/Unix) або *.dll (для Windows) із попереднього
+// проекту в корінь даного проекту.
+
 unit Main;
 
 {$mode objfpc}{$H+}
@@ -6,27 +10,27 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, EditBtn,
-  dynlibs;
+  DynLibs;
 
 type
 
   { TfMain }
 
   TfMain = class(TForm)
-    bBeforeBirthday: TButton;
-    bArToRom: TButton;
-    bRomToAr: TButton;
-    bCode: TButton;
-    DE1: TDateEdit;
-    eCode: TEdit;
-    eNumbers: TEdit;
-    Label1: TLabel;
-    Label2: TLabel;
-    Label3: TLabel;
-    procedure bArToRomClick(Sender: TObject);
-    procedure bBeforeBirthdayClick(Sender: TObject);
-    procedure bCodeClick(Sender: TObject);
-    procedure bRomToArClick(Sender: TObject);
+    btnBirthday: TButton;
+    btnArToRom: TButton;
+    btnRomToAr: TButton;
+    btnCode: TButton;
+    deBirthday: TDateEdit;
+    edtText: TEdit;
+    endNum: TEdit;
+    lblBirthday: TLabel;
+    lblNum: TLabel;
+    lblText: TLabel;
+    procedure btnArToRomClick(Sender: TObject);
+    procedure btnBirthdayClick(Sender: TObject);
+    procedure btnCodeClick(Sender: TObject);
+    procedure btnRomToArClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
   private
 
@@ -35,25 +39,25 @@ type
   end;
 
 type
-  TCode = function(s: PChar; Key: integer): PChar; stdcall;
-  TBeforeBirthday = function(Birthday:TDateTime): Integer; stdcall;
+  TCode = function(s: PChar; Key: integer): PChar; register;
+  TBeforeBirthday = function(Birthday:TDateTime): Integer; cdecl;
   TArToRom = function(N: integer): PChar; stdcall;
   TRomToAr = function(s: PChar): Integer; stdcall;
 
 const
 {$ifdef windows}
-  libname = 'MyFirstDLL.dll';
+  libname = 'FirstDLL.dll';
 {$else}
-  libname = 'libmyfirstdll.so';
+  libname = 'libfirstdll.so';
 {$endif}
 var
   fMain: TfMain;
-  MyH: THandle = 0; // для дескриптору бібліотеки
   Code: TCode;
   BeforeBirthday: TBeforeBirthday;
   ArToRom: TArToRom;
   RomToAr: TRomToAr;
-  libPath: String; // Шлях до бібліотеки
+  MyH: THandle = 0; // для дескриптору бібліотеки
+  libPath: String;  // шлях до бібліотеки
 
 implementation
 
@@ -61,15 +65,15 @@ implementation
 
 { TfMain }
 
-procedure TfMain.bBeforeBirthdayClick(Sender: TObject);
+procedure TfMain.btnBirthdayClick(Sender: TObject);
 begin
   // Виходимо, якщо пусто:
-  if DE1.Text = '' then Exit;
+  if deBirthday.Text = '' then Exit;
   // Відкриваємо бібліотеку і отримуємо її дескриптор:
   MyH:= LoadLibrary(libPath);
   // Виходимо, якщо помилка:
   if MyH = 0 then begin
-    ShowMessage('Помилка відкривання бібліотеки MyFirstDLL');
+    ShowMessage('Помилка відкривання бібліотеки FirstDLL');
     Exit;
   end;
   // Отримуємо адрес потрібної функції:
@@ -77,48 +81,48 @@ begin
   // Якщо функція прочиталася, рахуємо, інакше виходимо:
   if @BeforeBirthday <> nil then
     ShowMessage('До дня народження залишилось ' +
-    IntToStr(BeforeBirthday(DE1.Date)) + ' днів')
+    IntToStr(BeforeBirthday(deBirthday.Date)) + ' днів')
   else ShowMessage('Потрібна функція відсутня в бібліотеці');
   // Вивантажуємо бібліотеку із пам'яті:
   FreeLibrary(MyH);
 end;
 
-procedure TfMain.bCodeClick(Sender: TObject);
+procedure TfMain.btnCodeClick(Sender: TObject);
 begin
   // Виходимо, якщо пусто:
-  if eCode.Text = '' then Exit;
+  if edtText.Text = '' then Exit;
   // Відкриваємо бібліотеку і отримуємо її дескриптор:
   MyH:= LoadLibrary(libPath);
   // Виходимо, якщо помилка:
   if MyH = 0 then begin
-    ShowMessage('Помилка відкривання бібліотеки MyFirstDLL');
+    ShowMessage('Помилка відкривання бібліотеки FirstDLL');
     Exit;
   end;
   // Отримуємо адрес потрібної функції:
   Code:= TCode(GetProcAddress(MyH, 'Code'));
   // Якщо функція прочиталася, рахуємо, інакше виходимо:
-  if @Code <> nil then eCode.Text:= Code(PChar(eCode.Text), 10)
+  if @Code <> nil then edtText.Text:= Code(PChar(edtText.Text), 10)
   else ShowMessage('Потрібна функція відсутня в бібліотеці');
   // Вивантажуємо бібліотеку із пам'яті:
   FreeLibrary(MyH);
 end;
 
-procedure TfMain.bRomToArClick(Sender: TObject);
+procedure TfMain.btnRomToArClick(Sender: TObject);
 begin
   // Виходимо, якщо пусто:
-  if eNumbers.Text = '' then Exit;
+  if endNum.Text = '' then Exit;
   // Відкриваємо бібліотеку і отримуємо її дескриптор:
   MyH:= LoadLibrary(libPath);
   // Виходимо, якщо помилка:
   if MyH = 0 then begin
-    ShowMessage('Помилка відкривання бібліотеки MyFirstDLL');
+    ShowMessage('Помилка відкривання бібліотеки FirstDLL');
     Exit;
   end;
   // Отримуємо адрес потрібної функції:
   RomToAr:= TRomToAr(GetProcAddress(MyH, 'RomToAr'));
   // Якщо функція прочиталася, рахуємо, інакше виходимо:
   if @RomToAr <> nil then
-    eNumbers.Text:= IntToStr(RomToAr(PChar(eNumbers.Text)))
+    endNum.Text:= IntToStr(RomToAr(PChar(endNum.Text)))
   else ShowMessage('Потрібна функція відсутня в бібліотеці');
   // Вивантажуємо бібліотеку із пам'яті:
   FreeLibrary(MyH);
@@ -129,21 +133,21 @@ begin
   libPath:= ExtractFilePath(ParamStr(0)) + libname;
 end;
 
-procedure TfMain.bArToRomClick(Sender: TObject);
+procedure TfMain.btnArToRomClick(Sender: TObject);
 begin
   // Виходимо, якщо пусто:
-  if eNumbers.Text = '' then Exit;
+  if endNum.Text = '' then Exit;
   // Відкриваємо бібліотеку і отримуємо її дескриптор:
   MyH:= LoadLibrary(libPath);
   // Виходимо, якщо помилка:
   if MyH = 0 then begin
-    ShowMessage('Помилка відкривання бібліотеки MyFirstDLL');
+    ShowMessage('Помилка відкривання бібліотеки FirstDLL');
     Exit;
   end;
   // Отримуємо адрес потрібної функції:
   ArToRom:= TArToRom(GetProcAddress(MyH, 'ArToRom'));
   // Якщо функція прочиталася, рахуємо, інакше виходимо:
-  if @ArToRom <> nil then eNumbers.Text:= ArToRom(StrToInt(eNumbers.Text))
+  if @ArToRom <> nil then endNum.Text:= ArToRom(StrToInt(endNum.Text))
   else ShowMessage('Потрібна функція відсутня в бібліотеці');
   // Вивантажуємо бібліотеку із пам'яті:
   FreeLibrary(MyH);
