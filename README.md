@@ -134,8 +134,8 @@
         <!-- Folder Management -->
         <tr> <td>Folder Management</td>
              <td>Управління директоріями</td> </tr>
-        <tr> <td>&#9672; <a href="/22_Folder_Management/01">01</a></td>
-             <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/22_Folder_Management/01">StrList</a></td>
+             <td>Приклад використання TStringList та управління директоріями</td> </tr>
         <!-- Files -->
         <tr> <td>Files</td>
              <td>Файли</td> </tr>
