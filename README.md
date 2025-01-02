@@ -148,8 +148,8 @@
         <!-- Records And Variant -->
         <tr> <td>Records And Variant</td>
              <td>Записи та варіанти</td> </tr>
-        <tr> <td>&#9672; <a href="/24_Records_And_Variant/01">01</a></td>
-             <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/24_Records_And_Variant/01">RecordFile</a></td>
+             <td>Приклад роботи із записами</td> </tr>
         <tr> <td>&#9672; <a href="/24_Records_And_Variant/02">02</a></td>
              <td> ... </td> </tr>
         <tr> <td>&#9672; <a href="/24_Records_And_Variant/03">03</a></td>
