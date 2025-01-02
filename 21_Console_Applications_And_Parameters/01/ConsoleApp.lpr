@@ -1,4 +1,4 @@
-program Application;
+program ConsoleApp;
 
 {$mode objfpc}{$H+}
 
@@ -6,23 +6,22 @@ uses
   {$IFDEF UNIX}
   cthreads,
   {$ENDIF}
-  Classes, sysutils
-  { you can add units after this };
+  Classes, SysUtils, LazUTF8;
 
 var
   a, b: Integer;
 begin
   // Якщо параметрів взагалі немає:
   if ParamCount = 0 then begin
-    Write('Введіть перше ціле число: ');
+    Write(UTF8ToConsole('Введіть перше ціле число: '));
     ReadLn(a);
-    Write('Введіть друге ціле число: ');
+    Write(UTF8ToConsole('Введіть друге ціле число: '));
     ReadLn(b);
   end
   // Якщо тільки один параметр:
   else if ParamCount = 1 then begin
     a:= StrToInt(ParamStr(1));
-    Write('Введіть ціле число: ');
+    Write(UTF8ToConsole('Введіть ціле число: '));
     ReadLn(b);
   end
   // Якщо параметрів більше одного:
@@ -31,9 +30,9 @@ begin
     b:= StrToInt(ParamStr(2));
   end;
   // Тепер виведення результатів:
-  WriteLn('Всього параметрів: ' + IntToStr(ParamCount));
-  WriteLn('Запущена програма: ' + ParamStr(0));
-  WriteLn('Змінна a = ', a, '; змінна b = ', b);
+  WriteLn(UTF8ToConsole('Всього параметрів: ') + IntToStr(ParamCount));
+  WriteLn(UTF8ToConsole('Запущена програма: ') + ParamStr(0));
+  WriteLn(UTF8ToConsole('Змінна a = '), a, UTF8ToConsole('; змінна b = '), b);
   ReadLn;
 end.
 

@@ -129,8 +129,8 @@
         <!-- Console Applications And Parameters -->
         <tr> <td>Console Applications And Parameters</td>
              <td>Консольні програми і параметри</td> </tr>
-        <tr> <td>&#9672; <a href="/21_Console_Applications_And_Parameters/01">01</a></td>
-             <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/21_Console_Applications_And_Parameters/01">ConsoleApp</a></td>
+             <td>Приклад написання консольної програми</td> </tr>
         <!-- Folder Management -->
         <tr> <td>Folder Management</td>
              <td>Управління директоріями</td> </tr>
