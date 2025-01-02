@@ -1,0 +1,22 @@
+object fMain: TfMain
+  Left = 244
+  Height = 104
+  Top = 250
+  Width = 305
+  BorderStyle = bsDialog
+  Caption = 'Використання варіантів'
+  ClientHeight = 104
+  ClientWidth = 305
+  object btnTest: TButton
+    Left = 32
+    Height = 49
+    Top = 28
+    Width = 240
+    Caption = 'Тест'
+    Font.Height = -21
+    Font.Name = 'Sans'
+    ParentFont = False
+    TabOrder = 0
+    OnClick = btnTestClick
+  end
+end
