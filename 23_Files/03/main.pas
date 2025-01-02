@@ -13,12 +13,12 @@ type
   { TfMain }
 
   TfMain = class(TForm)
-    Button1: TButton;
-    DE: TDirectoryEdit;
-    FNE: TFileNameEdit;
-    Label1: TLabel;
-    Label2: TLabel;
-    procedure Button1Click(Sender: TObject);
+    btnCopy: TButton;
+    deCopyPath: TDirectoryEdit;
+    fneOriginalFile: TFileNameEdit;
+    lblOriginalFile: TLabel;
+    lblCopyPath: TLabel;
+    procedure btnCopyClick(Sender: TObject);
   private
 
   public
@@ -34,29 +34,31 @@ implementation
 
 { TfMain }
 
-procedure TfMain.Button1Click(Sender: TObject);
+procedure TfMain.btnCopyClick(Sender: TObject);
 var
-  fIn, fOut: File; // нетипізовані файли: оригінал і копія
-  NumRead, NumWritten: Word; // кількість зчитаних і записаних байт
+  fIn, fOut: File;             // бінарні файли: оригінал і копія
+  NumRead:    Word = 0;        // кількість зчитаних байт
+  NumWritten: Word = 0;        // кількість записаних байт
   Buf: Array[1..2048] of Byte; // буфер
 begin
+  Buf[1]:= 0; // задаємо перший елемент, щоб не було попередження компілятора
   // Якщо файл не вибраний, відображаємо повідомлення і виходимо:
-  if FNE.Text = '' then begin
+  if fneOriginalFile.Text = '' then begin
     ShowMessage('Увага! Потрібно вказати або вибрати файл для копіювання');
-    FNE.SetFocus;
+    fneOriginalFile.SetFocus;
     Exit;
   end;
   // Якщо директорія не вибрана, відображаємо повідомлення і виходимо:
-  if DE.Text = '' then begin
+  if deCopyPath.Text = '' then begin
     ShowMessage('Увага! Потрібно вказати або вибрати директорію для копії');
-    DE.SetFocus;
+    deCopyPath.SetFocus;
     Exit;
   end;
   // Починаємо роботу з файлами:
   try
-    AssignFile(fIn, UTF8ToSys(FNE.FileName));
-    AssignFile(fOut, UTF8ToSys(DE.Directory + DirectorySeparator +
-                     ExtractFileName(FNE.FileName)));
+    AssignFile(fIn, UTF8ToSys(fneOriginalFile.FileName));
+    AssignFile(fOut, UTF8ToSys(deCopyPath.Directory + DirectorySeparator +
+                     ExtractFileName(fneOriginalFile.FileName)));
     Reset(fIn, 1);
     Rewrite(fOut, 1);
     // Змінюємо курсор на пісочний годинник:

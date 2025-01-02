@@ -143,8 +143,8 @@
              <td>Приклад роботи із текстовими файлами</td> </tr>
         <tr> <td>&#9672; <a href="/23_Files/02">TypedFile</a></td>
              <td>Приклад роботи із типізованими файлами</td> </tr>
-        <tr> <td>&#9672; <a href="/23_Files/03">03</a></td>
-             <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/23_Files/03">BinaryFile</a></td>
+             <td>Приклад роботи із бінарними файлами</td> </tr>
         <!-- Records And Variant -->
         <tr> <td>Records And Variant</td>
              <td>Записи та варіанти</td> </tr>

@@ -1,4 +1,4 @@
-program FileCopier;
+program BinaryFile;
 
 {$mode objfpc}{$H+}
 
