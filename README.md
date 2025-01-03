@@ -171,8 +171,8 @@
         <!-- Testing And Debugging -->
         <tr> <td>Testing And Debugging</td>
              <td>Тестування та налагоджування</td> </tr>
-        <tr> <td>&#9672; <a href="/27_Testing_And_Debugging/01">01</a></td>
-             <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/27_Testing_And_Debugging/01">TestAndDebug</a></td>
+             <td>Приклад тестування та налагоджування проекту</td> </tr>
         <!-- Help System Development -->
         <tr> <td>Help System Development</td>
              <td>Розробка довідкової системи</td> </tr>
