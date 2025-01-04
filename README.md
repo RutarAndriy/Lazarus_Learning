@@ -181,8 +181,8 @@
         <!-- Installer Creating -->
         <tr> <td>Installer Creating</td>
              <td>Створення інсталятора</td> </tr>
-        <tr> <td>&#9672; <a href="/29_Installer_Creating/01">01</a></td>
-             <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/29_Installer_Creating/01">CodeBook</a></td>
+             <td>Приклад створення інсталятора для ОС Windows</td> </tr>
         <!-- Additional Examples -->
         <tr> <td>Additional Examples</td>
              <td>Додаткові приклади</td> </tr>
