@@ -8,7 +8,7 @@ object fAbout: TfAbout
   ClientHeight = 246
   ClientWidth = 320
   Position = poMainFormCenter
-  object Panel1: TPanel
+  object pnlMain: TPanel
     Left = 8
     Height = 192
     Top = 8
@@ -17,7 +17,7 @@ object fAbout: TfAbout
     ClientHeight = 192
     ClientWidth = 304
     TabOrder = 0
-    object Label1: TLabel
+    object lblTitle: TLabel
       Left = 52
       Height = 23
       Top = 8
@@ -27,7 +27,7 @@ object fAbout: TfAbout
       Font.Name = 'Sans'
       ParentFont = False
     end
-    object Label2: TLabel
+    object lblCopyright: TLabel
       Left = 8
       Height = 18
       Top = 40
@@ -38,7 +38,7 @@ object fAbout: TfAbout
       Font.Style = [fsItalic]
       ParentFont = False
     end
-    object Memo1: TMemo
+    object memText: TMemo
       Left = 8
       Height = 120
       Top = 64
@@ -50,7 +50,7 @@ object fAbout: TfAbout
       TabOrder = 0
     end
   end
-  object BitBtn1: TBitBtn
+  object btnOk: TBitBtn
     Left = 123
     Height = 30
     Top = 208

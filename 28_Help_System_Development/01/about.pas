@@ -13,11 +13,11 @@ type
   { TfAbout }
 
   TfAbout = class(TForm)
-    BitBtn1: TBitBtn;
-    Label1: TLabel;
-    Label2: TLabel;
-    Memo1: TMemo;
-    Panel1: TPanel;
+    btnOk: TBitBtn;
+    lblTitle: TLabel;
+    lblCopyright: TLabel;
+    memText: TMemo;
+    pnlMain: TPanel;
   private
 
   public

@@ -14,65 +14,65 @@ type
   { TfMain }
 
   TfMain = class(TForm)
-    CD: TColorDialog;
-    FD: TFontDialog;
-    FileMenu: TMenuItem;
-    FileCreate: TMenuItem;
-    FileOpen: TMenuItem;
-    FileSave: TMenuItem;
-    FileSaveAs: TMenuItem;
-    FileExit: TMenuItem;
-    EditMenu: TMenuItem;
-    EditUndo: TMenuItem;
-    EditCut: TMenuItem;
-    EditCopy: TMenuItem;
-    EditPaste: TMenuItem;
-    EditDelete: TMenuItem;
-    EditSelectAll: TMenuItem;
-    FormatMenu: TMenuItem;
-    FormatFont: TMenuItem;
-    FormatColor: TMenuItem;
-    FormatWordWrap: TMenuItem;
-    CoderMenu: TMenuItem;
-    CoderCode: TMenuItem;
-    CoderDecode: TMenuItem;
-    HelpMenu: TMenuItem;
-    HelpAbout: TMenuItem;
-    FileStat: TMenuItem;
-    EditRedo: TMenuItem;
-    HelpHelp: TMenuItem;
-    N4: TMenuItem;
-    N3: TMenuItem;
-    N2: TMenuItem;
-    N1: TMenuItem;
-    MM: TMainMenu;
-    Memo1: TMemo;
-    OD: TOpenDialog;
-    SD: TSaveDialog;
-    N5: TMenuItem;
-    procedure CoderCodeClick(Sender: TObject);
-    procedure CoderDecodeClick(Sender: TObject);
-    procedure EditRedoClick(Sender: TObject);
-    procedure EditUndoClick(Sender: TObject);
-    procedure EditCopyClick(Sender: TObject);
-    procedure EditCutClick(Sender: TObject);
-    procedure EditDeleteClick(Sender: TObject);
-    procedure EditPasteClick(Sender: TObject);
-    procedure EditSelectAllClick(Sender: TObject);
-    procedure FileCreateClick(Sender: TObject);
-    procedure FileExitClick(Sender: TObject);
-    procedure FileOpenClick(Sender: TObject);
-    procedure FileSaveAsClick(Sender: TObject);
-    procedure FileSaveClick(Sender: TObject);
-    procedure FileStatClick(Sender: TObject);
-    procedure FormatColorClick(Sender: TObject);
-    procedure FormatFontClick(Sender: TObject);
-    procedure FormatWordWrapClick(Sender: TObject);
+    clrDlg: TColorDialog;
+    fntDlg: TFontDialog;
+    mFileMenu: TMenuItem;
+    mFileCreate: TMenuItem;
+    mFileOpen: TMenuItem;
+    mFileSave: TMenuItem;
+    mFileSaveAs: TMenuItem;
+    mFileExit: TMenuItem;
+    mEditMenu: TMenuItem;
+    mEditUndo: TMenuItem;
+    mEditCut: TMenuItem;
+    mEditCopy: TMenuItem;
+    mEditPaste: TMenuItem;
+    mEditDelete: TMenuItem;
+    mEditSelectAll: TMenuItem;
+    mFormatMenu: TMenuItem;
+    mFormatFont: TMenuItem;
+    mFormatColor: TMenuItem;
+    mFormatWordWrap: TMenuItem;
+    mCoderMenu: TMenuItem;
+    mCoderCode: TMenuItem;
+    mCoderDecode: TMenuItem;
+    mHelpMenu: TMenuItem;
+    mHelpAbout: TMenuItem;
+    mFileStat: TMenuItem;
+    mEditRedo: TMenuItem;
+    mHelpHelp: TMenuItem;
+    sepFive: TMenuItem;
+    sepFour: TMenuItem;
+    sepThree: TMenuItem;
+    sepTwo: TMenuItem;
+    mMenu: TMainMenu;
+    memNotebook: TMemo;
+    opnDlg: TOpenDialog;
+    savDlg: TSaveDialog;
+    sepOne: TMenuItem;
+    procedure mCoderCodeClick(Sender: TObject);
+    procedure mCoderDecodeClick(Sender: TObject);
+    procedure mEditRedoClick(Sender: TObject);
+    procedure mEditUndoClick(Sender: TObject);
+    procedure mEditCopyClick(Sender: TObject);
+    procedure mEditCutClick(Sender: TObject);
+    procedure mEditDeleteClick(Sender: TObject);
+    procedure mEditPasteClick(Sender: TObject);
+    procedure mEditSelectAllClick(Sender: TObject);
+    procedure mFileCreateClick(Sender: TObject);
+    procedure mFileExitClick(Sender: TObject);
+    procedure mFileOpenClick(Sender: TObject);
+    procedure mFileSaveAsClick(Sender: TObject);
+    procedure mFileSaveClick(Sender: TObject);
+    procedure mFileStatClick(Sender: TObject);
+    procedure mFormatColorClick(Sender: TObject);
+    procedure mFormatFontClick(Sender: TObject);
+    procedure mFormatWordWrapClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormCreate(Sender: TObject);
-    procedure HelpAboutClick(Sender: TObject);
-    procedure HelpHelpClick(Sender: TObject);
-    procedure Memo1Change(Sender: TObject);
+    procedure mHelpAboutClick(Sender: TObject);
+    procedure mHelpHelpClick(Sender: TObject);
+    procedure memNotebookChange(Sender: TObject);
   private
 
   public
@@ -80,11 +80,11 @@ type
   end;
 
 const
-  historyLimit = 25;
+  historyLimit = 25;        // ліміт історії
 var
-  fMain: TfMain; // головна форма
+  fMain: TfMain;            // головна форма
   history: array of String; // масив історії
-  historyIndex: Integer; // індекс історії
+  historyIndex: Integer;    // індекс історії
   historyUndoRedo: Boolean; // вказує на перехід вперед/назад по історії
 
 implementation
@@ -138,58 +138,64 @@ begin
   Result:= Cipher(decryptedText, key);
 end;
 
-procedure TfMain.FormatWordWrapClick(Sender: TObject);
+// Зміна властивості "перенесення слів"
+procedure TfMain.mFormatWordWrapClick(Sender: TObject);
 begin
   // Змінюємо меню:
-  FormatWordWrap.Checked:= not FormatWordWrap.Checked;
-  // Присвоюємо налаштування Memo1:
-  Memo1.WordWrap:= FormatWordWrap.Checked;
+  mFormatWordWrap.Checked:= not mFormatWordWrap.Checked;
+  // Присвоюємо налаштування memNotebook:
+  memNotebook.WordWrap:= mFormatWordWrap.Checked;
   // Якщо перенесення по словах увімкнене, потрібна тільки вертикальна
   // смуга прокрутки, інакше потрібні обидві смуги:
-  if Memo1.WordWrap then Memo1.ScrollBars:= ssAutoVertical
-  else Memo1.ScrollBars:= ssAutoBoth;
+  if memNotebook.WordWrap then memNotebook.ScrollBars:= ssAutoVertical
+  else memNotebook.ScrollBars:= ssAutoBoth;
 end;
 
+// Закриття форми:
 procedure TfMain.FormClose(Sender: TObject; var CloseAction: TCloseAction);
 begin
-  // Якщо є зміни тексту, запитаємо користувача, чи не хоче він їх зберегти
-  if Memo1.Modified then begin
+  // Якщо є зміни тексту, запитаємо користувача, чи не хоче він їх зберегти:
+  if memNotebook.Modified then begin
     // Якщо користувач згідний зберегти зміни:
     if MessageDlg('Збереження файлу',
                   'Поточний файл був змінений. Зберегти зміни?',
                   mtConfirmation, [mbYes, mbNo], 0) = mrYes then
-                    FileSaveClick(Sender);
+                  mFileSaveClick(Sender);
   end; // if
 end;
 
+// Створення форми:
 procedure TfMain.FormCreate(Sender: TObject);
 begin
-  // Ініціалізуємо масив історії
+  // Ініціалізуємо масив історії:
   SetLength(history, 1);
-  // Ініціалізуємо індекс історії
+  // Ініціалізуємо індекс історії:
   historyIndex:= 0;
-  // Ініціалізуємо змінну редагування історії
+  // Ініціалізуємо змінну редагування історії:
   historyUndoRedo:= False;
 end;
 
-procedure TfMain.HelpAboutClick(Sender: TObject);
+// Виклик меню "Довідка -> Про програму":
+procedure TfMain.mHelpAboutClick(Sender: TObject);
 begin
   fAbout.ShowModal;
 end;
 
-procedure TfMain.HelpHelpClick(Sender: TObject);
+// Виклик меню "Довідка -> Довідка":
+procedure TfMain.mHelpHelpClick(Sender: TObject);
 begin
-  {$ifdef windows}
+  {$IFDEF WINDOWS}
   // Викликаємо довідку на ОС Windows:
   WinExec('hh.exe CodeBook.chm', SW_SHOW);
-  {$else}
+  {$ELSE}
   // На інших ОС відображаємо повідомлення про помилку:
   ShowMessage('Довідка у форматі *.chm доступна' + #13 +
               'лише для ОС Windows');
-  {$endif}
+  {$ENDIF}
 end;
 
-procedure TfMain.Memo1Change(Sender: TObject);
+// Зміна тексту в полі введення:
+procedure TfMain.memNotebookChange(Sender: TObject);
 var
   historySize: Integer;
   i: Integer;
@@ -221,39 +227,42 @@ begin
     // Збільшуємо індекс історії:
     Inc(historyIndex, 1);
     // Присвоюємо дані новому елементу:
-    history[historySize]:= Memo1.Lines.Text;
+    history[historySize]:= memNotebook.Lines.Text;
     // Даємо можливість відмінити зміни:
-    EditUndo.Enabled:= True;
+    mEditUndo.Enabled:= True;
   end;
 
   // Рахуємо символи:
-  fStats.CharsCount.Caption:= IntToStr(UTF8Length(Memo1.Text));
+  fStats.lblCharsCount.Caption:= IntToStr(UTF8Length(memNotebook.Text));
   // Рахуємо слова:
-  fStats.WordsCount.Caption:= IntToStr(WordCount(Memo1.Text, StdWordDelims));
+  fStats.lblWordsCount.Caption:= IntToStr(WordCount(memNotebook.Text,
+                                                    StdWordDelims));
   // Рахуємо рядки:
-  fStats.LinesCount.Caption:= IntToStr(Memo1.Lines.Count);
+  fStats.lblLinesCount.Caption:= IntToStr(memNotebook.Lines.Count);
 end;
 
-procedure TfMain.EditUndoClick(Sender: TObject);
+// Виклик меню "Правка -> Відмінити":
+procedure TfMain.mEditUndoClick(Sender: TObject);
 begin
   // Дана функція ще не реалізована для компонента TMemo:
-  // Memo1.Undo;
+  // memNotebook.Undo;
   // Задіємо власну реалізацію:
   if historyIndex > 0 then begin
     // Зменшуємо індекс історіх на одиницю:
     Dec(historyIndex, 1);
     // Якщо ми на початку історії, то відміна неможлива:
-    if historyIndex = 0 then EditUndo.Enabled:= False;
+    if historyIndex = 0 then mEditUndo.Enabled:= False;
     // Вказуємо на зміни:
     historyUndoRedo:= True;
-    EditRedo.Enabled:= True;
+    mEditRedo.Enabled:= True;
     // Вносимо зміни:
-    Memo1.Lines.Text:= history[historyIndex];
-    Memo1.SelStart:=Memo1.Lines.Text.Length;
+    memNotebook.Lines.Text:= history[historyIndex];
+    memNotebook.SelStart:=memNotebook.Lines.Text.Length;
   end;
 end;
 
-procedure TfMain.CoderCodeClick(Sender: TObject);
+// Виклик меню "Кодування -> Шифрувати":
+procedure TfMain.mCoderCodeClick(Sender: TObject);
 var
   key: String;
 begin
@@ -261,10 +270,11 @@ begin
   key:= '';
   if InputQuery('Ввід ключа', 'Введіть ключове слово (фразу):', key)
      and (key <> '') then
-       Memo1.Text:= Encrypt(Memo1.Text, key);
+       memNotebook.Text:= Encrypt(memNotebook.Text, key);
 end;
 
-procedure TfMain.CoderDecodeClick(Sender: TObject);
+// Виклик меню "Кодування -> Розшифрувати":
+procedure TfMain.mCoderDecodeClick(Sender: TObject);
 var
   key: String;
 begin
@@ -272,154 +282,172 @@ begin
   key:= '';
   if InputQuery('Ввід ключа', 'Введіть ключове слово (фразу):', key)
      and (key <> '') then
-       Memo1.Text:= Decrypt(Memo1.Text, key);
+       memNotebook.Text:= Decrypt(memNotebook.Text, key);
 end;
 
-procedure TfMain.EditRedoClick(Sender: TObject);
+// Виклик меню "Правка -> Повернути":
+procedure TfMain.mEditRedoClick(Sender: TObject);
 begin
   // Дана функція ще не реалізована для компонента TMemo:
-  // Memo1.Redo;
+  // memNotebook.Redo;
   // Задіємо власну реалізацію:
   if historyIndex < High(history) then begin
     // Збільшуємо індекс історіх на одиницю:
     Inc(historyIndex, 1);
     // Якщо ми на кінці історії, то повторення неможливе:
-    if historyIndex = Length(history) - 1 then EditRedo.Enabled:= False;
+    if historyIndex = Length(history) - 1 then mEditRedo.Enabled:= False;
     // Вказуємо на зміни:
     historyUndoRedo:= True;
-    EditUndo.Enabled:= True;
+    mEditUndo.Enabled:= True;
     // Вносимо зміни:
-    Memo1.Lines.Text:= history[historyIndex];
-    Memo1.SelStart:=Memo1.Lines.Text.Length;
+    memNotebook.Lines.Text:= history[historyIndex];
+    memNotebook.SelStart:=memNotebook.Lines.Text.Length;
   end;
 end;
 
-procedure TfMain.EditCopyClick(Sender: TObject);
+// Виклик меню "Правка -> Копіювати":
+procedure TfMain.mEditCopyClick(Sender: TObject);
 begin
-  Memo1.CopyToClipboard;
+  memNotebook.CopyToClipboard;
 end;
 
-procedure TfMain.EditCutClick(Sender: TObject);
+// Виклик меню "Правка -> Вирізати":
+procedure TfMain.mEditCutClick(Sender: TObject);
 begin
-  Memo1.CutToClipboard;
+  memNotebook.CutToClipboard;
 end;
 
-procedure TfMain.EditDeleteClick(Sender: TObject);
+// Виклик меню "Правка -> Видалити":
+procedure TfMain.mEditDeleteClick(Sender: TObject);
 begin
-  Memo1.ClearSelection;
+  memNotebook.ClearSelection;
 end;
 
-procedure TfMain.EditPasteClick(Sender: TObject);
+// Виклик меню "Правка -> Вставити":
+procedure TfMain.mEditPasteClick(Sender: TObject);
 begin
-  Memo1.PasteFromClipboard;
+  memNotebook.PasteFromClipboard;
 end;
 
-procedure TfMain.EditSelectAllClick(Sender: TObject);
+// Виклик меню "Правка -> Виділити все":
+procedure TfMain.mEditSelectAllClick(Sender: TObject);
 begin
-  Memo1.SelectAll;
+  memNotebook.SelectAll;
 end;
 
-procedure TfMain.FileCreateClick(Sender: TObject);
+// Виклик меню "Файл -> Створити":
+procedure TfMain.mFileCreateClick(Sender: TObject);
 begin
   // Якщо є зміни тексту, запитаємо користувача, чи не хоче він зберегти їх
-  // перед створенням нового тексту
-  if Memo1.Modified then begin
+  // перед створенням нового тексту:
+  if memNotebook.Modified then begin
     // Якщо користувач згідний зберегти зміни:
     if MessageDlg('Збереження файлу',
                   'Поточний файл був змінений. Зберегти зміни?',
                   mtConfirmation, [mbYes, mbNo], 0) = mrYes then
-                    FileSaveClick(Sender);
+                  mFileSaveClick(Sender);
   end; // if
-  // Тепер очищуємо Memo1, якщо є текст:
-  if Memo1.Text <> '' then Memo1.Clear;
+  // Тепер очищуємо memNotebook, якщо є текст:
+  if memNotebook.Text <> '' then memNotebook.Clear;
   // У SaveDialog забираємо ім'я файлу. Це буде означати, що файл не збережено:
-  SD.FileName:= '';
+  savDlg.FileName:= '';
 end;
 
-procedure TfMain.FileExitClick(Sender: TObject);
+// Виклик меню "Файл -> Вихід":
+procedure TfMain.mFileExitClick(Sender: TObject);
 begin
   Close;
 end;
 
-procedure TfMain.FileOpenClick(Sender: TObject);
+// Виклик меню "Файл -> Відкрити":
+procedure TfMain.mFileOpenClick(Sender: TObject);
+var
+  pos: Integer;
 begin
   // Перевірка необхідності збереження файлу, як у "Файл -> Створити":
-  if Memo1.Modified then Begin // зміни є
+  if memNotebook.Modified then Begin // зміни є
     // Якщо користувач згідний зберегти зміни:
     if MessageDlg('Збереження файлу',
                   'Поточний файл був змінений. Зберегти зміни?',
                   mtConfirmation, [mbYes, mbNo], 0) = mrYes then
-                    FileSaveClick(Sender);
+                  mFileSaveClick(Sender);
   end; // if
 
   // Очищуємо ім'я файлу в діалозі OpenDialog, змінюємо заголовок та
   // викликаємо метод LoadFromFile якщо діалог відбувся:
-  OD.FileName:= '';
-  OD.Title:= 'Відкрити існуючий файл';
-  if OD.Execute then begin
-    // Очищуємо Memo1 якщо є текст:
-    if Memo1.Text <> '' then Memo1.Clear;
+  opnDlg.FileName:= '';
+  opnDlg.Title:= 'Відкрити існуючий файл';
+  if opnDlg.Execute then begin
+    // Очищуємо memNotebook якщо є текст:
+    if memNotebook.Text <> '' then memNotebook.Clear;
     // Читаємо із файлу:
-    Memo1.Lines.LoadFromFile(UTF8ToSys(OD.FileName));
+    memNotebook.Lines.LoadFromFile(UTF8ToSys(opnDlg.FileName));
+    // Видаляємо символ/символи перенесення строки в кінці тексту:
+    memNotebook.Text:= TrimRight(memNotebook.Text);
     // Копіюємо ім'я файлу в діалог SaveDialog, щоб потім знати куди зберігати:
-    SD.FileName:= OD.FileName;
+    savDlg.FileName:= opnDlg.FileName;
   end; // if
 end;
 
-procedure TfMain.FileSaveAsClick(Sender: TObject);
+// Виклик меню "Файл -> Зберегти як ...":
+procedure TfMain.mFileSaveAsClick(Sender: TObject);
 begin
   // Переписуємо заголовок вікна діалогу, інакше він буде англійською
-  // мовою. Якщо збереження відбулося, то властивість Modified у Memo1
+  // мовою. Якщо збереження відбулося, то властивість Modified у memNotebook
   // змінюємо на False, оскільки всі зміни вже збережені:
-  SD.Title:= 'Зберегти як';
-  if SD.Execute then begin
-    Memo1.Lines.SaveToFile(UTF8ToSys(SD.FileName));
-    Memo1.Modified:= False;
+  savDlg.Title:= 'Зберегти як';
+  if savDlg.Execute then begin
+    memNotebook.Lines.SaveToFile(UTF8ToSys(savDlg.FileName));
+    memNotebook.Modified:= False;
   end;
 end;
 
-procedure TfMain.FileSaveClick(Sender: TObject);
+// Виклик меню "Файл -> Зберегти":
+procedure TfMain.mFileSaveClick(Sender: TObject);
 begin
   // Якщо ім'я файлу відомо, то не потрібно викликати діалог SaveDialog,
   // просто викликаємо метод SaveToFile:
-  if SD.FileName <> '' then begin
-    Memo1.Lines.SaveToFile(UTF8ToSys(SD.FileName));
+  if savDlg.FileName <> '' then begin
+    memNotebook.Lines.SaveToFile(UTF8ToSys(savDlg.FileName));
     // Встановлюємо значення Modified False, оскільки всі зміни вже збережені:
-    Memo1.Modified:= False;
+    memNotebook.Modified:= False;
   end // if
   // Інакше ім'я файлу не відомо, викликаємо "Зберегти як ...":
-  else FileSaveAsClick(Sender);
+  else mFileSaveAsClick(Sender);
 end;
 
-procedure TfMain.FileStatClick(Sender: TObject);
+// Виклик меню "Файл -> Статистика":
+procedure TfMain.mFileStatClick(Sender: TObject);
 begin
   fStats.Show;
 end;
 
-procedure TfMain.FormatColorClick(Sender: TObject);
+// Виклик меню "Формат -> Колір":
+procedure TfMain.mFormatColorClick(Sender: TObject);
 begin
-  // Спочатку задаємо колір діалогу, як у Memo1:
-  CD.Color:= Memo1.Font.Color;
+  // Спочатку задаємо колір діалогу, як у memNotebook:
+  clrDlg.Color:= memNotebook.Font.Color;
   // Задаємо заголовок:
-  CD.Title:= 'Вибір кольору';
-  // Якщо діалог завершився успішно, змінюємо колір шрифту у Memo1:
-  if CD.Execute then Memo1.Font.Color:= CD.Color;
+  clrDlg.Title:= 'Вибір кольору';
+  // Якщо діалог завершився успішно, змінюємо колір шрифту у memNotebook:
+  if clrDlg.Execute then memNotebook.Font.Color:= clrDlg.Color;
 end;
 
-procedure TfMain.FormatFontClick(Sender: TObject);
+// Виклик меню "Формат -> Шрифт":
+procedure TfMain.mFormatFontClick(Sender: TObject);
 var
   c: TColor;
 begin
-  // Отримуємо колір шришту
-  c:= Memo1.Font.Color;
-  // Спочатку діалогу присвоюємо шрифт як у Memo1:
-  FD.Font:= Memo1.Font;
+  // Отримуємо колір шришту:
+  c:= memNotebook.Font.Color;
+  // Спочатку діалогу присвоюємо шрифт як у memNotebook:
+  fntDlg.Font:= memNotebook.Font;
   // Задаємо заголовок:
-  FD.Title:= 'Вибір шрифту';
-  // Якщо діалог завершився успішно, змінюємо шрифт у Memo1:
-  if FD.Execute then begin
-    Memo1.Font:= FD.Font;
-    Memo1.Font.Color:= c;
+  fntDlg.Title:= 'Вибір шрифту';
+  // Якщо діалог завершився успішно, змінюємо шрифт у memNotebook:
+  if fntDlg.Execute then begin
+    memNotebook.Font:= fntDlg.Font;
+    memNotebook.Font.Color:= c;
   end;
 end;
 

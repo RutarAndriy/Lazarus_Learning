@@ -176,8 +176,8 @@
         <!-- Help System Development -->
         <tr> <td>Help System Development</td>
              <td>Розробка довідкової системи</td> </tr>
-        <tr> <td>&#9672; <a href="/28_Help_System_Development/01">01</a></td>
-             <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/28_Help_System_Development/01">CodeBook</a></td>
+             <td>Доопрацювання "CodeBook" - реалізовано весь функціонал програми</td> </tr>
         <!-- Installer Creating -->
         <tr> <td>Installer Creating</td>
              <td>Створення інсталятора</td> </tr>

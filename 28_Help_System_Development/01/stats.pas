@@ -12,14 +12,14 @@ type
   { TfStats }
 
   TfStats = class(TForm)
-    BitBtn1: TBitBtn;
-    Label1: TLabel;
-    Label2: TLabel;
-    Label3: TLabel;
-    LinesCount: TLabel;
-    WordsCount: TLabel;
-    CharsCount: TLabel;
-    procedure BitBtn1Click(Sender: TObject);
+    btnOk: TBitBtn;
+    lblLines: TLabel;
+    lblWords: TLabel;
+    lblChars: TLabel;
+    lblLinesCount: TLabel;
+    lblWordsCount: TLabel;
+    lblCharsCount: TLabel;
+    procedure btnOkClick(Sender: TObject);
   private
 
   public
@@ -35,7 +35,7 @@ implementation
 
 { TfStats }
 
-procedure TfStats.BitBtn1Click(Sender: TObject);
+procedure TfStats.btnOkClick(Sender: TObject);
 begin
   Close;
 end;

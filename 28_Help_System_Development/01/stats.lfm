@@ -8,49 +8,49 @@ object fStats: TfStats
   ClientHeight = 158
   ClientWidth = 221
   Position = poMainFormCenter
-  object Label1: TLabel
+  object lblLines: TLabel
     Left = 16
     Height = 16
     Top = 16
     Width = 43
     Caption = 'Рядків:'
   end
-  object Label2: TLabel
+  object lblWords: TLabel
     Left = 16
     Height = 16
     Top = 48
     Width = 29
     Caption = 'Слів:'
   end
-  object Label3: TLabel
+  object lblChars: TLabel
     Left = 16
     Height = 16
     Top = 80
     Width = 62
     Caption = 'Символів:'
   end
-  object LinesCount: TLabel
+  object lblLinesCount: TLabel
     Left = 136
     Height = 16
     Top = 16
     Width = 8
     Caption = '0'
   end
-  object WordsCount: TLabel
+  object lblWordsCount: TLabel
     Left = 136
     Height = 16
     Top = 48
     Width = 8
     Caption = '0'
   end
-  object CharsCount: TLabel
+  object lblCharsCount: TLabel
     Left = 136
     Height = 16
     Top = 80
     Width = 8
     Caption = '0'
   end
-  object BitBtn1: TBitBtn
+  object btnOk: TBitBtn
     Left = 73
     Height = 30
     Top = 112
@@ -58,7 +58,7 @@ object fStats: TfStats
     Caption = 'ОК'
     Kind = bkOK
     ModalResult = 1
-    OnClick = BitBtn1Click
+    OnClick = btnOkClick
     TabOrder = 0
   end
 end
