@@ -1,4 +1,4 @@
-program MyTemp;
+program NoteBook;
 
 {$mode objfpc}{$H+}
 

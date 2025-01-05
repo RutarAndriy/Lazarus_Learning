@@ -1,4 +1,4 @@
-program MyNotebook;
+program StrCollections;
 
 {$mode objfpc}{$H+}
 

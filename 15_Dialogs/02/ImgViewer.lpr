@@ -1,4 +1,4 @@
-program ImageViewer;
+program ImgViewer;
 
 {$mode objfpc}{$H+}
 

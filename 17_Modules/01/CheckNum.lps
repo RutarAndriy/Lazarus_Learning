@@ -7,9 +7,8 @@
       <Unit>
         <Filename Value="CheckNum.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="-1"/>
         <UsageCount Value="20"/>
-        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="main.pas"/>
@@ -29,8 +28,8 @@
         <Filename Value="numbers.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="Numbers"/>
-        <EditorIndex Value="2"/>
-        <TopLine Value="35"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="58"/>
         <CursorPos X="4" Y="29"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>

@@ -83,38 +83,38 @@
         <!-- Simple And Dynamic Arrays -->
         <tr> <td>Simple And Dynamic Arrays</td>
              <td>Прості та динамічні масиви</td> </tr>
-        <tr> <td>&#9672; <a href="/13_Simple_And_Dynamic_Arrays/01">MyTemp</a></td>
+        <tr> <td>&#9672; <a href="/13_Simple_And_Dynamic_Arrays/01">TempConvertor</a></td>
              <td>Написання програми "Конвертер температур""</td> </tr>
         <tr> <td>&#9672; <a href="/13_Simple_And_Dynamic_Arrays/02">DynArrays</a></td>
              <td>Приклад роботи із динамічними масивами</td> </tr>
         <!-- String Collections -->
         <tr> <td>String Collections</td>
              <td>Строкові колекції</td> </tr>
-        <tr> <td>&#9672; <a href="/14_String_Collections/01">MyNotebook</a></td>
-             <td>Написання простої програми "Мій записник"</td> </tr>
-        <tr> <td>&#9672; <a href="/14_String_Collections/02">MyStrings</a></td>
+        <tr> <td>&#9672; <a href="/14_String_Collections/01">NoteBook</a></td>
+             <td>Написання програми "Мій записник"</td> </tr>
+        <tr> <td>&#9672; <a href="/14_String_Collections/02">StrCollections</a></td>
              <td>Приклад використання TListBox та TComboBox</td> </tr>
         <!-- Dialogs -->
         <tr> <td>Dialogs</td>
              <td>Діалоги</td> </tr>
-        <tr> <td>&#9672; <a href="/15_Dialogs/01">MyNotebook</a></td>
-             <td>Доопрацювання "MyNotebook" - додано стандартні діалоги</td> </tr>
-        <tr> <td>&#9672; <a href="/15_Dialogs/02">ImageViewer</a></td>
+        <tr> <td>&#9672; <a href="/15_Dialogs/01">NoteBook</a></td>
+             <td>Доопрацювання "NoteBook" - додано стандартні діалоги</td> </tr>
+        <tr> <td>&#9672; <a href="/15_Dialogs/02">ImgViewer</a></td>
              <td>Написання програми для перегляду зображень</td> </tr>
         <!-- Menu And Toolbox -->
         <tr> <td>Menu And Toolbox</td>
              <td>Меню і панель інструментів</td> </tr>
-        <tr> <td>&#9672; <a href="/16_Menu_And_Toolbox/01">ImageViewer</a></td>
-             <td>Оновлення "ImageViewer" - додано меню і панель інструментів</td> </tr>
+        <tr> <td>&#9672; <a href="/16_Menu_And_Toolbox/01">ImgViewer</a></td>
+             <td>Доопрацювання "ImgViewer" - додано меню і панель інструментів</td> </tr>
         <!-- Modules -->
         <tr> <td>Modules</td>
              <td>Модулі</td> </tr>
         <tr> <td>&#9672; <a href="/17_Modules/01">CheckNum</a></td>
              <td>Приклад написання та використання модулів</td> </tr>
-        <!-- Codebook -->
-        <tr> <td>Codebook</td>
+        <!-- CodeBook -->
+        <tr> <td>CodeBook</td>
              <td>Записник-шифрувальник</td> </tr>
-        <tr> <td>&#9672; <a href="/18_Codebook/01">CodeBook</a></td>
+        <tr> <td>&#9672; <a href="/18_CodeBook/01">CodeBook</a></td>
              <td>Написання програми "Записник-шифрувальник"</td> </tr>
         <!-- Trees -->
         <tr> <td>Trees</td>

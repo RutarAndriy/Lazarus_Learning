@@ -5,12 +5,9 @@
     <BuildModes Active="Default"/>
     <Units>
       <Unit>
-        <Filename Value="MyTemp.lpr"/>
+        <Filename Value="TempConvertor.lpr"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <WindowIndex Value="-1"/>
-        <TopLine Value="-1"/>
-        <CursorPos X="-1" Y="-1"/>
         <UsageCount Value="20"/>
       </Unit>
       <Unit>

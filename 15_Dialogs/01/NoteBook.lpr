@@ -1,4 +1,4 @@
-program MyNotebook;
+program NoteBook;
 
 {$mode objfpc}{$H+}
 

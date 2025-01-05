@@ -1,4 +1,4 @@
-program MyStrings;
+program TempConvertor;
 
 {$mode objfpc}{$H+}
 

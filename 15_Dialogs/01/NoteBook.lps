@@ -5,12 +5,9 @@
     <BuildModes Active="Default"/>
     <Units>
       <Unit>
-        <Filename Value="MyNotebook.lpr"/>
+        <Filename Value="NoteBook.lpr"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <WindowIndex Value="-1"/>
-        <TopLine Value="-1"/>
-        <CursorPos X="-1" Y="-1"/>
         <UsageCount Value="22"/>
       </Unit>
       <Unit>
@@ -21,7 +18,7 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Main"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="30"/>
+        <TopLine Value="78"/>
         <CursorPos X="26" Y="87"/>
         <UsageCount Value="22"/>
         <Loaded Value="True"/>

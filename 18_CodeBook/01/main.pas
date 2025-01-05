@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, Menus,
-  LazUTF8, BlowFish;
+  LazUTF8;
 
 type
 
