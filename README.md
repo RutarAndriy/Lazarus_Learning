@@ -177,7 +177,7 @@
         <tr> <td>Help System Development</td>
              <td>Розробка довідкової системи</td> </tr>
         <tr> <td>&#9672; <a href="/28_Help_System_Development/01">CodeBook</a></td>
-             <td>Доопрацювання "CodeBook" - реалізовано весь функціонал програми</td> </tr>
+             <td>Доопрацювання "CodeBook" - реалізовано весь функціонал</td> </tr>
         <!-- Installer Creating -->
         <tr> <td>Installer Creating</td>
              <td>Створення інсталятора</td> </tr>
@@ -186,14 +186,26 @@
         <!-- Additional Examples -->
         <tr> <td>Additional Examples</td>
              <td>Додаткові приклади</td> </tr>
-        <tr> <td>&#9672; <a href="/30_Additional_Examples/01">01</a></td>
-             <td> ... </td> </tr>
-        <tr> <td>&#9672; <a href="/30_Additional_Examples/02">02</a></td>
-             <td> ... </td> </tr>
-        <tr> <td>&#9672; <a href="/30_Additional_Examples/03">03</a></td>
-             <td> ... </td> </tr>
-        <tr> <td>&#9672; <a href="/30_Additional_Examples/04">04</a></td>
-             <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/30_Additional_Examples/01">IntVsReal</a></td>
+             <td>Приклад роботи із цілими та дробовими числами</td> </tr>
+        <tr> <td>&#9672; <a href="/30_Additional_Examples/02">BasicTypes</a></td>
+             <td>Приклад використання базових типів даних</td> </tr>
+        <tr> <td>&#9672; <a href="/30_Additional_Examples/03">IOCheck</a></td>
+             <td>Приклад переопреділення стандартного контролю воду</td> </tr>
+        <tr> <td>&#9672; <a href="/30_Additional_Examples/04">StaticVar</a></td>
+             <td>Приклад використання "статичних" змінних</td> </tr>
+        <tr> <td>&#9672; <a href="/30_Additional_Examples/05">Labels</a></td>
+             <td>Приклад використання міток</td> </tr>
+        <tr> <td>&#9672; <a href="/30_Additional_Examples/06">Rainbow</a></td>
+             <td>Приклад створення "кольорової" консольної програми</td> </tr>
+        <tr> <td>&#9672; <a href="/30_Additional_Examples/07">ClassExample</a></td>
+             <td>Приклад створення та використання класів</td> </tr>
+        <tr> <td>&#9672; <a href="/30_Additional_Examples/08">Sleep</a></td>
+             <td>Приклад "зависання" інтерфейсу програми</td> </tr>
+        <tr> <td>&#9672; <a href="/30_Additional_Examples/09">ResizableForm</a></td>
+             <td>Приклад форми зі змінним розміром</td> </tr>
+        <tr> <td>&#9672; <a href="/30_Additional_Examples/10">LikeLazarus</a></td>
+             <td>Приклад малювання на формі</td> </tr>
         <!-- Snowfall -->
         <tr> <td>Snowfall</td>
              <td>Снігопад</td> </tr>
@@ -215,28 +227,10 @@
              <td> ... </td> </tr>
         <tr> <td>&#9672; <a href="/33_Execute_External_Programs/04">04</a></td>
              <td> ... </td> </tr>
-        <!-- Other Examples -->
-        <tr> <td>Other Examples</td>
+        <!-- Fly Problem -->
+        <tr> <td>Fly Problem</td>
              <td>Інші приклади</td> </tr>
-        <tr> <td>&#9672; <a href="/34_Other_Examples/01">01</a></td>
-             <td> ... </td> </tr>
-        <tr> <td>&#9672; <a href="/34_Other_Examples/02">02</a></td>
-             <td> ... </td> </tr>
-        <tr> <td>&#9672; <a href="/34_Other_Examples/03">03</a></td>
-             <td> ... </td> </tr>
-        <tr> <td>&#9672; <a href="/34_Other_Examples/04">04</a></td>
-             <td> ... </td> </tr>
-        <tr> <td>&#9672; <a href="/34_Other_Examples/05">05</a></td>
-             <td> ... </td> </tr>
-        <tr> <td>&#9672; <a href="/34_Other_Examples/06">06</a></td>
-             <td> ... </td> </tr>
-        <tr> <td>&#9672; <a href="/34_Other_Examples/07">07</a></td>
-             <td> ... </td> </tr>
-        <tr> <td>&#9672; <a href="/34_Other_Examples/08">08</a></td>
-             <td> ... </td> </tr>
-        <tr> <td>&#9672; <a href="/34_Other_Examples/09">09</a></td>
-             <td> ... </td> </tr>
-        <tr> <td>&#9672; <a href="/34_Other_Examples/10">10</a></td>
+        <tr> <td>&#9672; <a href="/34_Fly_Problem/01">FlyProblem</a></td>
              <td> ... </td> </tr>
     </tbody>
 </table>

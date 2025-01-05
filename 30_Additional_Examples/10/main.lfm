@@ -1,0 +1,29 @@
+object fMain: TfMain
+  Left = 474
+  Height = 400
+  Top = 234
+  Width = 400
+  BorderIcons = [biSystemMenu, biMaximize]
+  Caption = 'I ♥ Lazarus'
+  ClientHeight = 400
+  ClientWidth = 400
+  Color = clBlack
+  Constraints.MinHeight = 50
+  Constraints.MinWidth = 50
+  Position = poScreenCenter
+  object pbMain: TPaintBox
+    Left = 0
+    Height = 400
+    Top = 0
+    Width = 400
+    Align = alClient
+    OnClick = pbMainClick
+    OnPaint = pbMainPaint
+  end
+  object tUpdate: TTimer
+    Interval = 10
+    OnTimer = tUpdateTimer
+    Left = 104
+    Top = 65448
+  end
+end
