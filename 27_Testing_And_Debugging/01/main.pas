@@ -37,7 +37,7 @@ begin
   // Створюємо список рядків:
   st:= TStringList.Create;
   try
-    // Генеруємо список:
+    // Генеруємо список для налагоджування:
     for i:= -3 to 3 do begin
       st.Append('10/' + IntToStr(i) + '=' + FloatToStr(10 / i));
     end;

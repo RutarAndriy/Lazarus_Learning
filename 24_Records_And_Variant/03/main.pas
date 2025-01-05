@@ -55,7 +55,7 @@ end;
 
 procedure TfMain.btnAddClick(Sender: TObject);
 var
-  s: String;
+  s: String = '';
 begin
   if InputQuery('Вкажіть нове ім''я',
      'Впишіть прізвище, ім''я та по-батькові у форматі "Прізвище І.П."',

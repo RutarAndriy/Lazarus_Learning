@@ -45,11 +45,11 @@ type
   TRomToAr = function(s: PChar): Integer; stdcall;
 
 const
-{$ifdef windows}
+{$IFDEF WINDOWS}
   libname = 'FirstDLL.dll';
-{$else}
+{$ELSE}
   libname = 'libfirstdll.so';
-{$endif}
+{$ENDIF}
 var
   fMain: TfMain;
   Code: TCode;

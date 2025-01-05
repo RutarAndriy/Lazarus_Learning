@@ -12,14 +12,14 @@ type
   { TfEdit }
 
   TfEdit = class(TForm)
-    bSave: TBitBtn;
-    bCancel: TBitBtn;
-    CBNote: TComboBox;
-    ePhone: TEdit;
-    eName: TEdit;
-    Label1: TLabel;
-    Label2: TLabel;
-    Label3: TLabel;
+    btnSave: TBitBtn;
+    btnCancel: TBitBtn;
+    cbType: TComboBox;
+    edtPhone: TEdit;
+    edtName: TEdit;
+    lblName: TLabel;
+    lblPhone: TLabel;
+    lblType: TLabel;
     procedure FormShow(Sender: TObject);
   private
 
@@ -38,7 +38,7 @@ implementation
 
 procedure TfEdit.FormShow(Sender: TObject);
 begin
-  eName.SetFocus;
+  edtName.SetFocus;
 end;
 
 end.

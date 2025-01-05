@@ -9,7 +9,7 @@ object fMain: TfMain
   ClientWidth = 506
   OnCreate = FormCreate
   Position = poDesktopCenter
-  LCLVersion = '3.4.0.0'
+  LCLVersion = '3.6.0.0'
   object lblBirthday: TLabel
     Left = 8
     Height = 16

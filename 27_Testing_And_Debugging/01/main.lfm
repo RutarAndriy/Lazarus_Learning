@@ -7,6 +7,7 @@ object fMain: TfMain
   Caption = 'Тестування на налогоджування'
   ClientHeight = 216
   ClientWidth = 336
+  LCLVersion = '3.6.0.0'
   object btnTest: TButton
     Left = 8
     Height = 201

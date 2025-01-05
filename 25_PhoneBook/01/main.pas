@@ -51,21 +51,21 @@ implementation
 procedure TfMain.btnAddClick(Sender: TObject);
 begin
   // Очищуємо поля, якщо там що-небуть є:
-  fEdit.eName.Text:= '';
-  fEdit.ePhone.Text:= '';
+  fEdit.edtName.Text:= '';
+  fEdit.edtPhone.Text:= '';
   // Встановлюємо ModalResult редактора в mrNone:
   fEdit.ModalResult:= mrNone;
   // Тепер виводимо форму:
   fEdit.ShowModal;
   // Якщо користувач нічого не ввів - виходимо:
-  if (fEdit.eName.Text= '') or (fEdit.ePhone.Text= '') then Exit;
+  if (fEdit.edtName.Text= '') or (fEdit.edtPhone.Text= '') then Exit;
   // Якщо користувач не натиснув "Зберегти" - виходимо:
   if fEdit.ModalResult <> mrOk then Exit;
   // Інакше додаємо в сітку рядок, та заповнюємо його:
   sgView.RowCount:= sgView.RowCount + 1;
-  sgView.Cells[0, sgView.RowCount-1]:= fEdit.eName.Text;
-  sgView.Cells[1, sgView.RowCount-1]:= fEdit.ePhone.Text;
-  sgView.Cells[2, sgView.RowCount-1]:= fEdit.CBNote.Text;
+  sgView.Cells[0, sgView.RowCount-1]:= fEdit.edtName.Text;
+  sgView.Cells[1, sgView.RowCount-1]:= fEdit.edtPhone.Text;
+  sgView.Cells[2, sgView.RowCount-1]:= fEdit.cbType.Text;
 end;
 
 procedure TfMain.btnDelClick(Sender: TObject);
@@ -85,18 +85,18 @@ begin
   // Якщо даних в сітці немає - просто виходимо:
   if sgView.RowCount = 1 then Exit;
   // Інакше записуємо дані у форму редактора:
-  fEdit.eName.Text:= sgView.Cells[0, sgView.Row];
-  fEdit.ePhone.Text:= sgView.Cells[1, sgView.Row];
-  fEdit.CBNote.Text:= sgView.Cells[2, sgView.Row];
+  fEdit.edtName.Text:= sgView.Cells[0, sgView.Row];
+  fEdit.edtPhone.Text:= sgView.Cells[1, sgView.Row];
+  fEdit.cbType.Text:= sgView.Cells[2, sgView.Row];
   // Встановлюємо ModalResult редактора в mrNone:
   fEdit.ModalResult:= mrNone;
   // Тепер виводимо форму:
   fEdit.ShowModal;
   // Зберігаємо в сітку можливі зміни, якщо користувач натиснув "Зберегти":
   if fEdit.ModalResult = mrOk then begin
-    sgView.Cells[0, sgView.Row]:= fEdit.eName.Text;
-    sgView.Cells[1, sgView.Row]:= fEdit.ePhone.Text;
-    sgView.Cells[2, sgView.Row]:= fEdit.CBNote.Text;
+    sgView.Cells[0, sgView.Row]:= fEdit.edtName.Text;
+    sgView.Cells[1, sgView.Row]:= fEdit.edtPhone.Text;
+    sgView.Cells[2, sgView.Row]:= fEdit.cbType.Text;
     end;
 end;
 
@@ -118,7 +118,7 @@ begin
   if sgView.RowCount = 1 then exit;
   // Інакше відкриваємо файл для запису:
   try
-    AssignFile(f, adres + 'Telephones.dat');
+    AssignFile(f, adres + 'MyTelephones.dat');
     Rewrite(f);
     // Тепер цикл - від першого до останього запису сітки:
     for i:= 1 to sgView.RowCount-1 do begin
@@ -149,10 +149,10 @@ begin
   sgView.ColWidths[1]:= 150;
   sgView.ColWidths[2]:= 150;
   // Якщо файлу даних немає, просто виходимо:
-  if not FileExists(adres + 'Telephones.dat') then Exit;
+  if not FileExists(adres + 'MyTelephones.dat') then Exit;
   // Інакше файл є, відкриваємо його для читання і зчитуємо дані в сітку:
   try
-    AssignFile(f, adres + 'Telephones.dat');
+    AssignFile(f, adres + 'MyTelephones.dat');
     Reset(f);
     // Тепер цикл - від першого до останього запису сітки:
     while not Eof(f) do begin

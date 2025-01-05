@@ -10,6 +10,7 @@ object fMain: TfMain
   OnClose = FormClose
   OnCreate = FormCreate
   Position = poDesktopCenter
+  LCLVersion = '3.6.0.0'
   object pnlButtons: TPanel
     Left = 0
     Height = 27

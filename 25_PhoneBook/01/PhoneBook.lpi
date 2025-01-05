@@ -45,6 +45,7 @@
         <Filename Value="edit.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="fEdit"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Edit"/>
       </Unit>

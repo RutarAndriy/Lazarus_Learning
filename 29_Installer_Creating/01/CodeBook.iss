@@ -43,7 +43,7 @@ Name: "ukrainian"; MessagesFile: "compiler:Languages\Ukrainian.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "C:\files\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\files\CodeBook.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\files\CodeBook.chm"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\files\License.txt"; DestDir: "{app}"; Flags: ignoreversion
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files

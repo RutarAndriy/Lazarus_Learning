@@ -105,7 +105,7 @@
         <tr> <td>Menu And Toolbox</td>
              <td>Меню і панель інструментів</td> </tr>
         <tr> <td>&#9672; <a href="/16_Menu_And_Toolbox/01">ImgViewer</a></td>
-             <td>Доопрацювання "ImgViewer" - додано меню і панель інструментів</td> </tr>
+             <td>Доопрацювання "ImgViewer" - додано елементи керування</td> </tr>
         <!-- Modules -->
         <tr> <td>Modules</td>
              <td>Модулі</td> </tr>
@@ -155,9 +155,9 @@
         <tr> <td>&#9672; <a href="/24_Records_And_Variant/03">StrGrid</a></td>
              <td>Приклад використання TStringGrid</td> </tr>
         <!-- Phonebook -->
-        <tr> <td>Phonebook</td>
+        <tr> <td>PhoneBook</td>
              <td>Телефонний записник</td> </tr>
-        <tr> <td>&#9672; <a href="/25_Phonebook/01">PhoneBook</a></td>
+        <tr> <td>&#9672; <a href="/25_PhoneBook/01">PhoneBook</a></td>
              <td>Написання програми "Телефонний довідник"</td> </tr>
         <!-- DLL -->
         <tr> <td>DLL</td>

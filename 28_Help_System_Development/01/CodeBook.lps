@@ -19,6 +19,7 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Main"/>
         <IsVisibleTab Value="True"/>
+        <TopLine Value="433"/>
         <CursorPos X="67" Y="385"/>
         <UsageCount Value="190"/>
         <Loaded Value="True"/>
@@ -44,7 +45,6 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Stats"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="20"/>
         <CursorPos Y="28"/>
         <UsageCount Value="181"/>
         <Loaded Value="True"/>
@@ -74,7 +74,7 @@
         <UsageCount Value="5"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="29">
+    <JumpHistory HistoryIndex="28">
       <Position>
         <Filename Value="main.pas"/>
         <Caret Line="168" Column="27" TopLine="160"/>
@@ -173,10 +173,6 @@
       </Position>
       <Position>
         <Filename Value="main.pas"/>
-        <Caret Line="194" Column="15" TopLine="233"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
         <Caret Line="64" Column="19" TopLine="43"/>
       </Position>
       <Position>
@@ -207,12 +203,10 @@
       </Modes>
     </RunParams>
     <HistoryLists>
-      <List Name="WorkingDirectory" Type="File" Count="1"/>
-      <List Name="LaunchingApplication" Type="File" Count="3">
+      <List Name="LaunchingApplication" Type="File" Count="2">
         <Item1 Value="/usr/bin/gnome-terminal -t &apos;Lazarus Run Output&apos; -e &apos;$(LazarusDir)/tools/runwait.sh $(TargetCmdLine)&apos; --wait"/>
-        <Item3 Value="/usr/bin/gnome-terminal -t &apos;Lazarus Run Output&apos; -e &apos;$(LazarusDir)/tools/runwait.sh $(TargetCmdLine)&apos;"/>
+        <Item2 Value="/usr/bin/gnome-terminal -t &apos;Lazarus Run Output&apos; -e &apos;$(LazarusDir)/tools/runwait.sh $(TargetCmdLine)&apos;"/>
       </List>
-      <List Name="CommandLineParameters" Count="1"/>
     </HistoryLists>
   </ProjectSession>
 </CONFIG>

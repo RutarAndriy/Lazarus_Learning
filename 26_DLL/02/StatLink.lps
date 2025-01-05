@@ -7,11 +7,10 @@
       <Unit>
         <Filename Value="StatLink.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="1"/>
-        <TopLine Value="6"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2"/>
         <CursorPos Y="25"/>
         <UsageCount Value="20"/>
-        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="main.pas"/>
