@@ -203,19 +203,19 @@
         <tr> <td>&#9672; <a href="/30_Additional_Examples/08">Sleep</a></td>
              <td>Приклад "зависання" інтерфейсу програми</td> </tr>
         <tr> <td>&#9672; <a href="/30_Additional_Examples/09">ResizableForm</a></td>
-             <td>Приклад форми зі змінним розміром</td> </tr>
+             <td>Приклад форми з адаптивним інтерфейсом</td> </tr>
         <tr> <td>&#9672; <a href="/30_Additional_Examples/10">LikeLazarus</a></td>
              <td>Приклад малювання на формі</td> </tr>
         <!-- Snowfall -->
         <tr> <td>Snowfall</td>
              <td>Снігопад</td> </tr>
-        <tr> <td>&#9672; <a href="/31_Snowfall/01">01</a></td>
-             <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/31_Snowfall/01">Snowfall</a></td>
+             <td>Написання програми "Снігопад"</td> </tr>
         <!-- GPU Breakdown -->
         <tr> <td>GPU Breakdown</td>
              <td>Відвал відеокарти</td> </tr>
-        <tr> <td>&#9672; <a href="/32_GPU_Breakdown/01">01</a></td>
-             <td> ... </td> </tr>
+        <tr> <td>&#9672; <a href="/32_GPU_Breakdown/01">GPUBreakdown</a></td>
+             <td>Написання програми "Відвал відеокарти"</td> </tr>
         <!-- Execute External Programs -->
         <tr> <td>Execute External Programs</td>
              <td>Виконання зовнішніх програм</td> </tr>

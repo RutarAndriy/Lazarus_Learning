@@ -12,12 +12,12 @@ type
   { TfMain }
 
   TfMain = class(TForm)
-    RefreshTimer: TTimer;
+    tUpdate: TTimer;
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormCreate(Sender: TObject);
     procedure FormKeyUp(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure FormPaint(Sender: TObject);
-    procedure RefreshTimerTimer(Sender: TObject);
+    procedure tUpdateTimer(Sender: TObject);
   private
     Screenshot: TBitmap;
   public
@@ -151,7 +151,7 @@ begin
   end;
 end;
 
-procedure TfMain.RefreshTimerTimer(Sender: TObject);
+procedure TfMain.tUpdateTimer(Sender: TObject);
 begin
   ShowOnTop;
   Invalidate;

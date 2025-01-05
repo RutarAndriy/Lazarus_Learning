@@ -25,12 +25,12 @@ type
   { TfMain }
 
   TfMain = class(TForm)
-    RepaintTimer: TTimer;
+    tUpdate: TTimer;
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
     procedure FormKeyUp(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure FormPaint(Sender: TObject);
-    procedure RepaintTimerTimer(Sender: TObject);
+    procedure tUpdateTimer(Sender: TObject);
   private
     // Фонове зображення:
     BackgroundImage: TPortableNetworkGraphic;
@@ -86,16 +86,9 @@ begin
       if BackgroundImage.Height * ScaleCoef < ClientHeight then
         ScaleCoef:= ClientHeight / BackgroundImage.Height;
     end;
-
-    //if BackgroundImage.Width > BackgroundImage.Height
-    //  then MaxImage:= BackgroundImage.Width
-    //  else MaxImage:= BackgroundImage.Height;
-
+    // Задаємо розміри "оптимального" квадрату:
     BackgroundRect.Width:= Trunc(BackgroundImage.Width * ScaleCoef);
     BackgroundRect.Height:= Trunc(BackgroundImage.Height * ScaleCoef);
-
-    //BackgroundRect.Width:= 200;
-    //BackgroundRect.Height:= 150;
     // Задаємо позицію зображення:
     BackgroundRect.SetLocation(
       Trunc(ClientWidth/2 - BackgroundRect.Width/2),
@@ -180,7 +173,7 @@ begin
     ShowFPS:= not ShowFPS;
 end;
 
-procedure TfMain.RepaintTimerTimer(Sender: TObject);
+procedure TfMain.tUpdateTimer(Sender: TObject);
 begin
   UpdateSnow;
   Invalidate;

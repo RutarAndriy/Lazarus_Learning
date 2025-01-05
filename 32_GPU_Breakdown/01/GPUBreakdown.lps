@@ -7,9 +7,8 @@
       <Unit>
         <Filename Value="GPUBreakdown.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="-1"/>
         <UsageCount Value="20"/>
-        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="main.pas"/>
@@ -19,7 +18,7 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Main"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="89"/>
+        <TopLine Value="139"/>
         <CursorPos X="31" Y="107"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>

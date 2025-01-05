@@ -11,11 +11,10 @@ object fMain: TfMain
   OnKeyUp = FormKeyUp
   OnPaint = FormPaint
   Position = poMainFormCenter
-  LCLVersion = '3.6.0.0'
-  object RepaintTimer: TTimer
+  object tUpdate: TTimer
     Interval = 33
-    OnTimer = RepaintTimerTimer
-    Left = 8
-    Top = 8
+    OnTimer = tUpdateTimer
+    Left = 112
+    Top = 65456
   end
 end

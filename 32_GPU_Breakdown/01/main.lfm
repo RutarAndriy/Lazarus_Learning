@@ -9,9 +9,9 @@ object fMain: TfMain
   OnKeyUp = FormKeyUp
   OnPaint = FormPaint
   LCLVersion = '3.6.0.0'
-  object RefreshTimer: TTimer
+  object tUpdate: TTimer
     Interval = 33
-    OnTimer = RefreshTimerTimer
+    OnTimer = tUpdateTimer
     Left = 8
     Top = 8
   end
