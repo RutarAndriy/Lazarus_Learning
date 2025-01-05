@@ -9,6 +9,7 @@ object fMain: TfMain
   ClientWidth = 273
   OnClose = FormClose
   OnCreate = FormCreate
+  LCLVersion = '3.6.0.0'
   object edtField: TEdit
     Left = 8
     Height = 28

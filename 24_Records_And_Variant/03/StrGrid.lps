@@ -7,10 +7,8 @@
       <Unit>
         <Filename Value="StrGrid.lpr"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="-1"/>
         <UsageCount Value="20"/>
-        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="main.pas"/>
@@ -19,6 +17,8 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Main"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="53"/>
         <CursorPos X="33" Y="20"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>

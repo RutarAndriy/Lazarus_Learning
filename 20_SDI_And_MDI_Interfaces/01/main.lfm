@@ -9,6 +9,7 @@ object fMain: TfMain
   Menu = mMenu
   OnClose = FormClose
   Position = poScreenCenter
+  LCLVersion = '3.6.0.0'
   object memNotebook: TMemo
     Left = 0
     Height = 404
@@ -89,7 +90,7 @@ object fMain: TfMain
         OnClick = mFileSaveClick
       end
       object mFileSaveAs: TMenuItem
-        Caption = 'Зберегти як...'
+        Caption = 'Зберегти як ...'
         OnClick = mFileSaveAsClick
       end
       object sepOne: TMenuItem

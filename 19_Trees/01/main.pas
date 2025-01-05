@@ -70,7 +70,7 @@ end;
 
 procedure TfMain.FormClose(Sender: TObject; var CloseAction: TCloseAction);
 begin
-  trvMain.SaveToFile('MyLibrary.dat');
+  trvMain.SaveToFile('BookList.dat');
 end;
 
 procedure TfMain.FormCreate(Sender: TObject);
@@ -78,8 +78,8 @@ var
   i: Integer;
 begin
   // Якщо файл існує, то завантажимо його:
-  if FileExists('MyLibrary.dat') then
-    trvMain.LoadFromFile('MyLibrary.dat');
+  if FileExists('BookList.dat') then
+    trvMain.LoadFromFile('BookList.dat');
   // Тепер пройдемося по списку і кожному вузлу присвоїмо
   // потрібну піктограму:
   for i:= 0 to trvMain.Items.Count - 1 do

@@ -7,9 +7,8 @@
       <Unit>
         <Filename Value="TypedFile.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="-1"/>
         <UsageCount Value="21"/>
-        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="main.pas"/>
@@ -19,7 +18,7 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Main"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="50"/>
+        <TopLine Value="43"/>
         <CursorPos X="7" Y="52"/>
         <UsageCount Value="21"/>
         <Loaded Value="True"/>

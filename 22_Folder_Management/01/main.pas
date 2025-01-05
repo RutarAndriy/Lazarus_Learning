@@ -86,7 +86,7 @@ end;
 
 procedure TfMain.FormCreate(Sender: TObject);
 begin
-  // Ініціалізуємо змінну:
+  // Ініціалізуємо змінну при створенні форми:
   sList:= TStringList.Create;
 end;
 

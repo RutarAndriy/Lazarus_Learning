@@ -8,7 +8,7 @@ object fMain: TfMain
   ClientWidth = 310
   OnClose = FormClose
   OnCreate = FormCreate
-  LCLVersion = '3.4.0.0'
+  LCLVersion = '3.6.0.0'
   object lblCaption: TLabel
     Left = 8
     Height = 16

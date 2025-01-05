@@ -84,7 +84,7 @@
         <tr> <td>Simple And Dynamic Arrays</td>
              <td>Прості та динамічні масиви</td> </tr>
         <tr> <td>&#9672; <a href="/13_Simple_And_Dynamic_Arrays/01">TempConvertor</a></td>
-             <td>Написання програми "Конвертер температур""</td> </tr>
+             <td>Написання програми "Конвертер температур"</td> </tr>
         <tr> <td>&#9672; <a href="/13_Simple_And_Dynamic_Arrays/02">DynArrays</a></td>
              <td>Приклад роботи із динамічними масивами</td> </tr>
         <!-- String Collections -->
@@ -119,17 +119,17 @@
         <!-- Trees -->
         <tr> <td>Trees</td>
              <td>Дерева</td> </tr>
-        <tr> <td>&#9672; <a href="/19_Trees/01">MyLibrary</a></td>
+        <tr> <td>&#9672; <a href="/19_Trees/01">BookList</a></td>
              <td>Написання програми "Бібліотечний каталог"</td> </tr>
         <!-- SDI And MDI Interfaces -->
         <tr> <td>SDI And MDI Interfaces</td>
              <td>SDI та MDI інтерфейси</td> </tr>
         <tr> <td>&#9672; <a href="/20_SDI_And_MDI_Interfaces/01">CodeBook</a></td>
-             <td>Оновлення "CodeBook" - додано вікна статистики і довідки</td> </tr>
-        <!-- Console Applications And Parameters -->
-        <tr> <td>Console Applications And Parameters</td>
+             <td>Доопрацювання "CodeBook" - додано вікна статистики і довідки</td> </tr>
+        <!-- Console Apps And Parameters -->
+        <tr> <td>Console Apps And Parameters</td>
              <td>Консольні програми і параметри</td> </tr>
-        <tr> <td>&#9672; <a href="/21_Console_Applications_And_Parameters/01">ConsoleApp</a></td>
+        <tr> <td>&#9672; <a href="/21_Console_Apps_And_Parameters/01">ConsoleApp</a></td>
              <td>Приклад написання консольної програми</td> </tr>
         <!-- Folder Management -->
         <tr> <td>Folder Management</td>

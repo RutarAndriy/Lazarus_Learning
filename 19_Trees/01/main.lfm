@@ -8,6 +8,7 @@ object fMain: TfMain
   ClientWidth = 500
   OnClose = FormClose
   OnCreate = FormCreate
+  LCLVersion = '3.6.0.0'
   object pnlButtons: TPanel
     Left = 0
     Height = 350

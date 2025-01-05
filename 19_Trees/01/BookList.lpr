@@ -1,4 +1,4 @@
-program MyLibrary;
+program BookList;
 
 {$mode objfpc}{$H+}
 

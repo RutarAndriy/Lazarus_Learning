@@ -3,10 +3,11 @@ object fMain: TfMain
   Height = 208
   Top = 250
   Width = 625
-  Caption = 'Редагування сітки TStringGrid'
+  Caption = 'Сітка TStringGrid'
   ClientHeight = 208
   ClientWidth = 625
   OnCreate = FormCreate
+  LCLVersion = '3.6.0.0'
   object sgMain: TStringGrid
     Left = 5
     Height = 165

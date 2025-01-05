@@ -70,7 +70,7 @@ begin
   MyF.Checked:= cbTest.Checked;
   // Тепер створимо або перезапишемо файл налаштувань:
   try
-    AssignFile(f, 'RecordFile.dat');
+    AssignFile(f, 'MyRecordFile.dat');
     Rewrite(f);
     Write(f, MyF); // записуємо у файл дані із запису
   finally
@@ -83,10 +83,10 @@ var
   f: file of myForm; // типізований файл для збереження даних
 begin
   // Якщо файлу ще немає, просто виходимо:
-  if not FileExists('RecordFile.dat') then Exit;
+  if not FileExists('MyRecordFile.dat') then Exit;
   // Інакше відкриваємо файл і зчитуємо із нього налаштування в запис:
   try
-    AssignFile(f, 'RecordFile.dat');
+    AssignFile(f, 'MyRecordFile.dat');
     Reset(f);
     Read(f, MyF); // зчитали дані у змінну типу запис
   finally
