@@ -1,4 +1,4 @@
-program MyCycles;
+program CharsAndStr;
 
 {$mode objfpc}{$H+}
 

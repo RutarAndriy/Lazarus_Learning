@@ -1,4 +1,4 @@
-program Strings;
+program CalcIMT;
 
 {$mode objfpc}{$H+}
 

@@ -1,4 +1,4 @@
-program MyBool;
+program Subprog;
 
 {$mode objfpc}{$H+}
 

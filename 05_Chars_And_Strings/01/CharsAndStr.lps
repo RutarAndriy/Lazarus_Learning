@@ -5,7 +5,7 @@
     <BuildModes Active="Default"/>
     <Units>
       <Unit>
-        <Filename Value="Strings.lpr"/>
+        <Filename Value="CharsAndStr.lpr"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <UsageCount Value="20"/>

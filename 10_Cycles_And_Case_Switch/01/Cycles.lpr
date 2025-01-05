@@ -1,4 +1,4 @@
-program IMT;
+program Cycles;
 
 {$mode objfpc}{$H+}
 

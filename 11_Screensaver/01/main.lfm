@@ -10,7 +10,7 @@ object fMain: TfMain
   Color = clBlack
   OnActivate = FormActivate
   OnKeyPress = FormKeyPress
-  LCLVersion = '3.4.0.0'
+  LCLVersion = '3.6.0.0'
   WindowState = wsFullScreen
   object lblClock: TLabel
     Left = 37

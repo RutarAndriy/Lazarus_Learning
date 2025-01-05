@@ -5,10 +5,9 @@
     <BuildModes Active="Default"/>
     <Units>
       <Unit>
-        <Filename Value="MyCycles.lpr"/>
+        <Filename Value="Subprog.lpr"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="2"/>
         <UsageCount Value="21"/>
       </Unit>
       <Unit>
@@ -19,87 +18,64 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Main"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="118"/>
-        <CursorPos X="26" Y="116"/>
+        <TopLine Value="71"/>
+        <CursorPos X="33" Y="130"/>
         <UsageCount Value="21"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
-      <Unit>
-        <Filename Value="../../../../disk_d/6_Others/1_Programming/3_Learning/Lazarus_Learning/10_Cycles_And_Case_Switch/01/main.pas"/>
-        <ComponentName Value="fMain"/>
-        <HasResources Value="True"/>
-        <ResourceBaseClass Value="Form"/>
-        <UnitName Value="Main"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="69"/>
-        <CursorPos X="10" Y="81"/>
-        <UsageCount Value="10"/>
-      </Unit>
     </Units>
-    <JumpHistory HistoryIndex="15">
+    <JumpHistory HistoryIndex="12">
       <Position>
         <Filename Value="main.pas"/>
       </Position>
       <Position>
         <Filename Value="main.pas"/>
-        <Caret Line="39" Column="26" TopLine="21"/>
+        <Caret Line="43" Column="30" TopLine="33"/>
       </Position>
       <Position>
         <Filename Value="main.pas"/>
-        <Caret Line="37" Column="23" TopLine="21"/>
+        <Caret Line="39" TopLine="33"/>
       </Position>
       <Position>
         <Filename Value="main.pas"/>
-        <Caret Line="39" Column="23" TopLine="23"/>
+        <Caret Line="41" TopLine="35"/>
       </Position>
       <Position>
         <Filename Value="main.pas"/>
-        <Caret Line="56" Column="63" TopLine="42"/>
+        <Caret Line="62" Column="6" TopLine="49"/>
       </Position>
       <Position>
         <Filename Value="main.pas"/>
-        <Caret Line="59" Column="18" TopLine="41"/>
+        <Caret Line="67" Column="39" TopLine="55"/>
       </Position>
       <Position>
         <Filename Value="main.pas"/>
-        <Caret Line="61" Column="10" TopLine="41"/>
+        <Caret Line="69" Column="39" TopLine="57"/>
       </Position>
       <Position>
         <Filename Value="main.pas"/>
-        <Caret Line="55" Column="65" TopLine="41"/>
+        <Caret Line="83" Column="35" TopLine="69"/>
       </Position>
       <Position>
         <Filename Value="main.pas"/>
-        <Caret Line="53" Column="8" TopLine="42"/>
+        <Caret Line="85" Column="35" TopLine="71"/>
       </Position>
       <Position>
         <Filename Value="main.pas"/>
-        <Caret Line="56" Column="8" TopLine="45"/>
+        <Caret Line="26" Column="21" TopLine="17"/>
       </Position>
       <Position>
         <Filename Value="main.pas"/>
-        <Caret Line="89" Column="13" TopLine="72"/>
+        <Caret Line="33" Column="15" TopLine="25"/>
       </Position>
       <Position>
         <Filename Value="main.pas"/>
-        <Caret Line="87" Column="50" TopLine="72"/>
+        <Caret Line="35" Column="15" TopLine="26"/>
       </Position>
       <Position>
         <Filename Value="main.pas"/>
-        <Caret Line="81" Column="15" TopLine="68"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="82" Column="15" TopLine="69"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="84" Column="15" TopLine="71"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="109" Column="18" TopLine="91"/>
+        <Caret Line="29" Column="19" TopLine="20"/>
       </Position>
     </JumpHistory>
     <RunParams>

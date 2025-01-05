@@ -39,7 +39,7 @@
         <!-- Chars And Strings -->
         <tr> <td>Chars And Strings</td>
              <td>Символи та строки</td> </tr>
-        <tr> <td>&#9672; <a href="/05_Chars_And_Strings/01">Strings</a></td>
+        <tr> <td>&#9672; <a href="/05_Chars_And_Strings/01">CharsAndStr</a></td>
              <td>Простий приклад використання символів та строк</td> </tr>
         <tr> <td>&#9672; <a href="/05_Chars_And_Strings/02">EditControls</a></td>
              <td>Приклад використання TEdit, TLabeledEdit, TMaskEdit</td> </tr>
@@ -51,24 +51,24 @@
         <!-- Logical Types And Constructions -->
         <tr> <td>Logical Types And Constructions</td>
              <td>Логічні типи і конструкції</td> </tr>
-        <tr> <td>&#9672; <a href="/07_Logical_Types_And_Constructions/01">MyBool</a></td>
+        <tr> <td>&#9672; <a href="/07_Logical_Types_And_Constructions/01">BoolType</a></td>
              <td>Приклад використання логічного типу Boolean</td> </tr>
         <tr> <td>&#9672; <a href="/07_Logical_Types_And_Constructions/02">Election</a></td>
              <td>Написання програми "Вибори Президента"</td> </tr>
         <!-- Numbers -->
         <tr> <td>Numbers</td>
              <td>Числа</td> </tr>
-        <tr> <td>&#9672; <a href="/08_Numbers/01">IMT</a></td>
+        <tr> <td>&#9672; <a href="/08_Numbers/01">CalcIMT</a></td>
              <td>Написання програми для визначення індексу маси тіла</td> </tr>
         <!-- Subprograms -->
         <tr> <td>Subprograms</td>
              <td>Підпрограми</td> </tr>
-        <tr> <td>&#9672; <a href="/09_Subprograms/01">MySubprog</a></td>
+        <tr> <td>&#9672; <a href="/09_Subprograms/01">Subprog</a></td>
              <td>Приклад використання підпрограм (процедур та функцій)</td> </tr>
         <!-- Cycles And Case Switch -->
         <tr> <td>Cycles And Case Switch</td>
-             <td>Цикли і перемикач "switch"</td> </tr>
-        <tr> <td>&#9672; <a href="/10_Cycles_And_Case_Switch/01">MyCycles</a></td>
+             <td>Цикли і перемикач "Switch"</td> </tr>
+        <tr> <td>&#9672; <a href="/10_Cycles_And_Case_Switch/01">Cycles</a></td>
              <td>Приклад використання циклів та оператора Switch</td> </tr>
         <!-- Screensaver -->
         <tr> <td>Screensaver</td>

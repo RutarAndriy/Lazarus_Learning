@@ -105,9 +105,9 @@ end;
 procedure TfMain.btnFiveClick(Sender: TObject);
 begin
   MyNum:= StrToFloat(edtNumber.Text);
-  // Подвоїмо число
+  // Подвоїмо число:
   MyDouble;
-  // Виведемо результат на екран
+  // Виведемо результат на екран:
   ShowMessage(FloatToStr(MyNum));
 end;
 
@@ -127,7 +127,7 @@ end;
 // Приватна процедура форми TfMain яка подвоює глобальну змінну:
 procedure TfMain.MyDouble;
 begin
-  // Подвоюємо глобальну змінну
+  // Подвоюємо глобальну змінну:
   MyNum:= MyNum * 2;
 end;
 
