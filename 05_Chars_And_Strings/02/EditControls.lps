@@ -7,9 +7,8 @@
       <Unit>
         <Filename Value="EditControls.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="-1"/>
         <UsageCount Value="20"/>
-        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="main.pas"/>
@@ -19,7 +18,6 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Main"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="24"/>
         <CursorPos X="59" Y="38"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>

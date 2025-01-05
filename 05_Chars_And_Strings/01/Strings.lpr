@@ -1,4 +1,4 @@
-program Hello;
+program Strings;
 
 {$mode objfpc}{$H+}
 

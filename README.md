@@ -24,7 +24,7 @@
              <td>Анатомія проекту</td> </tr>
         <tr> <td>&#9672; <a href="/02_Project_Anatomy/01">SimpleForm</a></td>
              <td>Приклад створення найпростішої форми</td> </tr>
-        <tr> <td>&#9672; <a href="/02_Project_Anatomy/02">Hello</a></td>
+        <tr> <td>&#9672; <a href="/02_Project_Anatomy/02">PrintHello</a></td>
              <td>Написання програми яка виводить ваше ім'я</td> </tr>
         <!-- Working With Components -->
         <tr> <td>Working With Components</td>
@@ -34,19 +34,19 @@
         <!-- Code Basics -->
         <tr> <td>Code Basics</td>
              <td>Основи кодування</td> </tr>
-        <tr> <td>&#9672; <a href="/04_Code_Basics/01">Hello</a></td>
-             <td>Доопрацювання програми яка виводить ваше ім'я</td> </tr>
+        <tr> <td>&#9672; <a href="/04_Code_Basics/01">PrintHello</a></td>
+             <td>Доопрацювання "PrintHello" - додано додактовий діалог</td> </tr>
         <!-- Chars And Strings -->
         <tr> <td>Chars And Strings</td>
              <td>Символи та строки</td> </tr>
-        <tr> <td>&#9672; <a href="/05_Chars_And_Strings/01">MyStrings</a></td>
+        <tr> <td>&#9672; <a href="/05_Chars_And_Strings/01">Strings</a></td>
              <td>Простий приклад використання символів та строк</td> </tr>
         <tr> <td>&#9672; <a href="/05_Chars_And_Strings/02">EditControls</a></td>
              <td>Приклад використання TEdit, TLabeledEdit, TMaskEdit</td> </tr>
-        <!-- Standard String Functions And Messages -->
-        <tr> <td>Standard String Functions And Messages</td>
-             <td>Стандартні строкові функції та повідомлення</td> </tr>
-        <tr> <td>&#9672; <a href="/06_Standard_String_Functions_And_Messages/01">StringFunc</a></td>
+        <!-- String Functions And Messages -->
+        <tr> <td>String Functions And Messages</td>
+             <td>Строкові функції та повідомлення</td> </tr>
+        <tr> <td>&#9672; <a href="/06_String_Functions_And_Messages/01">StringFunc</a></td>
              <td>Приклад використання базових строкових функцій та діалогів</td> </tr>
         <!-- Logical Types And Constructions -->
         <tr> <td>Logical Types And Constructions</td>

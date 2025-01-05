@@ -1,4 +1,4 @@
-program MyStrings;
+program PrintHello;
 
 {$mode objfpc}{$H+}
 

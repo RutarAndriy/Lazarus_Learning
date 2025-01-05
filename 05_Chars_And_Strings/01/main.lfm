@@ -7,6 +7,7 @@ object fMain: TfMain
   ClientHeight = 240
   ClientWidth = 320
   Position = poScreenCenter
+  LCLVersion = '3.6.0.0'
   object btnChar: TButton
     Left = 8
     Height = 25

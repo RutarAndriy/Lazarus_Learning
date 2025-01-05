@@ -5,12 +5,9 @@
     <BuildModes Active="Default"/>
     <Units>
       <Unit>
-        <Filename Value="Hello.lpr"/>
+        <Filename Value="Strings.lpr"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <WindowIndex Value="-1"/>
-        <TopLine Value="-1"/>
-        <CursorPos X="-1" Y="-1"/>
         <UsageCount Value="20"/>
       </Unit>
       <Unit>
@@ -21,22 +18,25 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Main"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="26"/>
-        <CursorPos X="44" Y="15"/>
+        <TopLine Value="42"/>
+        <CursorPos X="49" Y="53"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
+      <Unit>
+        <Filename Value="../../../../disk_d/6_Others/1_Programming/3_Learning/Lazarus_Learning/05_Chars_And_Strings/01/main.pas"/>
+        <ComponentName Value="fMain"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Main"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="45"/>
+        <CursorPos X="39" Y="62"/>
+        <UsageCount Value="10"/>
+      </Unit>
     </Units>
-    <JumpHistory HistoryIndex="1">
-      <Position>
-        <Filename Value="main.pas"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="36" Column="49" TopLine="19"/>
-      </Position>
-    </JumpHistory>
+    <JumpHistory HistoryIndex="-1"/>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes ActiveMode=""/>

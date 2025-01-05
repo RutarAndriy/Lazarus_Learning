@@ -7,10 +7,9 @@
       <Unit>
         <Filename Value="HelloWorld.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="-1"/>
         <CursorPos X="12" Y="7"/>
         <UsageCount Value="21"/>
-        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="main.pas"/>
@@ -20,6 +19,7 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Main"/>
         <IsVisibleTab Value="True"/>
+        <TopLine Value="10"/>
         <CursorPos X="29" Y="34"/>
         <UsageCount Value="21"/>
         <Loaded Value="True"/>

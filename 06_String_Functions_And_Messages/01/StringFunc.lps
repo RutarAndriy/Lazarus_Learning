@@ -7,10 +7,9 @@
       <Unit>
         <Filename Value="StringFunc.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="-1"/>
         <CursorPos X="12" Y="7"/>
         <UsageCount Value="21"/>
-        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="main.pas"/>
@@ -20,7 +19,7 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Main"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="65"/>
+        <TopLine Value="61"/>
         <CursorPos X="31" Y="75"/>
         <UsageCount Value="21"/>
         <Loaded Value="True"/>

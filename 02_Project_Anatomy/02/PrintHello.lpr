@@ -1,4 +1,4 @@
-program Hello;
+program PrintHello;
 
 {$mode objfpc}{$H+}
 
