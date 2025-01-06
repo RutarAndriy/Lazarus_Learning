@@ -1,4 +1,4 @@
-object Form1: TForm1
+object fMain: TfMain
   Left = 382
   Height = 106
   Top = 250
@@ -6,31 +6,32 @@ object Form1: TForm1
   Caption = 'TProcess'
   ClientHeight = 106
   ClientWidth = 464
-  object Button1: TButton
+  LCLVersion = '3.4.0.0'
+  object btnGUI: TButton
     Left = 8
     Height = 25
     Top = 8
     Width = 448
     Caption = 'Запустити графічну програму'
     TabOrder = 0
-    OnClick = Button1Click
+    OnClick = btnGUIClick
   end
-  object Button2: TButton
+  object btnWrong: TButton
     Left = 8
     Height = 25
     Top = 40
     Width = 448
     Caption = 'Запустити консольну програму і прочитати вивід (неправильно)'
     TabOrder = 1
-    OnClick = Button2Click
+    OnClick = btnWrongClick
   end
-  object Button3: TButton
+  object btnRight: TButton
     Left = 8
     Height = 25
     Top = 72
     Width = 448
     Caption = 'Запустити консольну програму і прочитати вивід (правильно)'
     TabOrder = 2
-    OnClick = Button3Click
+    OnClick = btnRightClick
   end
 end

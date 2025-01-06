@@ -19,14 +19,14 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Main"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="194"/>
-        <CursorPos X="17" Y="194"/>
+        <TopLine Value="365"/>
+        <CursorPos X="16" Y="367"/>
         <UsageCount Value="100"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
-        <Filename Value="../../../../../../.FpcUpDeluxe/lazarus/lcl/graphics.pp"/>
+        <Filename Value="/.FpcUpDeluxe/lazarus/lcl/graphics.pp"/>
         <UnitName Value="Graphics"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="699"/>

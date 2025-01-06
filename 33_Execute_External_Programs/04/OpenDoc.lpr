@@ -1,4 +1,4 @@
-program ExecuteProcess;
+program OpenDoc;
 
 {$mode objfpc}{$H+}
 
@@ -19,7 +19,7 @@ begin
   RequireDerivedFormResource:=True;
   Application.Scaled:=True;
   Application.Initialize;
-  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TfMain, fMain);
   Application.Run;
 end.
 

@@ -10,15 +10,15 @@ uses
 
 type
 
-  { TForm1 }
+  { TfMain }
 
-  TForm1 = class(TForm)
-    Button1: TButton;
-    Button2: TButton;
-    Button3: TButton;
-    procedure Button1Click(Sender: TObject);
-    procedure Button2Click(Sender: TObject);
-    procedure Button3Click(Sender: TObject);
+  TfMain = class(TForm)
+    btnGUI: TButton;
+    btnWrong: TButton;
+    btnRight: TButton;
+    procedure btnGUIClick(Sender: TObject);
+    procedure btnWrongClick(Sender: TObject);
+    procedure btnRightClick(Sender: TObject);
   private
 
   public
@@ -26,15 +26,16 @@ type
   end;
 
 var
-  Form1: TForm1;
+  fMain: TfMain;
 
 implementation
 
 {$R *.lfm}
 
-{ TForm1 }
+{ TfMain }
 
-procedure TForm1.Button1Click(Sender: TObject);
+// Запуск графічної програми:
+procedure TfMain.btnGUIClick(Sender: TObject);
 var
   MyProcess: TProcess;
   FullPath: String;
@@ -42,18 +43,18 @@ begin
   // Створюємо процес:
   MyProcess:= TProcess.Create(nil);
   // Задаємо різні параметри в залежності від ОС:
-  {$ifdef windows}
+  {$IFDEF WINDOWS}
   FullPath:= FindDefaultExecutablePath('notepad');
   MyProcess.Executable:= FullPath;
   MyProcess.Parameters.Add('File_1');
-  {$else}
+  {$ELSE}
   FullPath:= FindDefaultExecutablePath('xed');
   MyProcess.Executable:= FullPath;
   MyProcess.Parameters.Add('-w');
   MyProcess.Parameters.Add('File_1');
   MyProcess.Parameters.Add('File_2');
   MyProcess.Parameters.Add('File_3');
-  {$endif}
+  {$ENDIF}
   // Задаємо параметри виконання:
   MyProcess.Options:= MyProcess.Options + [poWaitOnExit];
   // Запускаємо процес:
@@ -64,7 +65,8 @@ begin
   MyProcess.Free;
 end;
 
-procedure TForm1.Button2Click(Sender: TObject);
+// Запуск консольної програми і читання її виводу - неправильно!
+procedure TfMain.btnWrongClick(Sender: TObject);
 var
   MyProcess: TProcess;
   FullPath: String;
@@ -73,20 +75,20 @@ begin
   // Створюємо процес:
   MyProcess:= TProcess.Create(nil);
   // Задаємо різні параметри в залежності від ОС:
-  {$ifdef windows}
+  {$IFDEF WINDOWS}
   FullPath:= FindDefaultExecutablePath('ping');
   MyProcess.Executable:= FullPath;
   MyProcess.Parameters.Add('-h');
   MyProcess.Options:= MyProcess.Options + [poWaitOnExit, poUsePipes,
                                            poNoConsole];
-  {$else}
+  {$ELSE}
   FullPath:= FindDefaultExecutablePath('ping');
   MyProcess.Executable:= FullPath;
   MyProcess.Parameters.Add('-h');
   // Опція poStderrToOutPut потрібна лише для деяких програм, таких як ping:
   MyProcess.Options:= MyProcess.Options + [poWaitOnExit, poUsePipes,
                                            poStderrToOutPut];
-  {$endif}
+  {$ENDIF}
   // Запускаємо процес:
   MyProcess.Execute;
   // Створюємо список рядків:
@@ -100,7 +102,8 @@ begin
   MyProcess.Free;
 end;
 
-procedure TForm1.Button3Click(Sender: TObject);
+// Запуск консольної програми і читання її виводу - правильно!
+procedure TfMain.btnRightClick(Sender: TObject);
 const
   BUF_SIZE = 2048; // розмір буфера для читання вихідних даних блоками
 var
@@ -112,22 +115,24 @@ begin
   // Створюємо процес:
   MyProcess:= TProcess.Create(nil);
   // Задаємо різні параметри в залежності від ОС:
-  {$ifdef windows}
+  {$IFDEF WINDOWS}
   MyProcess.Executable:= 'c:\windows\system32\cmd.exe';
   MyProcess.Parameters.Add('/c');
   MyProcess.Parameters.Add('dir /s c:\windows');
-  {$else}
+  {$ELSE}
   MyProcess.Executable:= '/bin/ls';
   MyProcess.Parameters.Add('--recursive');
   MyProcess.Parameters.Add('--all');
   MyProcess.Parameters.Add('-l');
-  {$endif}
+  {$ENDIF}
   // Задаємо параметри запуску:
   MyProcess.Options:= [poUsePipes, poNoConsole];
   // Запускаємо процес:
   MyProcess.Execute;
   // Створюємо потік для збереження виведених даних:
   OutputStream:= TMemoryStream.Create;
+  // Задаємо перший елемент, щоб не було попередження компілятора:
+  Buffer[1]:= 0;
   // Всі дані читаються в циклі, поки дані не закінчаться:
   repeat
     // Зчитуємо дані в буфер і отримуємо кількість зчитаних байт:

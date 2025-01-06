@@ -1,19 +1,21 @@
-object Form1: TForm1
+object fMain: TfMain
   Left = 234
   Height = 107
   Top = 250
   Width = 219
+  BorderIcons = [biSystemMenu]
   BorderStyle = bsDialog
   Caption = 'Open Document'
   ClientHeight = 107
   ClientWidth = 219
-  object Button1: TButton
+  LCLVersion = '3.4.0.0'
+  object btnRun: TButton
     Left = 8
     Height = 91
     Top = 8
     Width = 203
     Caption = 'Відкрити PDF'
     TabOrder = 0
-    OnClick = Button1Click
+    OnClick = btnRunClick
   end
 end

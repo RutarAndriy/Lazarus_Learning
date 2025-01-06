@@ -10,11 +10,11 @@ uses
 
 type
 
-  { TForm1 }
+  { TfMain }
 
-  TForm1 = class(TForm)
-    Button1: TButton;
-    procedure Button1Click(Sender: TObject);
+  TfMain = class(TForm)
+    btnRun: TButton;
+    procedure btnRunClick(Sender: TObject);
   private
 
   public
@@ -22,15 +22,15 @@ type
   end;
 
 var
-  Form1: TForm1;
+  fMain: TfMain;
 
 implementation
 
 {$R *.lfm}
 
-{ TForm1 }
+{ TfMain }
 
-procedure TForm1.Button1Click(Sender: TObject);
+procedure TfMain.btnRunClick(Sender: TObject);
 begin
   // Відкриваємо *.pdf за допомогою програми за замовчуванням:
   OpenDocument('..' + DirectorySeparator +

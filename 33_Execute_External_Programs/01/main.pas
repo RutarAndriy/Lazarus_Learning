@@ -10,13 +10,13 @@ uses
 
 type
 
-  { TForm1 }
+  { TfMain }
 
-  TForm1 = class(TForm)
-    Button1: TButton;
-    Button2: TButton;
-    procedure Button1Click(Sender: TObject);
-    procedure Button2Click(Sender: TObject);
+  TfMain = class(TForm)
+    btnConsole: TButton;
+    btnGUI: TButton;
+    procedure btnConsoleClick(Sender: TObject);
+    procedure btnGUIClick(Sender: TObject);
   private
 
   public
@@ -24,7 +24,7 @@ type
   end;
 
 var
-  Form1: TForm1;
+  fMain: TfMain;
   Exec: String;
   Args: array of String;
 
@@ -32,25 +32,25 @@ implementation
 
 {$R *.lfm}
 
-{ TForm1 }
+{ TfMain }
 
-procedure TForm1.Button1Click(Sender: TObject);
+procedure TfMain.btnConsoleClick(Sender: TObject);
 var
   FullPath: String;
   res: Integer;
 begin
   // Різні параметри для різних ОС:
-  {$ifdef windows}
+  {$IFDEF WINDOWS}
     Exec:= 'ping';
     SetLength(Args, 1);
     Args[0]:= 'www.google.com';
-  {$else}
+  {$ELSE}
     Exec:= 'ping';
     SetLength(Args, 3);
     Args[0]:= '-c';
     Args[1]:= '5';
     Args[2]:= 'www.google.com';
-  {$endif}
+  {$ENDIF}
   try
     // Отримуємо шлях до виконуваної програми:
     FullPath:= FindDefaultExecutablePath(Exec);
@@ -69,24 +69,24 @@ begin
   end;
 end;
 
-procedure TForm1.Button2Click(Sender: TObject);
+procedure TfMain.btnGUIClick(Sender: TObject);
 var
   FullPath: String;
   res: Integer;
 begin
   // Різні параметри для різних ОС:
-  {$ifdef windows}
+  {$IFDEF WINDOWS}
     Exec:= 'notepad';
     SetLength(Args, 1);
     Args[0]:= 'New_File';
-  {$else}
+  {$ELSE}
     Exec:= 'xed';
     SetLength(Args, 4);
     Args[0]:= '-w';
     Args[1]:= 'File_1';
     Args[2]:= 'File_2';
     Args[3]:= 'File_3';
-  {$endif}
+  {$ENDIF}
   try
     // Отримуємо шлях до виконуваної програми:
     FullPath:= FindDefaultExecutablePath(Exec);

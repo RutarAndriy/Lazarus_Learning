@@ -11,6 +11,7 @@ object fMain: TfMain
   Constraints.MinWidth = 900
   OnClose = FormClose
   OnCreate = FormCreate
+  Position = poDesktopCenter
   object lblDistance: TLabel
     Left = 8
     Height = 16

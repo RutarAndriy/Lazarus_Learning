@@ -219,18 +219,18 @@
         <!-- Execute External Programs -->
         <tr> <td>Execute External Programs</td>
              <td>Виконання зовнішніх програм</td> </tr>
-        <tr> <td>&#9672; <a href="/33_Execute_External_Programs/01">01</a></td>
-             <td><i> ... </i></td> </tr>
-        <tr> <td>&#9672; <a href="/33_Execute_External_Programs/02">02</a></td>
-             <td><i> ... </i></td> </tr>
-        <tr> <td>&#9672; <a href="/33_Execute_External_Programs/03">03</a></td>
-             <td><i> ... </i></td> </tr>
-        <tr> <td>&#9672; <a href="/33_Execute_External_Programs/04">04</a></td>
-             <td><i> ... </i></td> </tr>
+        <tr> <td>&#9672; <a href="/33_Execute_External_Programs/01">ExecProcess</a></td>
+             <td><i>Приклад запуску зовнішньої програми</i></td> </tr>
+        <tr> <td>&#9672; <a href="/33_Execute_External_Programs/02">TProcess</a></td>
+             <td><i>Приклад використання TProcess</i></td> </tr>
+        <tr> <td>&#9672; <a href="/33_Execute_External_Programs/03">PathVar</a></td>
+             <td><i>Приклад отримання значення системної змінної %PATH</i></td> </tr>
+        <tr> <td>&#9672; <a href="/33_Execute_External_Programs/04">OpenDoc</a></td>
+             <td><i>Приклад відкривання документів стандартними програмами</i></td> </tr>
         <!-- Fly Problem -->
         <tr> <td>Fly Problem</td>
              <td>Задача про муху</td> </tr>
         <tr> <td>&#9672; <a href="/34_Fly_Problem/01">FlyProblem</a></td>
-             <td><i> ... </i></td> </tr>
+             <td><i>Написання програми "Задача про муху"</i></td> </tr>
     </tbody>
 </table>

@@ -122,11 +122,16 @@ begin
           runRight:= True;
           flyTime:= remDist / (flySpeed + fSpeed)
         end;
-    flyDist:= flyTime * flySpeed; // отримання відстані польоту мухи
-    remDist:= remDist - flyTime * (fSpeed + sSpeed); // залишкова відстань
-    resCount:= Length(Result); // отриманя кількості шляхів
-    SetLength(Result, resCount + 1); // збільшення масиву на 1
-    Result[resCount]:= flyDist; // зберігання отриманого шляху
+    // Отримання відстані польоту мухи:
+    flyDist:= flyTime * flySpeed;
+    // Отримання залишкової відстані:
+    remDist:= remDist - flyTime * (fSpeed + sSpeed);
+    // Отриманя кількості шляхів:
+    resCount:= Length(Result);
+    // Збільшення масиву на 1:
+    SetLength(Result, resCount + 1);
+    // Зберігання отриманого шляху:
+    Result[resCount]:= flyDist;
   end;
 end;
 
@@ -134,11 +139,11 @@ procedure TfMain.pnlDrawPaint(Sender: TObject);
 const
   time = 1 / 90;
 var
-  W, H: Integer; // ширина і висота панелі малювання
+  W, H: Integer;           // ширина і висота панелі малювання
   sPoint, ePoint: Integer; // початкова і кінцева точки шляху
-  dLenght: Integer; // відстань між містами в пікселях
-  fX, sX, flyX: Integer; // координати I, II поїзда і мухи
-  lineY: Integer; // висотна координата лінії шляху
+  dLenght: Integer;        // відстань між містами в пікселях
+  fX, sX, flyX: Integer;   // координати I, II поїзда і мухи
+  lineY: Integer;          // висотна координата лінії шляху
 begin
 
   // Отримуємо ширину і висоту панелі малювання:
@@ -354,19 +359,19 @@ begin
     Invalidate
   else
     if animationEnd then
-      begin
-        r:= 0;
-        s:= '';
-        animationEnd:= False;
-        for i:= 0 to Length(answer) - 1 do begin
-          s:= s + Format('Відрізок шляху № %.2d: %.3n км',
-             [i + 1, answer[i]]) + #13;
-          r:= r + answer[i];
-        end;
-        s:= s + #13 + 'Загальний шлях мухи: ' + Format('%.3n км', [r]);
-        MessageDlg('Задача виконана', s, mtConfirmation, [mbOk], 0);
-        resetAll;
+    begin
+      r:= 0;
+      s:= '';
+      animationEnd:= False;
+      for i:= 0 to Length(answer) - 1 do begin
+        s:= s + Format('Відрізок шляху № %.2d: %.3n км',
+           [i + 1, answer[i]]) + #13;
+        r:= r + answer[i];
       end;
+      s:= s + #13 + 'Загальний шлях мухи: ' + Format('%.3n км', [r]);
+      MessageDlg('Задача виконана', s, mtConfirmation, [mbOk], 0);
+      resetAll;
+    end;
 end;
 
 initialization
