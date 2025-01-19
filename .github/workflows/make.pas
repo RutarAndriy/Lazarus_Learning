@@ -80,7 +80,7 @@ type
   begin
     OutLog(etDebug, #9'add:'#9 + Path);
     if RunCommand('sudo', ['cp', Path, '/usr/lib/'], Result) and
-       RunCommand('ldconfig', ['--verbose'], Result) then
+       RunCommand('sudo', ['ldconfig', '--verbose'], Result) then
       OutLog(etInfo, #9'success!')
     else
     begin
