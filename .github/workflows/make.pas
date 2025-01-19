@@ -177,6 +177,7 @@ type
       for Result in List do
         AddPackage(Result);
       List := FindAllFiles(Target, '*.lpi', True);
+      List.Sort;
       for Result in List do
         BuildProject(Result);
     finally
