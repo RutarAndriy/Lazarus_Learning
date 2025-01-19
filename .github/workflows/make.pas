@@ -101,7 +101,7 @@ type
       OutLog(etInfo, #9'to:'#9 + Result.Output);
       if ContainsStr(ReadFileToString(Path.Replace('.lpi', '.lpr')), 'consoletestrunner') then
         RunTest(Result.Output)
-      else if (ContainsStr(ReadFileToString(Path.Replace('.lpi', '.lpr')), 'consoletestrunner')) then
+      else if (ContainsStr(ReadFileToString(Path.Replace('.lpi', '.lpr')), 'library')) then
         AddDDL(Result.Output)
     end
     else
