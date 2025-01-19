@@ -76,6 +76,19 @@ type
     end;
   end;
 
+  function AddDDL(const Path: String): string;
+  begin
+    OutLog(etDebug, #9'add:'#9 + Path);
+    if RunCommand('sudo', ['cp', Path, '/usr/lib/'], Result) and
+       RunCommand('ldconfig', ['--verbose'], Result) then
+      OutLog(etInfo, #9'success!')
+    else
+    begin
+      ExitCode += 1;
+      OutLog(etError, Result);
+    end;
+  end;
+
   function BuildProject(const Path: string): Output;
   begin
     OutLog(etDebug, 'Build from:'#9 + Path);
@@ -87,7 +100,9 @@ type
       Result.Output := Result.Output.Split(' ')[2].Replace(LineEnding, EmptyStr);
       OutLog(etInfo, #9'to:'#9 + Result.Output);
       if ContainsStr(ReadFileToString(Path.Replace('.lpi', '.lpr')), 'consoletestrunner') then
-        RunTest(Result.Output);
+        RunTest(Result.Output)
+      else if (ContainsStr(ReadFileToString(Path.Replace('.lpi', '.lpr')), 'consoletestrunner')) then
+        AddDDL(Result.Output)
     end
     else
     begin
